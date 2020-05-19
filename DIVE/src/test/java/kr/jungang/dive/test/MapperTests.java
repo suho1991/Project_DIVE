@@ -1,4 +1,4 @@
-package kr.jungang.dive.persistence;
+package kr.jungang.dive.test;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

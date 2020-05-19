@@ -6,9 +6,9 @@
 				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
 		</Console>
 
-		<RollingFile name="File" fileName="/log/${logNm}.log"
-			filePattern="/log/logs/${logNm}_%d{yyyy-MM-dd}_%i.log">
-			<PatternLayout pattern="${layoutPattern}" />
+		<RollingFile name="File" fileName="logs/${name}.log"
+			filePattern="logs/$${date:yyyy}/$${date:MM}/$${date:dd}/${name}_%d{yyyyMMddHH}.log">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
 			<Policies>
 				<TimeBasedTriggeringPolicy modulate="true" interval="1" /> <!-- 일별 로그 파일 생성 -->
 				<SizeBasedTriggeringPolicy size="10MB" /> <!-- 10MB 용량이 초과시 DefaultRolloverStrategy 정책만큼 넘버링 -->
