@@ -17,12 +17,45 @@
 		<result property="regDate" column="reg_date" />
 		<result property="updateDate" column="update_date" />
 		<result property="enabled" column="enabled" />
-		<!-- <collection property="listAuthority" resultMap="authorityResultMap"></collection> 
-			<collection property="listContactPoint" resultMap="contactPointResultMap" 
-			columnPrefix="contact_"></collection> -->
+		<collection property="authorityList"
+			resultMap="authorityResultMap"></collection>
+		<!-- <collection property="listContactPoint"
+			resultMap="contactPointResultMap" columnPrefix="contact_"></collection>
+		 -->
 	</resultMap>
 	
-	<!-- 아이디로 검색 -->
+	<resultMap type="kr.jungang.dive.user.domain.AuthorityVO" id="authorityResultMap">
+		<result property="userNum" column="user_num" />
+		<result property="authority" column="authority" />
+	</resultMap>
+	
+	<!-- 권한 조회 -->
+	<select id="readAuthority" resultMap="userResultMap">
+		SELECT u.user_num, id, password, enabled, reg_date, update_date, a.authority
+		  FROM tbl_user u LEFT OUTER JOIN tbl_authorities a ON u.user_num = a.user_num
+		 WHERE u.user_num = #{userNum}
+	</select>
+
+	<!-- 회원 가입 -->
+	<insert id="createUser">
+		<selectKey keyProperty="userNum" order="BEFORE"
+			resultType="long">
+			<![CDATA[
+				SELECT SEQ_USER.NEXTVAL FROM DUAL
+			]]>
+		</selectKey>
+		INSERT INTO TBL_USER
+		(user_num, id, password, name, sex, birthday,
+		address, phone, email)
+		<!-- ,jdbcType=Type : null을 허용하려면 입력해줘야함 -->
+		VALUES(#{userNum},#{id},#{password},#{name, jdbcType=VARCHAR},
+		#{sex,jdbcType=CHAR},#{birthday,
+		jdbcType=CHAR},#{address,jdbcType=VARCHAR},
+		#{phone,
+		jdbcType=VARCHAR},#{email,jdbcType=VARCHAR})
+	</insert>
+
+	<!-- 아이디로 회원정보 검색 -->
 	<select id="findById" resultMap="userResultMap">
   	<![CDATA[
   		SELECT *
@@ -31,18 +64,21 @@
   	]]>
 	</select>
 
-	<!-- 정보 생성 -->
-	<insert id="insertUser">
-		<selectKey keyProperty="userNum" order="BEFORE"
-			resultType="long">
-     <![CDATA[
-      SELECT SEQ_USER.NEXTVAL FROM DUAL
-   	]]>
-		</selectKey>
-		INSERT INTO TBL_USER
-		(user_num, id, password, name, sex, birthday, address, phone, email)
-		<!-- ,jdbcType=Type : null을 허용하려면 입력해줘야함 -->
-		VALUES(#{userNum},#{id},#{password},#{name, jdbcType=VARCHAR},#{sex, jdbcType=CHAR},
-		#{birthday, jdbcType=CHAR},#{address, jdbcType=VARCHAR},#{phone, jdbcType=VARCHAR},#{email, jdbcType=VARCHAR})
-	</insert>
+	<!-- 회원정보 수정 -->
+	<update id="updateUser">
+		UPDATE TBL_USER
+		SET password = #{password},
+		address = #{address},
+		phone = #{phone},
+		email = #{email},
+		update_date = sysdate
+		WHERE id = #{id}
+	</update>
+
+	<!-- 회원 탈퇴 -->
+	<delete id="deleteUser">
+		DELETE
+		FROM TBL_USER
+		WHERE id = #{id}
+	</delete>
 </mapper>

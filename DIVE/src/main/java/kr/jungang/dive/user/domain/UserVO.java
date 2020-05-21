@@ -1,6 +1,7 @@
 package kr.jungang.dive.user.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -20,6 +21,8 @@ public class UserVO {
 	private Date regDate;
 	private Date updateDate;
 	private boolean enabled;
+	
+	private List<AuthorityVO> authorityList;
 
 	// insertUser Test¿ë Constructor
 	public UserVO(String id, String password) {
@@ -37,6 +40,10 @@ public class UserVO {
 		this.address = address;
 		this.phone = phone;
 		this.email = email;
+	}
+	
+	public void updateUserPhone() {
+		setPhone("010-1234-5678");
 	}
 
 }

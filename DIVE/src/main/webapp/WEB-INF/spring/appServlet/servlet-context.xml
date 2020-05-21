@@ -22,7 +22,7 @@
 	</beans:bean>
 	
 	<context:component-scan base-package="kr.jungang.dive" />
-	
-	
+	<context:component-scan base-package="kr.jungang.dive.security.controller" />
+	<context:component-scan base-package="kr.jungang.dive.user.controller" />
 	
 </beans:beans>
