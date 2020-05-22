@@ -26,6 +26,7 @@ public class SecurityController {
 	@GetMapping("/user/accessError")
 	public void accessDenied(Authentication authentication, Model model) {
 		model.addAttribute("msg", "Access Denied!");
+		log.info("Error");
 	}
 	
 	@GetMapping("/user/userLogout")

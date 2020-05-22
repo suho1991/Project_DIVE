@@ -5,6 +5,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
+import kr.jungang.dive.security.domain.CustomUser;
 import kr.jungang.dive.user.domain.UserVO;
 import kr.jungang.dive.user.persistence.UserMapper;
 import lombok.Setter;
@@ -19,10 +20,10 @@ public class ForUserDetailsService implements UserDetailsService {
 	public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
 		log.warn("Load User By UserName: " + userName);
 		
-		UserVO userVO = userMapper.readAuthority(userName);
+		UserVO userVO = userMapper.findById(userName);
 		log.warn("queried by member mapper: " + userVO);
 		
-		return null;
+		return userVO == null ? null : new CustomUser(userVO);
 	}
 
 }

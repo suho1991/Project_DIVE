@@ -30,13 +30,13 @@ public class UserLoginSuccessHandler implements AuthenticationSuccessHandler {
 		log.warn("ROLE_NAMES: " + roleNames);
 		
 		if(roleNames.contains("ROLE_MEMBER")) {
-			response.sendRedirect("/");
-			log.info("È¸¿øÀÔ´Ï´Ù.");
+			response.sendRedirect("/user/memberPage");
+			log.info("È¸ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
 			return;
 		}
 		if(roleNames.contains("ROLE_ADMIN")) {
-			response.sendRedirect("/");
-			log.info("°ü¸®ÀÚÀÔ´Ï´Ù.");
+			response.sendRedirect("/user/userLogout");
+			log.info("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
 			return;
 		}
 		

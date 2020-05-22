@@ -34,6 +34,7 @@
 		SELECT u.user_num, id, password, enabled, reg_date, update_date, a.authority
 		  FROM tbl_user u LEFT OUTER JOIN tbl_authorities a ON u.user_num = a.user_num
 		 WHERE u.user_num = #{userNum}
+	
 	</select>
 
 	<!-- 회원 가입 -->
@@ -58,9 +59,9 @@
 	<!-- 아이디로 회원정보 검색 -->
 	<select id="findById" resultMap="userResultMap">
   	<![CDATA[
-  		SELECT *
-  		  FROM TBL_USER
-		 WHERE id = #{id}
+  		SELECT u.*, a.*
+  		  FROM tbl_user u left outer join tbl_authorities a on u.user_num = a.user_num
+		 WHERE u.id = #{id}
   	]]>
 	</select>
 
@@ -81,4 +82,10 @@
 		FROM TBL_USER
 		WHERE id = #{id}
 	</delete>
+	
+	<!-- TEST용 권한 입력 -->
+	<insert id="insertAuthority">
+		insert into tbl_authorities (user_num, authority)
+		values(#{userNum},#{authority})
+	</insert>
 </mapper>

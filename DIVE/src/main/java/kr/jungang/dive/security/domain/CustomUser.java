@@ -10,10 +10,9 @@ import org.springframework.security.core.userdetails.User;
 import kr.jungang.dive.user.domain.UserVO;
 import lombok.Getter;
 
+@SuppressWarnings("serial")
 @Getter
 public class CustomUser extends User {
-	private static final long serialVersionUID = 1L;
-
 	private UserVO user;
 
 	public CustomUser(String username, String password, Collection<? extends GrantedAuthority> authorities) {

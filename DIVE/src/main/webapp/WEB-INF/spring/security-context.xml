@@ -17,9 +17,9 @@
 
 	<security:http>
 		<!-- 해당 url 접속 시도 시 access 권한 확인 -->
-		<security:intercept-url pattern="/user/member"
+		<security:intercept-url pattern="/user/memberPage"
 			access="hasRole('ROLE_MEMBER')" />
-		<security:intercept-url pattern="/user/admin"
+		<security:intercept-url pattern="/user/adminPage"
 			access="hasRole('ROLE_ADMIN')" />
 
 		<!-- 권한 없으면 로그인 페이지로 이동, success시 bean id를 사용해 핸들러 작동 -->
@@ -30,8 +30,13 @@
 		<security:access-denied-handler
 			ref="UserAccessDenied" />
 
+		<!-- 로그아웃  시 쿠키 삭제 -->
 		<security:logout logout-url="/user/userLogout"
-			invalidate-session="true" />
+			invalidate-session="true" delete-cookies="remember-me, JSESSION_ID" />
+			
+		<!-- 자동 로그인 설정 -->
+		<security:remember-me data-source-ref="dataSource" token-validity-seconds="604800" />
+		
 	</security:http>
 
 	<security:authentication-manager>

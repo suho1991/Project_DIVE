@@ -1,13 +1,17 @@
 package kr.jungang.dive.user;
 
+import java.util.stream.IntStream;
+
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import kr.jungang.dive.user.domain.AuthorityVO;
 import kr.jungang.dive.user.domain.UserVO;
 import kr.jungang.dive.user.persistence.UserMapper;
 import lombok.Setter;
@@ -17,12 +21,14 @@ import lombok.extern.log4j.Log4j2;
 @ContextConfiguration({ "file:src/main/webapp/WEB-INF/spring/root-context.xml",
 		"file:src/main/webapp/WEB-INF/spring/appServlet/security-context.xml" })
 @Log4j2
-@FixMethodOrder(MethodSorters.NAME_ASCENDING) // test ¿À¸§Â÷¼øÀ¸·Î ½ÇÇàµÊ
+@FixMethodOrder(MethodSorters.NAME_ASCENDING) // test ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ ì‹¤í–‰ë¨
 public class UserMapperTests {
+	@Setter(onMethod_ = @Autowired)
+	private PasswordEncoder pwEncoder;
 	@Setter(onMethod_ = @Autowired)
 	private UserMapper userMapper;
 
-	// È¸¿ø °¡ÀÔ
+	// íšŒì› ê°€ìž…
 	@Test
 	public void test_01_createUser() {
 		try {
@@ -33,7 +39,7 @@ public class UserMapperTests {
 		}
 	}
 
-	// ¾ÆÀÌµð·Î È¸¿øÁ¤º¸ °Ë»ö
+	// ì•„ì´ë””ë¡œ íšŒì›ì •ë³´ ê²€ìƒ‰
 	@Test
 	public void test_02_findById() {
 		try {
@@ -44,37 +50,80 @@ public class UserMapperTests {
 		}
 	}
 
-	// È¸¿øÁ¤º¸ ¼öÁ¤
+	// íšŒì›ì •ë³´ ìˆ˜ì •
 	@Test
 	public void test_03_updateUser() {
 		try {
 			UserVO updateUser = userMapper.findById("MASTER");
 			updateUser.updateUserPhone();
 			userMapper.updateUser(updateUser);
-			log.info("¼öÁ¤¿Ï·á");
+			log.info("ìˆ˜ì •ì™„ë£Œ");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	// È¸¿ø Å»Åð
+	// íšŒì› íƒˆí‡´
 	@Test
 	public void test_04_deleteUser() {
 		try {
 			String deleteId = "USER";
 			userMapper.deleteUser(deleteId);
-			log.info(deleteId + "»èÁ¦¿Ï·á");
+			log.info(deleteId + "ì‚­ì œì™„ë£Œ");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 	
-	//±ÇÇÑ Á¶È¸
+	//ê¶Œí•œ ì¡°íšŒ
+//	@Test
+//	public void test_05_readAuthority() {
+//		UserVO userAuthority = userMapper.readAuthority(17);
+//		log.info(userAuthority);
+//		
+//		userAuthority.getAuthorityList().forEach(AuthorityVO -> log.info(AuthorityVO));
+//	}
+	
 	@Test
-	public void test_05_readAuthority() {
-		UserVO userAuthority = userMapper.readAuthority("SUB");
-		log.info(userAuthority);
-		
-		userAuthority.getAuthorityList().forEach(AuthorityVO -> log.info(AuthorityVO));
+	public void test_06_insertUser() {
+		try {
+//			for(int i = 0; i < 10; i++) {}ë¥¼ ì•„ëž˜ì™€ ê°™ì´ ì‚¬ìš© ê°€ëŠ¥
+			IntStream.rangeClosed(1, 10).forEach(i -> {
+				if (i < 8) {
+					UserVO obj = new UserVO("user" + i, pwEncoder.encode("user" + i), "Lee" + i);
+					userMapper.createUser(obj);
+				} else if (i < 9) {
+					UserVO obj = new UserVO("member" + i, pwEncoder.encode("user" + i), "Kim" + i);
+					userMapper.createUser(obj);
+				} else {
+					UserVO obj = new UserVO("admin" + i, pwEncoder.encode("user" + i), "Hong" + i);
+					userMapper.createUser(obj);
+				}
+			});
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Test
+	public void test_07_insertAuthority() {
+		try {
+			IntStream.rangeClosed(1, 10).forEach(i -> {
+				if (i < 8) {
+					AuthorityVO obj = new AuthorityVO(i, "ROLE_USER");
+					userMapper.insertAuthority(obj);
+				} else if (i < 9) {
+					AuthorityVO obj = new AuthorityVO(i, "ROLE_MEMBER");
+					userMapper.insertAuthority(obj);
+				} else {
+					AuthorityVO obj = new AuthorityVO(i, "ROLE_ADMIN");
+					userMapper.insertAuthority(obj);
+					obj = new AuthorityVO(i, "ROLE_MEMBER");
+					userMapper.insertAuthority(obj);
+				}
+			});
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 }

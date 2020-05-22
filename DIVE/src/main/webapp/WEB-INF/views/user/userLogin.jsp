@@ -18,10 +18,13 @@
 
 	<form action="/login" method="POST">
 		<div>
-			<input type="text" name="username" value="member" />	
+			<input type="text" name="username" value="member8" />	
 		</div>
 		<div>
-			<input type="password" name="password" value="member" />	
+			<input type="password" name="password" value="user8" />	
+		</div>
+		<div>
+			<input type="checkbox" name="remember-me" />Remember Me
 		</div>
 		<div>
 			<input type="submit" value="Login">

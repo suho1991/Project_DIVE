@@ -1,19 +1,24 @@
 package kr.jungang.dive.user.persistence;
 
+import kr.jungang.dive.user.domain.AuthorityVO;
 import kr.jungang.dive.user.domain.UserVO;
 
 public interface UserMapper {
-	//È¸¿ø °¡ÀÔ
+	//È¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	public void createUser(UserVO createUserVO);
 	
-	//¾ÆÀÌµð·Î È¸¿ø Á¤º¸ °Ë»ö
+	//ï¿½ï¿½ï¿½Ìµï¿½ï¿½ È¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ë»ï¿½
 	public UserVO findById(String id);
 	
-	//È¸¿øÁ¤º¸ ¼öÁ¤
+	//È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	public void updateUser(UserVO updateUserVO);
 	
-	//È¸¿ø Å»Åð
+	//È¸ï¿½ï¿½ Å»ï¿½ï¿½
 	public void deleteUser(String id);
+
+	//ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ Testï¿½ï¿½
+	public void insertAuthority(AuthorityVO authorityVO);
 	
-	public UserVO readAuthority(String id);
+	//ê¶Œí•œ ì¡°íšŒ
+	public UserVO readAuthority(long userNum);
 }

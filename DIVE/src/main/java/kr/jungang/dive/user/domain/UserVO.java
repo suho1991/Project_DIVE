@@ -46,4 +46,10 @@ public class UserVO {
 		setPhone("010-1234-5678");
 	}
 
+	public UserVO(String id, String password, String name) {
+		this.id = id;
+		this.password = password;
+		this.name = name;
+	}
+
 }

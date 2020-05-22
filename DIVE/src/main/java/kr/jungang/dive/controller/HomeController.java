@@ -1,4 +1,4 @@
-package kr.jungang.dive;
+package kr.jungang.dive.controller;
 
 import java.text.DateFormat;
 import java.util.Date;
