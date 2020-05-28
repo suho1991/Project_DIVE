@@ -48,20 +48,16 @@
 	</bean>
 
 	<tx:annotation-driven />
-
+	
 	<mybatis-spring:scan
-		base-package="kr.jungang.dive.test" />
-	<mybatis-spring:scan
-		base-package="kr.jungang.dive.user" />
-	<mybatis-spring:scan
-		base-package="kr.jungang.dive.security" />
+		base-package="kr.jungang.dive.user.persistence" />
 
 	<!-- [컴포넌트 자동 스캔 명령] -->
 	<!-- 자동주입 명령을 사용하기 위해 위치를 알려줘야한다. -->
 	<context:component-scan
 		base-package="kr.jungang.dive" />
 	<context:component-scan
-		base-package="kr.jungang.dive.user.persistence" />
+		base-package="kr.jungang.dive.user.service" />
 
 	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
 </beans>

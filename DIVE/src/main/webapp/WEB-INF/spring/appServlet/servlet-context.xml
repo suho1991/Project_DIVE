@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans:beans
-	xmlns="http://www.springframework.org/schema/mvc"
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:beans="http://www.springframework.org/schema/beans"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:security="http://www.springframework.org/schema/security"
+	xmlns:websocket="http://www.springframework.org/schema/websocket"
 	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd
+		http://www.springframework.org/schema/websocket http://www.springframework.org/schema/websocket/spring-websocket.xsd
 		http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd
 		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
@@ -26,14 +27,32 @@
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
+		<beans:property name="contentType"
+			value="text/html; charset=UTF-8" />
+	</beans:bean>
+	
+	<!-- Web Socket -->
+	<websocket:handlers>
+		<websocket:mapping handler="chatHandler" path="/chat-ws" />
+		<websocket:sockjs />
+	</websocket:handlers>
+	
+	<beans:bean id="chatHandler" class="kr.jungang.dive.chatting.ChatHandler"></beans:bean>
+
+	<beans:bean id="multipartResolver"
+		class="org.springframework.web.multipart.support.StandardServletMultipartResolver">
 	</beans:bean>
 
+	<context:component-scan
+		base-package="kr.jungang.dive" />
 	<context:component-scan
 		base-package="kr.jungang.dive.controller" />
 	<context:component-scan
 		base-package="kr.jungang.dive.security.controller" />
 	<context:component-scan
 		base-package="kr.jungang.dive.user.controller" />
+	<context:component-scan
+		base-package="kr.jungang.dive.chatting.controller" />
 
 	<security:global-method-security
 		pre-post-annotations="enabled" secured-annotations="enabled">

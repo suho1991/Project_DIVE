@@ -4,12 +4,14 @@ import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import lombok.extern.log4j.Log4j2;
 
 @Controller
 @Log4j2
 public class SecurityController {
+	
 	@GetMapping("/user/userLogin")
 	public void userLogin(String error, String logout, Model model) {
 		log.info("error" + error);
@@ -32,5 +34,14 @@ public class SecurityController {
 	@GetMapping("/user/userLogout")
 	public void userLogout() {
 		log.info("Logout!");
+	}
+	
+	@GetMapping("/user/deleteUser")
+	public void deleteUser(@RequestParam("id") String id, String delete, Model model) {
+		model.addAttribute("id", id);
+		log.info("delete" + delete);
+		if(delete != null) {
+			model.addAttribute("delete", "탈퇴 완료 되었습니다.");
+		}
 	}
 }

@@ -7,8 +7,10 @@ import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 
 import lombok.extern.log4j.Log4j2;
@@ -19,6 +21,7 @@ public class UserLoginSuccessHandler implements AuthenticationSuccessHandler {
 	@Override
 	public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
 			Authentication authentication) throws IOException, ServletException {
+		
 		log.warn("Login Success!");
 		
 		List<String> roleNames = new ArrayList<>();
@@ -31,12 +34,12 @@ public class UserLoginSuccessHandler implements AuthenticationSuccessHandler {
 		
 		if(roleNames.contains("ROLE_MEMBER")) {
 			response.sendRedirect("/user/memberPage");
-			log.info("ȸ���Դϴ�.");
+			log.info("MEMBER");
 			return;
 		}
 		if(roleNames.contains("ROLE_ADMIN")) {
 			response.sendRedirect("/user/userLogout");
-			log.info("�������Դϴ�.");
+			log.info("ADMIN");
 			return;
 		}
 		
