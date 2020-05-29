@@ -71,6 +71,7 @@ public class UserServiceTests {
 		log.info(count + "건 수정 완료");
 	}
 	
+	/*
 	//회원 탈퇴
 	@Test
 	public void test_05_deleteUserService() {
@@ -81,4 +82,5 @@ public class UserServiceTests {
 			e.printStackTrace();
 		}
 	}
+	*/
 }

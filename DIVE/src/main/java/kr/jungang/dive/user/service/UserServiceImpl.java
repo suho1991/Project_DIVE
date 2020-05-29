@@ -38,8 +38,10 @@ public class UserServiceImpl implements UserService {
 		return userMapper.updateUser(updateUser);
 	}
 
+	/*
 	@Override
 	public boolean deleteUser(String id) {
 		return userMapper.deleteUser(id);
 	}
+	*/
 }

@@ -53,22 +53,34 @@ public class UserController {
 		return "redirect:/";
 	}
 
+	@PreAuthorize("isAuthenticated()") // 인증 된 상태일 때 연결해 줄 것
 	@GetMapping("/findById")
 	public String findById(@RequestParam("id") String id, Model model) {
 		model.addAttribute("user", userService.findById(id));
 		return "user/myPage";
 	}
 
+	@PreAuthorize("isAuthenticated()") // 인증 된 상태일 때 연결해 줄 것
 	@GetMapping("/updateUser")
 	public void updateUser(@RequestParam("id") String id, Model model) {
 		model.addAttribute("user", userService.findById(id));
 	}
-	
+
 	@PostMapping("/updateUser")
 	public String updateUser(UserDTO updateUser, RedirectAttributes rttr) {
-		updateUser.setPassword(pwEncoder.encode(updateUser.getPassword()));
 		userService.updateUser(updateUser);
 		rttr.addFlashAttribute("result", updateUser.getId());
-		return "redirect:/user/mypage";
+		return "redirect:/";
 	}
+
+	@PreAuthorize("isAuthenticated()") // 인증 된 상태일 때 연결해 줄 것
+	@GetMapping("/deleteUser")
+	public void deleteUser(@RequestParam("id") String id, String delete, Model model) {
+		model.addAttribute("id", id);
+		log.info("delete" + delete);
+		if (delete != null) {
+			model.addAttribute("delete", "탈퇴 완료 되었습니다.");
+		}
+	}
+
 }

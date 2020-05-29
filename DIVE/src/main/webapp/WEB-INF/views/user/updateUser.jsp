@@ -127,37 +127,37 @@ i {
 					<form action="/user/updateUser" method="post">
 						<div class="form-group">
 							<label for="userId">아이디</label> <input class="form-control"
-								type="text" readonly='readonly' value='${user.id}'>
+								type="text" readonly='readonly' value='${user.id}' name="id">
 						</div>
 						<br />
 						<div class="form-group">
 							<label for="userName">이름</label> <input class="form-control"
-								type="text" readonly='readonly' value='${user.name}'>
+								type="text" readonly='readonly' value='${user.name}' name="name">
 						</div>
 						<br />
 						<div class="form-group">
 							<label for="birthday">생년월일</label> <input class="form-control"
-								type="text" readonly='readonly' value='${user.birthday}'>
+								type="text" readonly='readonly' value='${user.birthday}' name="birthday">
 						</div>
 						<br />
 						<div class="form-group">
 							<label>성별</label> <input class="form-control" type="text"
-								readonly='readonly' value='${user.sex}'>
+								readonly='readonly' value='${user.sex}' name="sex">
 						</div>
 						<br />
 						<div class="form-group">
 							<label for="address">주소</label> <input class="form-control"
-								type="text" value='${user.address}'>
+								type="text" value='${user.address}' name="address">
 						</div>
 						<br />
 						<div class="form-group">
 							<label for="mPhone1">연락처</label> <input class="form-control"
-								type="text" value='${user.phone}'>
+								type="text" value='${user.phone}' name="phone">
 						</div>
 						<br />
 						<div class="form-group">
 							<label for="email01">이메일</label> <input class="form-control"
-								type="text" value='${user.email}'>
+								type="text" value='${user.email}' name="email">
 						</div>
 
 						<input type="hidden" name="${_csrf.parameterName}"

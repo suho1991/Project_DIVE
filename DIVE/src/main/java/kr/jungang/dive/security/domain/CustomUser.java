@@ -26,6 +26,6 @@ public class CustomUser extends User {
 				.map(authority -> new SimpleGrantedAuthority(authority.getAuthority())).collect(Collectors.toList()));
 		
 		this.user = userDTO;
-		
 	}
+	
 }

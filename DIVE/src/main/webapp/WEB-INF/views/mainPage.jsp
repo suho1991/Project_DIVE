@@ -17,6 +17,21 @@
 <script src="resources/js/main_js.js"></script>
 <script src="https://kit.fontawesome.com/a4b9f55ded.js"
 	crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$(document).ready(
+			function() {
+				$('.move').on(
+						'click',
+						function(e) {
+							e.preventDefault();
+							$('#actionForm').append(
+									"<input type='hidden' name='id' value='"
+											+ $(this).attr('href') + "'/>");
+							$('#actionForm').attr("action", "/user/findById");
+							$('#actionForm').submit();
+						});
+			});
+</script>
 </head>
 <body>
 	<nav class="navbar">
@@ -31,29 +46,34 @@
 			<li><a href="#">FAQ</a></li>
 			<li><a href="#">CORPORATION</a></li>
 		</ul>
-		<ul class="navbar_icons">
-			<!-- 익명의 사용자의 경우 표시함(로그인 되어 있지 않는 user) -->
-			<sec:authorize access="isAnonymous()">
+
+		<!-- 익명의 사용자의 경우 표시함(로그인 되어 있지 않는 user) -->
+		<sec:authorize access="isAnonymous()">
+			<ul class="navbar_icons">
 				<li><a href="/user/userLogin">Login</a></li>
 
 				<li><a href="/user/signUp">Sign Up</a></li>
-			</sec:authorize>
+			</ul>
+		</sec:authorize>
 
-			<!-- 회원이나 관리자 권한으로 로그인 되어  있는 경우 표시함 -->
-			<sec:authentication property="principal" var="principal" />
-			<sec:authorize access="isAuthenticated()">
-				<li><a href="/chat">Chatting</a></li>
+		<!-- 회원이나 관리자 권한으로 로그인 되어  있는 경우 표시함 -->
+		<sec:authorize access="isAuthenticated()">
+			<ul class="navbar_icons">
+				<sec:authentication property="principal" var="principal" />
+				<li><a href="/chat/intro">채팅</a></li>
 				<li><a href="/user/userLogout">Logout</a></li>
 				<!-- 스프링 시큐리티 principal 가져오는 라이브러리 선언
 		security > domain > CustomUser.java에 선언된 field를 불러온다. -->
+				<sec:authentication property="principal" var="principal" />
 				<li>
 					<form id="actionForm" method="get">
 						<!-- EL표현식으로 사용가능 -->
 						<a class='move' href='${principal.username}'> My Page </a>
 					</form>
 				</li>
-			</sec:authorize>
-		</ul>
+			</ul>
+		</sec:authorize>
+
 
 		<a href="#" class="navbar_toggle_btn"> <i class="fas fa-bars"></i>
 		</a>

@@ -35,13 +35,4 @@ public class SecurityController {
 	public void userLogout() {
 		log.info("Logout!");
 	}
-	
-	@GetMapping("/user/deleteUser")
-	public void deleteUser(@RequestParam("id") String id, String delete, Model model) {
-		model.addAttribute("id", id);
-		log.info("delete" + delete);
-		if(delete != null) {
-			model.addAttribute("delete", "탈퇴 완료 되었습니다.");
-		}
-	}
 }

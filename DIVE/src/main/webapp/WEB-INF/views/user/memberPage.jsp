@@ -38,7 +38,7 @@
 		security > domain > CustomUser.java에 선언된 field를 불러온다.		
 	 -->
 		<sec:authentication property="principal" var="principal" />
-		<form id="actionForm" action="/user/myPage" method="get">
+		<form id="actionForm" method="get">
 			<!-- EL표현식으로 사용가능 -->
 			<a class='move' href='${principal.username}'> My Page </a>
 		</form>

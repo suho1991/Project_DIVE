@@ -12,6 +12,8 @@ public interface UserService {
 	//회원 정보 수정
 	public boolean updateUser(UserDTO updateUser);
 
+	/*
 	//회원 탈퇴
 	public boolean deleteUser(String id);
+	*/
 }

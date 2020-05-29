@@ -28,6 +28,19 @@
 											"/user/updateUser");
 									$('#actionForm').submit();
 								});
+				$('.move')
+				.on(
+						'click',
+						function(e) {
+							e.preventDefault();
+							$('#actionForm').append(
+									"<input type='hidden' name='id' value='"
+											+ $(this).attr('href')
+											+ "'/>");
+							$('#actionForm').attr("action",
+									"/user/updateUser");
+							$('#actionForm').submit();
+						});
 			});
 </script>
 <style>
