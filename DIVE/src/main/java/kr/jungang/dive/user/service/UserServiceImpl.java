@@ -22,13 +22,13 @@ public class UserServiceImpl implements UserService {
 	public void createUser(UserDTO createUser) {
 		userMapper.createUser(createUser);
 		
-		AuthorityVO authority = new AuthorityVO(createUser.getUserNum(), "ROLE_MEMBER");
+		AuthorityVO authority = new AuthorityVO(createUser.getUId(), "ROLE_MEMBER");
 		userMapper.insertAuthority(authority);
 	}
 
 	@Override
-	public UserDTO findById(String id) {
-		UserDTO findById = userMapper.findById(id);
+	public UserDTO findById(String userId) {
+		UserDTO findById = userMapper.findById(userId);
 		
 		return findById;
 	}
@@ -38,10 +38,4 @@ public class UserServiceImpl implements UserService {
 		return userMapper.updateUser(updateUser);
 	}
 
-	/*
-	@Override
-	public boolean deleteUser(String id) {
-		return userMapper.deleteUser(id);
-	}
-	*/
 }

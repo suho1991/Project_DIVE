@@ -15,32 +15,16 @@
 <script type="text/javascript">
 	$(document).ready(
 			function() {
-				$('.modify')
-						.on(
-								'click',
-								function(e) {
-									e.preventDefault();
-									$('#actionForm').append(
-											"<input type='hidden' name='id' value='"
-													+ $(this).attr('href')
-													+ "'/>");
-									$('#actionForm').attr("action",
-											"/user/updateUser");
-									$('#actionForm').submit();
-								});
-				$('.move')
-				.on(
-						'click',
-						function(e) {
-							e.preventDefault();
-							$('#actionForm').append(
-									"<input type='hidden' name='id' value='"
-											+ $(this).attr('href')
-											+ "'/>");
-							$('#actionForm').attr("action",
-									"/user/updateUser");
-							$('#actionForm').submit();
-						});
+				$('.modify').on('click', function(e) {
+					e.preventDefault();
+					$('#actionForm').append(
+						"<input type='hidden' name='userId' value='"
+						+ $(this).attr('href')
+						+ "'/>");
+						$('#actionForm').attr("action",
+								"/user/updateUser");
+						$('#actionForm').submit();
+					});
 			});
 </script>
 <style>
@@ -139,58 +123,54 @@ i {
 				<div class="customer_inform">
 					<sec:authentication property="principal" var="principal" />
 					<sec:authorize access="isAuthenticated()">
-						<form action="/user/updateUser" method="post">
 							<div class="form-group">
 								<label for="userId">아이디</label> <input class="form-control"
-									type="text" readonly='readonly' value='${user.id}'>
+									type="text" readonly='readonly' value='${user.userId}' name="userId">
 							</div>
 							<br />
 							<div class="form-group">
 								<label for="userName">이름</label> <input class="form-control"
-									type="text" readonly='readonly' value='${user.name}'>
+									type="text" readonly='readonly' value='${user.name}' name="name">
+							</div>
+							<br />
+							<div class="form-group">
+								<label for="userName">닉네임</label> <input class="form-control"
+									type="text" readonly='readonly' value='${user.nickName}' name="nickName">
 							</div>
 							<br />
 							<div class="form-group">
 								<label for="birthday">생년월일</label> <input class="form-control"
-									type="text" readonly='readonly' value='${user.birthday}'>
+									type="text" readonly='readonly' value='${user.birthday}' name="birthday">
 							</div>
 							<br />
 							<div class="form-group">
 								<label>성별</label> <input class="form-control" type="text"
-									readonly='readonly' value='${user.sex}'>
+									readonly='readonly' value='${user.sex}' name="sex">
 							</div>
 							<br />
 							<div class="form-group">
 								<label for="address">주소</label> <input class="form-control"
-									type="text" readonly='readonly' value='${user.address}'>
+									type="text" readonly='readonly' value='${user.address}' name="address">
 							</div>
 							<br />
 							<div class="form-group">
 								<label for="mPhone1">연락처</label> <input class="form-control"
-									type="text" readonly='readonly' value='${user.phone}'>
+									type="text" readonly='readonly' value='${user.phone}' name="phone">
 							</div>
 							<br />
 							<div class="form-group">
 								<label for="email01">이메일</label> <input class="form-control"
-									type="text" readonly='readonly' value='${user.email}'>
+									type="text" readonly='readonly' value='${user.email}' name="email">
 							</div>
 
 							<input type="hidden" name="${_csrf.parameterName}"
 								value="${_csrf.token}" /> 
 								
-								<a class='modify'
-								href='${principal.username}'><button type="submit">정보
-									수정</button></a>
-						</form>
+							<form id="actionForm">
+								<a class="modify" href="${principal.username}"><button>정보 수정</button></a>
+							</form>
 					</sec:authorize>
 				</div>
-				<sec:authentication property="principal" var="principal" />
-				<sec:authorize access="isAuthenticated()">
-					<form id="actionForm" method="get">
-						<a class='move' href='${principal.username}'><button>회원탈퇴</button>
-						</a>
-					</form>
-				</sec:authorize>
 
 				<a href="/"><button class="cancle">취소</button></a> <br />
 			</section>

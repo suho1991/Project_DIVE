@@ -21,7 +21,7 @@
 								function(e) {
 									e.preventDefault();
 									$('#actionForm').append(
-											"<input type='hidden' name='id' value='"
+											"<input type='hidden' name='userId' value='"
 													+ $(this).attr('href')
 													+ "'/>");
 									$('#actionForm').attr("action",
@@ -127,12 +127,17 @@ i {
 					<form action="/user/updateUser" method="post">
 						<div class="form-group">
 							<label for="userId">아이디</label> <input class="form-control"
-								type="text" readonly='readonly' value='${user.id}' name="id">
+								type="text" readonly='readonly' value='${user.userId}' name="userId">
 						</div>
 						<br />
 						<div class="form-group">
 							<label for="userName">이름</label> <input class="form-control"
 								type="text" readonly='readonly' value='${user.name}' name="name">
+						</div>
+						<br />
+						<div class="form-group">
+							<label for="userName">닉네임</label> <input class="form-control"
+								type="text" readonly='readonly' value='${user.nickName}' name="nickName">
 						</div>
 						<br />
 						<div class="form-group">
@@ -166,13 +171,6 @@ i {
 						<button type="submit" data-oper='modify'>정보 수정</button>
 					</form>
 				</div>
-				<sec:authentication property="principal" var="principal" />
-				<sec:authorize access="isAuthenticated()">
-					<form id="actionForm" method="get">
-						<a class='move' href='${principal.username}'><button>회원탈퇴</button>
-						</a>
-					</form>
-				</sec:authorize>
 				<a href="/"><button class="cancle">취소</button></a> <br />
 			</section>
 		</div>

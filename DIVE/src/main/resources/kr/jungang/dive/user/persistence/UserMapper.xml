@@ -5,10 +5,11 @@
 <mapper namespace="kr.jungang.dive.user.persistence.UserMapper">
 	<resultMap id="userResultMap"
 		type="kr.jungang.dive.user.domain.UserDTO">
-		<id property="userNum" column="user_num" />
-		<result property="id" column="id" />
+		<id property="uId" column="u_id" />
+		<result property="userId" column="user_id" />
 		<result property="password" column="password" />
 		<result property="name" column="name" />
+		<result property="nickName" column="nickname" />
 		<result property="sex" column="sex" />
 		<result property="birthday" column="birthday" />
 		<result property="address" column="address" />
@@ -23,51 +24,51 @@
 
 	<resultMap type="kr.jungang.dive.user.domain.AuthorityVO"
 		id="authorityResultMap">
-		<result property="userNum" column="user_num" />
+		<result property="uId" column="u_id" />
 		<result property="authority" column="authority" />
 	</resultMap>
 
 	<!-- 권한 조회 -->
 	<select id="readAuthority" resultMap="userResultMap">
-		SELECT u.user_num, id, password, 
+		SELECT u.u_id, id, password, 
 			   enabled, reg_date, update_date, a.authority
 		  FROM tbl_user u LEFT OUTER JOIN 
-		       tbl_authorities a ON u.user_num = a.user_num
-		 WHERE u.user_num = #{userNum}
+		       tbl_authorities a ON u.u_id = a.u_id
+		 WHERE u.u_id = #{uId}
 	</select>
 
 	<!-- 회원 가입 -->
 	<insert id="createUser">
-		<selectKey keyProperty="userNum" order="BEFORE"
+		<selectKey keyProperty="uId" order="BEFORE"
 			resultType="long">
      <![CDATA[
       SELECT seq_user.NEXTVAL FROM dual
    	 ]]>
 		</selectKey>
 		INSERT INTO tbl_user (
-							  user_num, id, password, name, sex, birthday,
+							  u_id, user_id, password, name, nickname, sex, birthday,
 		 					  address, phone, email
 		 					  )
 		<!-- ,jdbcType=Type : null을 허용하려면 입력해줘야함 -->
 			 VALUES (
-			  		 #{userNum},#{id},#{password},#{name,jdbcType=VARCHAR},
-					 #{sex},#{birthday},#{address,jdbcType=VARCHAR},
+			  		 #{uId},#{userId},#{password},#{name,jdbcType=VARCHAR},
+					 #{nickName,jdbcType=VARCHAR},#{sex},#{birthday},#{address,jdbcType=VARCHAR},
 					 #{phone,jdbcType=VARCHAR},#{email,jdbcType=VARCHAR}
 					 )
 	</insert>
 
 	<!-- 권한 입력 -->
 	<insert id="insertAuthority">
-		INSERT INTO tbl_authorities (user_num, authority)
-		VALUES (#{userNum},#{authority})
+		INSERT INTO tbl_authorities (u_id, authority)
+		VALUES (#{uId},#{authority})
 	</insert>
 
 	<!-- 아이디로 회원정보 검색 -->
 	<select id="findById" resultMap="userResultMap">
   	<![CDATA[
-  		SELECT u.user_num, u.id, u.password, u.name, u.sex, u.birthday, u.address, u.phone, u.email, a.*
-  		  FROM tbl_user u left outer join tbl_authorities a on u.user_num = a.user_num
-		 WHERE u.id = #{id}
+  		SELECT u.u_id, u.user_id, u.password, u.name, u.nickname, u.sex, u.birthday, u.address, u.phone, u.email, a.*
+  		  FROM tbl_user u left outer join tbl_authorities a on u.u_id = a.u_id
+		 WHERE u.user_id = #{userId}
   	]]>
 	</select>
 
@@ -79,13 +80,6 @@
 			   phone = #{phone},
 			   email = #{email},
 			   update_date = sysdate
-		 WHERE id = #{id}
+		 WHERE user_id = #{userId}
 	</update>
-
-	<!-- 회원 탈퇴 -->
-	<delete id="deleteUser">
-        DELETE 
-          FROM tbl_user
-         WHERE id = #{id}
-	</delete>
 </mapper>

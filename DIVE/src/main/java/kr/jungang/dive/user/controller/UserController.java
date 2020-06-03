@@ -49,38 +49,28 @@ public class UserController {
 	public String createUser(UserDTO createUser, RedirectAttributes rttr) {
 		createUser.setPassword(pwEncoder.encode(createUser.getPassword()));
 		userService.createUser(createUser);
-		rttr.addFlashAttribute("result", createUser.getId());
+		rttr.addFlashAttribute("result", createUser.getUserId());
 		return "redirect:/";
 	}
 
 	@PreAuthorize("isAuthenticated()") // 인증 된 상태일 때 연결해 줄 것
 	@GetMapping("/findById")
-	public String findById(@RequestParam("id") String id, Model model) {
-		model.addAttribute("user", userService.findById(id));
+	public String findById(@RequestParam("userId") String userId, Model model) {
+		model.addAttribute("user", userService.findById(userId));
 		return "user/myPage";
 	}
 
 	@PreAuthorize("isAuthenticated()") // 인증 된 상태일 때 연결해 줄 것
 	@GetMapping("/updateUser")
-	public void updateUser(@RequestParam("id") String id, Model model) {
-		model.addAttribute("user", userService.findById(id));
+	public void updateUser(@RequestParam("userId") String userId, Model model) {
+		model.addAttribute("user", userService.findById(userId));
 	}
 
 	@PostMapping("/updateUser")
 	public String updateUser(UserDTO updateUser, RedirectAttributes rttr) {
 		userService.updateUser(updateUser);
-		rttr.addFlashAttribute("result", updateUser.getId());
+		rttr.addFlashAttribute("result", updateUser.getUserId());
 		return "redirect:/";
 	}
-
-	@PreAuthorize("isAuthenticated()") // 인증 된 상태일 때 연결해 줄 것
-	@GetMapping("/deleteUser")
-	public void deleteUser(@RequestParam("id") String id, String delete, Model model) {
-		model.addAttribute("id", id);
-		log.info("delete" + delete);
-		if (delete != null) {
-			model.addAttribute("delete", "탈퇴 완료 되었습니다.");
-		}
-	}
-
+	
 }

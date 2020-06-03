@@ -26,7 +26,7 @@
 	<h1>ADMIN</h1>
 	<p>
 		안녕하세요
-		<sec:authentication property="principal.user.id" />
+		<sec:authentication property="principal.user.userId" />
 		고객님!
 	</p>
 	<sec:authorize access="isAnonymous()">

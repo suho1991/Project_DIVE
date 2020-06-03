@@ -34,21 +34,22 @@ public class UserServiceTests {
 	@Test
 	public void test_02_createUserService() {
 		UserDTO createUser = new UserDTO();
-		createUser.setId("jokerb");
+		createUser.setUserId("jokerb");
 		createUser.setPassword("joker");
 		createUser.setName("a");
+		createUser.setNickName("a");
 		createUser.setSex('a');
 		createUser.setBirthday("123156");
 		createUser.setAddress("a");
 		createUser.setPhone("a");
 		createUser.setEmail("a");
-		log.info("check" + createUser.getUserNum());
+		log.info("check" + createUser.getUId());
 		try {
 			userService.createUser(createUser);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		log.info("success!" + createUser.getUserNum());
+		log.info("success!" + createUser.getUId());
 	}
 
 	//My Page(아이디로 정보 조회)
@@ -71,16 +72,4 @@ public class UserServiceTests {
 		log.info(count + "건 수정 완료");
 	}
 	
-	/*
-	//회원 탈퇴
-	@Test
-	public void test_05_deleteUserService() {
-		try {
-			boolean result = userService.deleteUser("aoa");
-			log.info("result: " + result);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-	*/
 }

@@ -64,18 +64,6 @@ public class UserMapperTests {
 		}
 	}
 
-	//회원 탈퇴
-	@Test
-	public void test_04_deleteUser() {
-		try {
-			String deleteId = "USER";
-			userMapper.deleteUser(deleteId);
-			log.info(deleteId + "삭제완료");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
 	//권한 조회
 	@Test
 	public void test_05_readAuthority() {

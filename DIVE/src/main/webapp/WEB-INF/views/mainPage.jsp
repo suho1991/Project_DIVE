@@ -17,21 +17,6 @@
 <script src="resources/js/main_js.js"></script>
 <script src="https://kit.fontawesome.com/a4b9f55ded.js"
 	crossorigin="anonymous"></script>
-<script type="text/javascript">
-	$(document).ready(
-			function() {
-				$('.move').on(
-						'click',
-						function(e) {
-							e.preventDefault();
-							$('#actionForm').append(
-									"<input type='hidden' name='id' value='"
-											+ $(this).attr('href') + "'/>");
-							$('#actionForm').attr("action", "/user/findById");
-							$('#actionForm').submit();
-						});
-			});
-</script>
 </head>
 <body>
 	<nav class="navbar">

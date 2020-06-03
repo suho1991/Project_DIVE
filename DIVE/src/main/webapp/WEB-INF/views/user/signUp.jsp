@@ -110,7 +110,7 @@ i {
 							<div class="test">
 								<label for="userId">아이디</label>
 							</div>
-							<input class="border" type="text" id="userId" name="id"
+							<input class="border" type="text" id="userId" name="userId"
 								maxlength="20" value="">
 						</div>
 						<div class="fieldlabel">
@@ -136,6 +136,13 @@ i {
 								<label for="userName">이름</label>
 							</div>
 							<input class="border" type="text" id="userName" name="name"
+								maxlength="20" value="">
+						</div>
+						<div class="fieldlabel">
+							<div>
+								<label for="userName">닉네임</label>
+							</div>
+							<input class="border" type="text" id="userName" name="nickName"
 								maxlength="20" value="">
 						</div>
 						<div class="fieldlabel">

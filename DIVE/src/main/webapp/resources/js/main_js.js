@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () { // jQuery
 		$('.move').on('click', function(e) {
 			e.preventDefault();
 			$('#actionForm').append(
-					"<input type='hidden' name='id' value='" + 
+					"<input type='hidden' name='userId' value='" + 
 					$(this).attr('href') + "'/>");
 			$('#actionForm').attr("action", "/user/findById");
 			$('#actionForm').submit();

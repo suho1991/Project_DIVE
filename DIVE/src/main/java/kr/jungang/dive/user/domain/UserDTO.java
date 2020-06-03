@@ -11,10 +11,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserDTO {
-	private long userNum;
-	private String id;
+	private long uId;
+	private String userId;
 	private String password;
 	private String name;
+	private String nickName;
 	private char sex;
 	private String birthday;
 	private String address;
@@ -27,9 +28,9 @@ public class UserDTO {
 	//연관속성 1:N 관계
 	private List<AuthorityVO> authorityList;
 
-	public UserDTO(String id, String password, String name, char sex, String birthday, String address, String phone,
+	public UserDTO(String userId, String password, String name, char sex, String birthday, String address, String phone,
 			String email) {
-		this.id = id;
+		this.userId = userId;
 		this.password = password;
 		this.name = name;
 		this.sex = sex;
@@ -39,15 +40,15 @@ public class UserDTO {
 		this.email = email;
 	}
 
-	public UserDTO(String id, String password, String name) {
-		this.id = id;
+	public UserDTO(String userId, String password, String name) {
+		this.userId = userId;
 		this.password = password;
 		this.name = name;
 	}
 	
 	// insertUser Test용 Constructor
-	public UserDTO(String id, String password) {
-		this.id = id;
+	public UserDTO(String userId, String password) {
+		this.userId = userId;
 		this.password = password;
 	}
 

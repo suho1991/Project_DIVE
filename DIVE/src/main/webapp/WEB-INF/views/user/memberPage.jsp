@@ -14,7 +14,7 @@
 		$('.move').on('click', function(e) {
 			e.preventDefault();
 			$('#actionForm').append(
-					"<input type='hidden' name='id' value='" + 
+					"<input type='hidden' name='userId' value='" + 
 					$(this).attr('href') + "'/>");
 			$('#actionForm').attr("action", "/user/findById");
 			$('#actionForm').submit();
@@ -26,7 +26,7 @@
 	<h1>MEMBER</h1>
 	<p>
 		안녕하세요
-		<sec:authentication property="principal.user.id" />
+		<sec:authentication property="principal.user.userId" />
 		고객님!
 	</p>
 	<sec:authorize access="isAnonymous()">

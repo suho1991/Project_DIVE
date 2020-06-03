@@ -13,6 +13,6 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 public class AuthorityVO {
-	private long userNum;
+	private long uId;
 	private String authority;
 }
