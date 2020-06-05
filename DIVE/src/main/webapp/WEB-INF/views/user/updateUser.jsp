@@ -171,7 +171,7 @@ i {
 						<button type="submit" data-oper='modify'>정보 수정</button>
 					</form>
 				</div>
-				<a href="/"><button class="cancle">취소</button></a> <br />
+				<a href="/"><button class="cancle">HOME</button></a> <br />
 			</section>
 		</div>
 	</div>

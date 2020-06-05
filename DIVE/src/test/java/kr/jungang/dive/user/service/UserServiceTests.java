@@ -43,13 +43,13 @@ public class UserServiceTests {
 		createUser.setAddress("a");
 		createUser.setPhone("a");
 		createUser.setEmail("a");
-		log.info("check" + createUser.getUId());
+		log.info("check" + createUser.getId());
 		try {
 			userService.createUser(createUser);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		log.info("success!" + createUser.getUId());
+		log.info("success!" + createUser.getId());
 	}
 
 	//My Page(아이디로 정보 조회)

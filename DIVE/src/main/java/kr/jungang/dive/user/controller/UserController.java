@@ -28,16 +28,19 @@ public class UserController {
 	@Setter(onMethod_ = @Autowired)
 	private UserService userService;
 
-	@PreAuthorize("hasAnyRole('ROLE_ADMIN', 'ROLE_MEMBER')")
-	@GetMapping("/memberPage")
-	public void memberPage() {
-		log.info("Member Page");
-	}
-
 	@Secured({ "ROLE_ADMIN" })
 	@GetMapping("/adminPage")
-	public void adminPage() {
+	public String getAllMember(Model model) {
 		log.info("Admin Page");
+		model.addAttribute("member", userService.getAllMember());
+		return "user/adminPage";
+	}
+	
+	@PostMapping("/adminPage")
+	public String updateMemberStatus(UserDTO memberStatus) {
+		userService.updateMemberStatus(memberStatus);
+		log.info(memberStatus);
+		return "redirect:/user/adminPage";
 	}
 
 	@GetMapping("/signUp")
@@ -72,5 +75,7 @@ public class UserController {
 		rttr.addFlashAttribute("result", updateUser.getUserId());
 		return "redirect:/";
 	}
+	
+	
 	
 }

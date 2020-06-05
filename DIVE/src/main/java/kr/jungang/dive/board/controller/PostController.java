@@ -48,11 +48,6 @@ public class PostController {
 		
 	}
 	
-	@GetMapping("/updatePost")
-	public void openModifyPost(@RequestParam("id") int id,@ModelAttribute("criteria") PostCriteria postCriteria, Model model) {
-		model.addAttribute("post",postService.findById(id));
-	}
-	
 	@PostMapping("/create")
 	@PreAuthorize("isAuthenticated()") //인증된 상태일 때 연결해 줄 것이다.
 	public String insertPost(PostVO obj, @ModelAttribute("criteria") PostCriteria postCriteria, RedirectAttributes rttr){
@@ -62,24 +57,4 @@ public class PostController {
 		rttr.addAttribute("keyword",postCriteria.getKeyword());	
 		return "redirect:/board/list";
 	}
-	
-	@PreAuthorize("principal.user.id == #obj.userNum")
-	@PostMapping("/updatePost")
-	public String updatePost(PostVO obj, @ModelAttribute("criteria") PostCriteria postCriteria, RedirectAttributes rttr){
-		if(postService.updatePost(obj) == 1) {
-			rttr.addFlashAttribute("result","success");			
-		}
-		return "redirect:/board/detailPost?id=" + obj.getId();
-	}
-	
-	@PreAuthorize("principal.user.id == #userNum") //현재 사용자 id가 게시글의 작성자 id와 같을 경우 허용
-	@PostMapping("/deletePost")
-	public String deletePost(@RequestParam("id") int id, @ModelAttribute("criteria") PostCriteria postCriteria, 
-			RedirectAttributes rttr, long userNum){
-		if(postService.deletePost(id) == 1) {
-			rttr.addFlashAttribute("result","success");			
-		}
-		return "redirect:/board/list";
-	}
-	
 }

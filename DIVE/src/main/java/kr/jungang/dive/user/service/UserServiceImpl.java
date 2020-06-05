@@ -1,5 +1,7 @@
 package kr.jungang.dive.user.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +13,7 @@ import lombok.Setter;
 import lombok.extern.log4j.Log4j2;
 
 @Log4j2
-@Service("UserService")
+@Service
 @AllArgsConstructor
 //Controller와 Mapper사이 다리역할
 public class UserServiceImpl implements UserService {
@@ -22,7 +24,7 @@ public class UserServiceImpl implements UserService {
 	public void createUser(UserDTO createUser) {
 		userMapper.createUser(createUser);
 		
-		AuthorityVO authority = new AuthorityVO(createUser.getUId(), "ROLE_MEMBER");
+		AuthorityVO authority = new AuthorityVO(createUser.getId(), "ROLE_MEMBER");
 		userMapper.insertAuthority(authority);
 	}
 
@@ -36,6 +38,16 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public boolean updateUser(UserDTO updateUser) {
 		return userMapper.updateUser(updateUser);
+	}
+
+	@Override
+	public List<UserDTO> getAllMember() {
+		return userMapper.getAllMember();
+	}
+
+	@Override
+	public UserDTO updateMemberStatus(UserDTO memberStatus) {
+		return userMapper.updateMemberStatus(memberStatus);
 	}
 
 }

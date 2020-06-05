@@ -11,10 +11,10 @@
 <!-- CSS 또는 JS의 경우 절대경로를 사용하도록 한다 servlet-context.xml에 명시되어 있는 resources mapping 확인 -->
 <link rel="stylesheet" href="pretty.css">
 <!-- defer : 모든 파일을 받을때까지 브라우저에서 표시안되는걸 방지 -->
-<link rel="stylesheet" href="resources/css/main_style.css">
+<link rel="stylesheet" href="/resources/css/main_style.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="resources/js/main_js.js"></script>
+<script src="/resources/js/main_js.js"></script>
 <script src="https://kit.fontawesome.com/a4b9f55ded.js"
 	crossorigin="anonymous"></script>
 </head>
@@ -25,11 +25,10 @@
 			<h1>DIVE</h1>
 		</div>
 		<ul class="navbar_menu">
-			<li><a href="#">HOME</a></li>
-			<li><a href="#">CUSTOMER</a></li>
-			<li><a href="#">CHAT</a></li>
-			<li><a href="#">FAQ</a></li>
-			<li><a href="#">CORPORATION</a></li>
+			<li><a href="/">HOME</a></li>
+			<li><a href="/products/list">PRODUCTS</a></li>
+			<li><a href="/chat/intro">CHAT</a></li>
+			<li><a href="/board/list">BOARD</a></li>
 		</ul>
 
 		<!-- 익명의 사용자의 경우 표시함(로그인 되어 있지 않는 user) -->
@@ -41,8 +40,8 @@
 			</ul>
 		</sec:authorize>
 
-		<!-- 회원이나 관리자 권한으로 로그인 되어  있는 경우 표시함 -->
-		<sec:authorize access="isAuthenticated()">
+		<!-- 회원 권한으로 로그인 되어  있는 경우 표시함 -->
+		<sec:authorize access="hasRole('ROLE_MEMBER')">
 			<ul class="navbar_icons">
 				<sec:authentication property="principal" var="principal" />
 				<li><a href="/chat/intro">채팅</a></li>
@@ -53,9 +52,32 @@
 				<li>
 					<form id="actionForm" method="get">
 						<!-- EL표현식으로 사용가능 -->
-						<a class='move' href='${principal.username}'> My Page </a>
+						<a class='move' href='${principal.username}'> 
+							<sec:authentication property="principal.user.userId" />
+						</a>
 					</form>
 				</li>
+			</ul>
+		</sec:authorize>
+
+		<!-- 관리자 권한으로 로그인 되어  있는 경우 표시함 -->
+		<sec:authorize access="hasRole('ROLE_ADMIN')">
+			<ul class="navbar_icons">
+				<sec:authentication property="principal" var="principal" />
+				<li><a href="/chat/intro">채팅</a></li>
+				<!-- 스프링 시큐리티 principal 가져오는 라이브러리 선언
+		security > domain > CustomUser.java에 선언된 field를 불러온다. -->
+				<sec:authentication property="principal" var="principal" />
+				<li>
+					<form id="actionForm" method="get">
+						<!-- EL표현식으로 사용가능 -->
+						<a class='move' href='${principal.username}'>
+							<sec:authentication property="principal.user.userId" />
+						</a>
+					</form>
+				</li>
+				<li><a href="/user/adminPage">Admin Page</a></li>
+				<li><a href="/user/userLogout">Logout</a></li>
 			</ul>
 		</sec:authorize>
 

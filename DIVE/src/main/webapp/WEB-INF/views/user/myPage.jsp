@@ -172,7 +172,7 @@ i {
 					</sec:authorize>
 				</div>
 
-				<a href="/"><button class="cancle">취소</button></a> <br />
+				<a href="/"><button class="cancle">HOME</button></a> <br />
 			</section>
 		</div>
 	</div>

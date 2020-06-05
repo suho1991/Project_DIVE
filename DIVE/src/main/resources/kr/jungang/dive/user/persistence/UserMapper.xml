@@ -5,7 +5,7 @@
 <mapper namespace="kr.jungang.dive.user.persistence.UserMapper">
 	<resultMap id="userResultMap"
 		type="kr.jungang.dive.user.domain.UserDTO">
-		<id property="uId" column="u_id" />
+		<id property="id" column="id" />
 		<result property="userId" column="user_id" />
 		<result property="password" column="password" />
 		<result property="name" column="name" />
@@ -24,34 +24,34 @@
 
 	<resultMap type="kr.jungang.dive.user.domain.AuthorityVO"
 		id="authorityResultMap">
-		<result property="uId" column="u_id" />
+		<result property="userNum" column="user_num" />
 		<result property="authority" column="authority" />
 	</resultMap>
 
 	<!-- 권한 조회 -->
 	<select id="readAuthority" resultMap="userResultMap">
-		SELECT u.u_id, id, password, 
+		SELECT u.id, user_id, password, 
 			   enabled, reg_date, update_date, a.authority
 		  FROM tbl_user u LEFT OUTER JOIN 
-		       tbl_authorities a ON u.u_id = a.u_id
-		 WHERE u.u_id = #{uId}
+		       tbl_authorities a ON u.id = a.user_num
+		 WHERE u.id = #{id}
 	</select>
 
 	<!-- 회원 가입 -->
 	<insert id="createUser">
-		<selectKey keyProperty="uId" order="BEFORE"
+		<selectKey keyProperty="id" order="BEFORE"
 			resultType="long">
      <![CDATA[
       SELECT seq_user.NEXTVAL FROM dual
    	 ]]>
 		</selectKey>
 		INSERT INTO tbl_user (
-							  u_id, user_id, password, name, nickname, sex, birthday,
+							  id, user_id, password, name, nickname, sex, birthday,
 		 					  address, phone, email
 		 					  )
 		<!-- ,jdbcType=Type : null을 허용하려면 입력해줘야함 -->
 			 VALUES (
-			  		 #{uId},#{userId},#{password},#{name,jdbcType=VARCHAR},
+			  		 #{id},#{userId},#{password},#{name,jdbcType=VARCHAR},
 					 #{nickName,jdbcType=VARCHAR},#{sex},#{birthday},#{address,jdbcType=VARCHAR},
 					 #{phone,jdbcType=VARCHAR},#{email,jdbcType=VARCHAR}
 					 )
@@ -59,15 +59,15 @@
 
 	<!-- 권한 입력 -->
 	<insert id="insertAuthority">
-		INSERT INTO tbl_authorities (u_id, authority)
-		VALUES (#{uId},#{authority})
+		INSERT INTO tbl_authorities (user_num, authority)
+		VALUES (#{userNum},#{authority})
 	</insert>
 
 	<!-- 아이디로 회원정보 검색 -->
 	<select id="findById" resultMap="userResultMap">
   	<![CDATA[
-  		SELECT u.u_id, u.user_id, u.password, u.name, u.nickname, u.sex, u.birthday, u.address, u.phone, u.email, a.*
-  		  FROM tbl_user u left outer join tbl_authorities a on u.u_id = a.u_id
+  		SELECT u.id, u.user_id, u.password, u.name, u.nickname, u.sex, u.birthday, u.address, u.phone, u.email, a.*
+  		  FROM tbl_user u left outer join tbl_authorities a on u.id = a.user_num
 		 WHERE u.user_id = #{userId}
   	]]>
 	</select>
@@ -80,6 +80,35 @@
 			   phone = #{phone},
 			   email = #{email},
 			   update_date = sysdate
+		 WHERE user_id = #{userId}
+	</update>
+	
+	<!-- 전체 회원 리스트 -->
+	<select id="getAllMember" resultMap="userResultMap">
+		SELECT u.id, u.user_id, u.name,
+		u.nickname, u.email, u.enabled, 
+		u.reg_date, a.authority
+		FROM tbl_user u left outer join
+		tbl_authorities a on u.id = a.user_num
+	</select>
+	
+	<!-- 전체 회원 리스트 페이징 -->
+	<select id="getAllMemberWithPaging" resultMap="userResultMap">
+		<![CDATA[
+			SELECT id, user_id, name, nickname, email, enabled, reg_date
+			  FROM (
+			  		SELECT rownum rn, id, user_id, name, nickname, email, enabled, reg_date
+			  		  FROM tbl_user
+			  		 WHERE rownum <= 20)
+			  		 WHERE rn > 10
+		]]>
+	</select>
+	
+	<!-- 회원 상태 변경 -->
+	<update id="updateMemberStatus">
+		UPDATE tbl_user
+		   SET 
+		       enabled = #{enabled}
 		 WHERE user_id = #{userId}
 	</update>
 </mapper>

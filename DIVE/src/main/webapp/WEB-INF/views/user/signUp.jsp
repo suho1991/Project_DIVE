@@ -84,8 +84,8 @@ i {
 		<div class="choice-sector-content">
 			<section class="choice">
 				<div class="choice_btn">
-					<span class="login_sector"> <a href="/user/userLogin"> <input
-							type="button" class="login_btn" value="L O G I N">
+					<span class="login_sector"> <a href="/"> <input
+							type="button" class="login_btn" value="H O M E">
 					</a>
 					</span> <span class="signup_sector"> <input type="button"
 						class="signup_btn" value="S I G N U P">
@@ -120,14 +120,13 @@ i {
 							<input class="border" type="password" id="userPw" name="password"
 								maxlength="20" autocomplete="off">
 						</div>
-						<!-- <div class="fieldlabel">
+						<div class="fieldlabel">
 							<div>
 								<label for="userPwCheck">비밀번호 확인</label>
 							</div>
 							<input class="border" type="password" id="userPwCheck"
 								name="userPwCheck" maxlength="20" autocomplete="off">
 						</div>
-						 -->
 						<br />
 						<h1>회원정보 입력</h1>
 						<br />
@@ -196,7 +195,6 @@ i {
 	</div>
 
 
-	<!-- 
 	<script language="javascript">
 		function checkAll() {
 			if (!checkUserId(form.userId.value)) {
@@ -258,7 +256,6 @@ i {
 				form.password.focus();
 				return false;
 			}
-			/*
 			//비밀번호 확인이 입력되었는지 확인하기
 			if (!checkExistData(userPwCheck, "비밀번호 확인을")) {
 				form.userPwCheck.focus();
@@ -280,7 +277,6 @@ i {
 				form.userPwCheck.focus();
 				return false;
 			}
-			*/
 			//아이디와 비밀번호가 같을 때..
 			if (id == password) {
 				alert("아이디와 비밀번호는 같을 수 없습니다!");
@@ -371,6 +367,5 @@ i {
 			return true; //확인이 완료되었을 때
 		}
 	</script>
-	 -->
 </body>
 </html>

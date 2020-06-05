@@ -1,6 +1,6 @@
 package kr.jungang.dive.user.mapper;
 
-import java.util.stream.IntStream;
+import java.util.List;
 
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -11,7 +11,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import kr.jungang.dive.user.domain.AuthorityVO;
+import kr.jungang.dive.framework.paging.Criteria;
 import kr.jungang.dive.user.domain.UserDTO;
 import kr.jungang.dive.user.persistence.UserMapper;
 import lombok.Setter;
@@ -27,8 +27,8 @@ public class UserMapperTests {
 	private PasswordEncoder pwEncoder;
 	@Setter(onMethod_ = @Autowired)
 	private UserMapper userMapper;
-
-
+	
+/*
 	//회원 가입
 	@Test
 	public void test_01_createUser() {
@@ -39,18 +39,18 @@ public class UserMapperTests {
 			e.printStackTrace();
 		}
 	}
-
+*/
 	//아이디로 회원정보 검색
 	@Test
 	public void test_02_findById() {
 		try {
-			UserDTO findId = userMapper.findById("MASTER");
+			UserDTO findId = userMapper.findById("devcolton");
 			log.info(findId);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-
+/*
 	//회원정보 수정
 	@Test
 	public void test_03_updateUser() {
@@ -116,5 +116,15 @@ public class UserMapperTests {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	*/
+	
+	@Test
+	public void test_08_testPaging() {
+		Criteria criteria = new Criteria();
+		
+		List<UserDTO> list = userMapper.getAllMemberWithPaging(criteria);
+		
+		list.forEach(user -> log.info(user));
 	}
 }
