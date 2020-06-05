@@ -36,11 +36,24 @@
 	<websocket:handlers>
 		<websocket:mapping handler="chatHandler"
 			path="/chat" />
+		<websocket:handshake-interceptors>
+			<beans:bean
+				class="org.springframework.web.socket.server.support.HttpSessionHandshakeInterceptor" />
+		</websocket:handshake-interceptors>
 		<websocket:sockjs />
 	</websocket:handlers>
 
 	<beans:bean id="chatHandler"
 		class="kr.jungang.dive.chat.ChatHandler"></beans:bean>
+
+	<!-- STOMP 설정 -->
+	<websocket:message-broker
+		application-destination-prefix="/app">
+		<websocket:stomp-endpoint path="/stomp">
+			<websocket:sockjs />
+		</websocket:stomp-endpoint>
+		<websocket:simple-broker prefix="/topic" />
+	</websocket:message-broker>
 
 	<beans:bean id="multipartResolver"
 		class="org.springframework.web.multipart.support.StandardServletMultipartResolver">
@@ -58,6 +71,8 @@
 		base-package="kr.jungang.dive.chat.controller" />
 	<context:component-scan
 		base-package="kr.jungang.dive.board.controller" />
+	<context:component-scan
+		base-package="kr.jungang.dive.product.controller" />
 
 	<security:global-method-security
 		pre-post-annotations="enabled" secured-annotations="enabled">

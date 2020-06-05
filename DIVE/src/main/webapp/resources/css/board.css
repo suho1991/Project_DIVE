@@ -1,0 +1,272 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(./images/dive.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* navbar */
+        .navbar a,
+        .navbar h1,
+        .navbar i {
+            color: white;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #263343;
+            padding: 8px 12px;
+        }
+
+        .navbar_logo {
+            display: flex;
+            font-size: 24px;
+            align-items: center;
+            margin: 0px;
+        }
+
+        .navbar_logo i {
+            padding: 0 10px;
+        }
+
+        .navbar_menu {
+            display: flex;
+            list-style: none;
+            padding-left: 0px;
+        }
+
+        .navbar_menu li {
+            padding: 8px 12px;
+        }
+
+        .navbar_menu li:hover {
+            background-color: #4f5c6e;
+            border-radius: 8px;
+        }
+
+        .navbar_icons {
+            list-style: none;
+            display: flex;
+            padding-right: 50px;
+        }
+
+        .navbar_icons li {
+            padding: 8px 12px;
+        }
+
+        .navbar_icons li:hover {
+            background-color: #4f5c6e;
+            border-radius: 8px;
+        }
+
+        .navbar_toggle_btn {
+            display: none;
+            position: absolute;
+            right: 32px;
+            font-size: 24px;
+            color: skyblue;
+        }
+
+        i {
+            font-size: 50px;
+        }
+
+        .search_bar_text {
+            width: 300px;
+            border: 0;
+            border-bottom: 1px solid white;
+            padding-bottom: 5px;
+            outline: none;
+            background-color: transparent;
+            color: white;
+        }
+
+        .search_btn {
+            width: 50px;
+            height: 100%;
+            border: 0;
+            outline: none;
+            color: #ffffff;
+            background-color: transparent;
+        }
+
+        .fa-search {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                /* 로고를 왼쪽 상단에 놓기 위하여 */
+                padding: 8px 24px;
+            }
+
+            .navbar_menu {
+                display: none;
+                /*javascript로 toggle버튼을 활성화할때만 사용하기위해서*/
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                /*너비가 안먹어서 왼쪽으로 치우치기때문에 사용한다*/
+            }
+
+            .navbar_menu li {
+                /*hover 효과를 꽉채우기위하여*/
+                width: 100%;
+                text-align: center;
+                /*너비가 넓어졌을때 텍스트는 왼쪽으로 다시 가기때문 재지정해줘야한다*/
+            }
+
+            .navbar_icons {
+                display: none;
+                /*javascript로 toggle버튼을 활성화할때만 사용하기위해서*/
+                justify-content: center;
+                width: 100%;
+                padding-left: 0;
+            }
+
+            .navbar_toggle_btn {
+                display: block;
+                /*화면이 줄어들었을때만 토글버튼이 나오도록 활성화*/
+            }
+
+            .navbar_menu.active,
+            .navbar_icons.active {
+                display: flex;
+                /* 메뉴와 아이콘에 대하여
+        javascript에서 클릭하면 active 하게한 내용을 토대로
+        화면에 다시 보여지게 한다 */
+            }
+        }
+
+
+
+        table {
+            border-collapse: collapse;
+        }
+
+        .top {
+            text-align: center;
+        }
+
+        .logo i {
+            font-size: 50px;
+            margin: 30px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .logo a:link,
+        .logo a:visited {
+            color: black;
+        }
+
+        .tit a {
+            color: black;
+        }
+
+        .board_list_wrap {
+            padding: 50px;
+        }
+
+        .board_list {
+            width: 100%;
+            border-top: 2px solid navy;
+        }
+
+        .board_list tr {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .board_list th,
+        .board_list td {
+            padding: 10px;
+            font-size: 14px;
+
+        }
+
+        .board_list td {
+            text-align: center;
+        }
+
+        .board_list .tit {
+            text-align: left;
+        }
+
+        .board_list .tit:hover {
+            text-decoration: underline;
+        }
+
+        .board_list_wrap {
+
+            width: 900px;
+            height: 100%;
+            margin: 150px auto;
+            background-color: white;
+            border-radius: 10px;
+            padding-bottom: 100px;
+        }
+
+        .board_list_wrap .paging {
+            font-size: 0;
+            /* list 사이 여백 공간 초기화 */
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .board_list_wrap .paging a {
+
+            display: inline-block;
+            margin-left: 10px;
+            padding: 5px 10px;
+            border-radius: 100px;
+            font-size: 12px;
+            /* .board_list_wrap .paging 에서 여백 초기화한 값을 토대로 다시 사이즈 재지정 */
+            color: black;
+        }
+
+        .board_list_wrap .paging a:first-child {
+            margin-left: 0;
+        }
+
+        .board_list_wrap .paging a.btn {
+            border: 1px solid #eee;
+            /* 옆의 border가 들어간 item들과 크기를 맞추기위하여 */
+            text-decoration: none;
+            background: white;
+
+        }
+
+        .board_list_wrap .paging a.num {
+            border: 1px solid blue;
+            font-weight: 600;
+            color: blue;
+        }
+
+        .board_list_wrap .paging a.num.on {
+            background: blue;
+            color: #fff;
+        }
+
+        .writing {
+            text-align: right;
+        }
+
+        .writing_btn {
+            margin: 5px;
+            padding: 5px;
+        }

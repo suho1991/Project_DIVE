@@ -14,8 +14,7 @@
 <body>
 	<h1>Chat App</h1>
 	<div>
-		<a onclick="window.open ( '/chat/chatting', 'name', 'width = 400, 
-				height = 569, scrollbars=no, resizable=no, toolbars=no, menubar=no')">
+		<a onclick="window.open ( '/chat/chatting', 'name', 'width = 400, height = 569, scrollbars=no, resizable=no, toolbars=no, menubar=no')">
 		<input type="button" id="enterBtn" value="입장" /></a>
 	</div>
 </body>

@@ -156,6 +156,34 @@ a {
 		<a href="/board/create"><button class="writing_btn">글쓰기</button></a>
 	</div>
 	</sec:authorize>
+	
+	
+	<!-- 검색  -->
+	<form id="searchForm" class="form-inline" action="/board/list" method="get" >
+							<select class="form-control" name='type'>
+								<option value="" 
+									<c:out value="${pageMaker.cri.type == null ? 'selected':''}"/>>────────────</option>
+								<option value="T"
+									<c:out value="${pageMaker.cri.type eq 'T' ? 'selected':''}"/>>제목</option>
+								<option value="C"
+									<c:out value="${pageMaker.cri.type eq 'C' ? 'selected':''}"/>>내용</option>
+								<option value="W"
+									<c:out value="${pageMaker.cri.type eq 'W' ? 'selected':''}"/>>작성자</option>
+								<option value="TC"
+									<c:out value="${pageMaker.cri.type eq 'TC' ? 'selected':''}"/>>제목 or 내용</option>
+								<option value="TW"
+									<c:out value="${pageMaker.cri.type eq 'TW' ? 'selected':''}"/>>제목 or 작성자</option>
+								<option value="CW"
+									<c:out value="${pageMaker.cri.type eq 'CW' ? 'selected':''}"/>>내용 or 작성자</option>
+								<option value="TWC"
+									<c:out value="${pageMaker.cri.type eq 'TWC' ? 'selected':''}"/>>전체</option>
+							</select>
+							<input class="form-control" type="text" name='keyword' value='${pageMaker.cri.keyword}'>
+							<input type="hidden" name='pageNum' value='${pageMaker.cri.pageNum}'>
+                            <input type="hidden" name='amount' value='${pageMaker.cri.amount}' >
+                            <button id='searchBtn' class='btn btn-primary'>검색</button>
+						</form>
+	
 	<div class="paging">
 		<a href="#" class="btn"> <<</a> 
 		<c:if test="${pageMaker.prev}">
@@ -200,6 +228,23 @@ $(document).ready(function(){
     	actionForm.attr("action","/board/detailPost");
     	actionForm.submit();
 	});
-	
+    
+    var searchForm = $('#searchForm');
+    $('#searchBtn').on('click', function(e) {
+		if(!searchForm.find("option:selected").val()){
+			alert("검색종류를 선택하세요.");
+			return false;
+		}
+		
+		if(!searchForm.find("input[name='keyword']").val()){
+			alert("키워드를 입력하세요.");
+			return false;
+		}
+		
+		searchForm.find("input[name='pageNum']").val("1");
+		e.preventDefault();
+		
+		searchForm.submit();
+	});
 });
 </script>

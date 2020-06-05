@@ -2,6 +2,7 @@ package kr.jungang.dive.product.controller;
 
 import java.util.List;
 
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,10 +27,14 @@ public class ProductController {
 	@GetMapping("/list")
 	public void getProductList(ProductCriteria productCriteria, Model model) {
 		List<ProductVO> list = productService.getWithPagingProduct(productCriteria);
-		model.addAttribute("listPost", list);
+		model.addAttribute("listProduct", list);
 		model.addAttribute("pageMaker", new PageDTO(productService.getTotCount(productCriteria), productCriteria));
 	}
 	
-	
+	@GetMapping("/register")
+	@PreAuthorize("isAuthenticated()") //인증된 상태일 때 연결해 줄 것이다.
+	public void regiProduct() {
+		
+	}
 	
 }

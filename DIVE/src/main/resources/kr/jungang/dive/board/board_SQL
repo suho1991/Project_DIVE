@@ -13,7 +13,7 @@ create table tbl_post(
 	title		varchar2(2000) not null,
 	content		varchar2(4000),
 	writer		varchar2(200) not null,
-	user_id		number(10) constraint fk_post2member references tbl_user(U_ID),
+	user_id		number(10) constraint fk_post2member references tbl_user(id),
 	reg_date		date default sysdate,
 	update_date	date default sysdate
 );
@@ -26,7 +26,7 @@ create table tbl_reply(
 	rid		number(10) constraint fk_reply2reply references tbl_reply(id),
 	content		varchar2(4000) not null,
 	writer		varchar2(200) not null,
-	user_id		number(10) constraint fk_reply2member references tbl_user(U_ID),
+	user_id		number(10) constraint fk_reply2member references tbl_user(id),
 	reg_date	date default sysdate,
 	update_date	date default sysdate
 );

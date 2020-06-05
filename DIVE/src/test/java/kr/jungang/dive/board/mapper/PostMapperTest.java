@@ -30,8 +30,6 @@ public class PostMapperTest {
 	@Test
 	public void testGetAll() {
 		try {
-			List<PostVO> post = postMapper.getAllPost();
-			post.forEach(list -> log.info(list));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

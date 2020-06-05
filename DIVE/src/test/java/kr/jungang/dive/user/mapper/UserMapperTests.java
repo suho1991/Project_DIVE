@@ -1,6 +1,6 @@
 package kr.jungang.dive.user.mapper;
 
-import java.util.List;
+import java.util.stream.IntStream;
 
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -11,7 +11,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import kr.jungang.dive.framework.paging.Criteria;
+import kr.jungang.dive.user.domain.AuthorityVO;
 import kr.jungang.dive.user.domain.UserDTO;
 import kr.jungang.dive.user.persistence.UserMapper;
 import lombok.Setter;
@@ -27,7 +27,7 @@ public class UserMapperTests {
 	private PasswordEncoder pwEncoder;
 	@Setter(onMethod_ = @Autowired)
 	private UserMapper userMapper;
-	
+
 /*
 	//회원 가입
 	@Test
@@ -118,13 +118,4 @@ public class UserMapperTests {
 		}
 	}
 	*/
-	
-	@Test
-	public void test_08_testPaging() {
-		Criteria criteria = new Criteria();
-		
-		List<UserDTO> list = userMapper.getAllMemberWithPaging(criteria);
-		
-		list.forEach(user -> log.info(user));
-	}
 }
