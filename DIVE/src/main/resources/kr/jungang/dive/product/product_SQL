@@ -1,0 +1,22 @@
+drop table tbl_product;
+
+drop sequence seq_product;
+
+create sequence seq_product;
+
+
+-- id, title, description, writer, user_num, price, region, reg_date, update_date, like_count, hits_count, enabled
+create table tbl_product(
+    id          number(10) constraint pk_product primary key,
+    title       varchar2(400) not null,
+    description clob,
+    writer      varchar2(100) not null,
+    user_num    number(10) constraint fk_product2user references tbl_user(id),
+    price       number(10) not null,
+    region      varchar2(400) not null,
+    reg_date    date default sysdate,
+    update_date date default sysdate,
+    like_count  number(10),
+    hits_count  number(10),
+    enabled CHAR(1) DEFAULT '1'
+);
