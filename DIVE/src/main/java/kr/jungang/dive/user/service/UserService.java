@@ -19,7 +19,7 @@ public interface UserService {
 	public UserDTO findMyId(String name, String email);
 	
 	//PASSWORD 변경(Naver -> SMPT PORT: 587, SERVER NAME: smtp.naver.com, ID: courage5683, PASS: 네이버로그인 비번)
-	public void changePassword(String password);
+	public UserDTO changePassword(String password, String userId);
 	
 	//회원 리스트(only Admin)
 	public List<UserDTO> getAllMember();

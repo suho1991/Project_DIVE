@@ -11,8 +11,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="/mail/sendMail" method="post">
-		<button type="submit" value="메일전송"></button>
+	<form action="/mail/sendEmail" method="post">
+			아이디:
+			<input type="text" name="userId" placeholder="  ID를 입력하세요. ">
+			이메일 :
+			<input type="email" name="email" placeholder="  이메일주소를 입력하세요. ">
+			<button type="submit" name="submit">이메일 인증받기 (이메일 보내기)</button>
+			<input type="hidden" name="${_csrf.parameterName}"
+							value="${_csrf.token}" />
 	</form>
 </body>
 </html>

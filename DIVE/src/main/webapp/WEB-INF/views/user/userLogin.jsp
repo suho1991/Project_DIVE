@@ -119,7 +119,7 @@ i {
 					</form>
 				</div>
 				<div class="findcustomer">
-					<a href="/user/findMyId">아이디찾기</a> / <a href="/user/changePassword">비밀번호찾기</a>
+					<a href="/user/findMyId">아이디찾기</a> / <a href="/mail/sendEmail">비밀번호찾기</a>
 				</div>
 			</section>
 			<h3>

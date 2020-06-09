@@ -28,7 +28,7 @@ public interface UserMapper {
 	public UserDTO findMyId(@Param("name") String name, @Param("email") String email);
 	
 	//PASSWORD 변경
-	public void changePassword(String password);
+	public UserDTO changePassword(@Param("password") String password, @Param("userId") String userId);
 	
 	//회원 리스트(only Admin)
 	public List<UserDTO> getAllMember();

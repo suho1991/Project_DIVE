@@ -13,10 +13,14 @@
 <script src="/resources/js/findMyId.js"></script>
 </head>
 <body>
-	<form action="/user/chagngePassword" method="post">
+	<form action="/user/changePassword" method="post">
+			ID:
+			<input type="text" name="userId" value="${userId}">
 			신규 비밀번호:
 			<input type="password" name="password" placeholder=" 패스워드를 입력하세요. ">
 			<button type="submit" name="submit">변경</button>
+			<input type="hidden" name="${_csrf.parameterName}"
+							value="${_csrf.token}" />
 	</form>
 </body>
 </html>

@@ -13,10 +13,14 @@
 <script src="/resources/js/findMyId.js"></script>
 </head>
 <body>
-	<form action="/user/sendEmail" method="post">
-			이메일 :
-			<input type="email" name="email" placeholder="  이메일주소를 입력하세요. ">
-			<button type="submit" name="submit">이메일 인증받기 (이메일 보내기)</button>
+	<form action="/mail/certifyEmail" method="post">
+		ID: <input type="text" name="userId" value="${userId}"> 인증번호
+		입력 : <input type="number" name="certifyDice"
+			placeholder="  인증번호를 입력하세요. "> <input type="hidden"
+			name="dice" value="${dice}">
+		<button type="submit" name="submit">인증번호 전송</button>
+		<input type="hidden" name="${_csrf.parameterName}"
+			value="${_csrf.token}" />
 	</form>
 </body>
 </html>

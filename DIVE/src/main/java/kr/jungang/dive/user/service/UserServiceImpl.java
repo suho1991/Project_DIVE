@@ -1,9 +1,9 @@
 package kr.jungang.dive.user.service;
 
-import java.util.HashMap;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
 import kr.jungang.dive.user.domain.AuthorityVO;
@@ -45,8 +45,8 @@ public class UserServiceImpl implements UserService {
 	}
 	
 	@Override
-	public void changePassword(String password) {
-		userMapper.changePassword(password);
+	public UserDTO changePassword(String password, String userId) {
+		return userMapper.changePassword(password, userId);
 	}
 	
 	@Override
