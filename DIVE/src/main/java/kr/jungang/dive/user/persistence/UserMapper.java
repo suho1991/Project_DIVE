@@ -2,6 +2,8 @@ package kr.jungang.dive.user.persistence;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Param;
+
 import kr.jungang.dive.framework.paging.Criteria;
 import kr.jungang.dive.user.domain.AuthorityVO;
 import kr.jungang.dive.user.domain.UserDTO;
@@ -23,7 +25,10 @@ public interface UserMapper {
 	public UserDTO readAuthority(long userNum);
 	
 	//아이디 찾기
-	public String findMyId();
+	public UserDTO findMyId(@Param("name") String name, @Param("email") String email);
+	
+	//PASSWORD 변경
+	public void changePassword(String password);
 	
 	//회원 리스트(only Admin)
 	public List<UserDTO> getAllMember();

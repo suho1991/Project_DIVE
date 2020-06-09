@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
@@ -11,6 +11,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Access Denied!!</h1>
+	<form action="/mail/sendMail" method="post">
+		<button type="submit" value="메일전송"></button>
+	</form>
 </body>
 </html>

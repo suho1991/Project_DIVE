@@ -1,5 +1,6 @@
 package kr.jungang.dive.user.service;
 
+import java.util.HashMap;
 import java.util.List;
 
 import kr.jungang.dive.user.domain.UserDTO;
@@ -13,6 +14,12 @@ public interface UserService {
 
 	//회원 정보 수정
 	public boolean updateUser(UserDTO updateUser);
+	
+	//아이디 찾기
+	public UserDTO findMyId(String name, String email);
+	
+	//PASSWORD 변경(Naver -> SMPT PORT: 587, SERVER NAME: smtp.naver.com, ID: courage5683, PASS: 네이버로그인 비번)
+	public void changePassword(String password);
 	
 	//회원 리스트(only Admin)
 	public List<UserDTO> getAllMember();

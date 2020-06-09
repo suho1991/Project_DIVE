@@ -1,6 +1,6 @@
 let socket = null;
 function connect() {
-	socket = new SockJS("http://localhost:8080/chat"); // 웹소켓 객체생성
+	socket = new SockJS("http://172.30.1.53:8080/chat"); // 웹소켓 객체생성
 	socket.onopen = onOpen;
 	socket.onmessage = onMessage;
 	socket.onclose = onClose;

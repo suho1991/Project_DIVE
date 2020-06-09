@@ -46,14 +46,24 @@
 	<beans:bean id="chatHandler"
 		class="kr.jungang.dive.chat.ChatHandler"></beans:bean>
 
-	<!-- STOMP 설정 -->
-	<websocket:message-broker
-		application-destination-prefix="/app">
-		<websocket:stomp-endpoint path="/stomp">
-			<websocket:sockjs />
-		</websocket:stomp-endpoint>
-		<websocket:simple-broker prefix="/topic" />
-	</websocket:message-broker>
+	<!-- 회원가입 메일 인증 -->
+	<beans:bean id="mailSender"
+		class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<beans:property name="host" value="smtp.naver.com" />
+		<beans:property name="port" value="587" /><!-- 465 or 25 -->
+		<beans:property name="username" value="courage5683" />
+		<beans:property name="password"
+			value="star813792!NAVER" />
+		<beans:property name="defaultEncoding" value="utf-8" />
+		<beans:property name="javaMailProperties">
+			<beans:props>
+				<beans:prop key="mail.transport.protocol">smtp</beans:prop>
+				<beans:prop key="mail.smtp.auth">true</beans:prop>
+				<beans:prop key="mail.smtp.starttls.enable">true</beans:prop>
+				<beans:prop key="mail.debug">true</beans:prop>
+			</beans:props>
+		</beans:property>
+	</beans:bean>
 
 	<beans:bean id="multipartResolver"
 		class="org.springframework.web.multipart.support.StandardServletMultipartResolver">
@@ -73,6 +83,8 @@
 		base-package="kr.jungang.dive.board.controller" />
 	<context:component-scan
 		base-package="kr.jungang.dive.product.controller" />
+	<context:component-scan
+		base-package="kr.jungang.dive.framework.controller" />
 
 	<security:global-method-security
 		pre-post-annotations="enabled" secured-annotations="enabled">

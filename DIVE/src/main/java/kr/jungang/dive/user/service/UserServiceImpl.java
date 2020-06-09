@@ -1,5 +1,6 @@
 package kr.jungang.dive.user.service;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,9 +11,7 @@ import kr.jungang.dive.user.domain.UserDTO;
 import kr.jungang.dive.user.persistence.UserMapper;
 import lombok.AllArgsConstructor;
 import lombok.Setter;
-import lombok.extern.log4j.Log4j2;
 
-@Log4j2
 @Service
 @AllArgsConstructor
 //Controller와 Mapper사이 다리역할
@@ -41,6 +40,16 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
+	public UserDTO findMyId(String name, String email) {
+		return userMapper.findMyId(name, email);
+	}
+	
+	@Override
+	public void changePassword(String password) {
+		userMapper.changePassword(password);
+	}
+	
+	@Override
 	public List<UserDTO> getAllMember() {
 		return userMapper.getAllMember();
 	}
@@ -49,5 +58,4 @@ public class UserServiceImpl implements UserService {
 	public UserDTO updateMemberStatus(UserDTO memberStatus) {
 		return userMapper.updateMemberStatus(memberStatus);
 	}
-
 }

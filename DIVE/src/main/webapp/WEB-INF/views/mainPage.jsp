@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib uri="http://www.springframework.org/security/tags"
 	prefix="sec"%>
 <!DOCTYPE html>
@@ -52,8 +53,8 @@
 				<li>
 					<form id="actionForm" method="get">
 						<!-- EL표현식으로 사용가능 -->
-						<a class='move' href='${principal.username}'> 
-							<sec:authentication property="principal.user.userId" />
+						<a class='move' href='${principal.username}'> <sec:authentication
+								property="principal.user.userId" />
 						</a>
 					</form>
 				</li>
@@ -64,20 +65,25 @@
 		<sec:authorize access="hasRole('ROLE_ADMIN')">
 			<ul class="navbar_icons">
 				<sec:authentication property="principal" var="principal" />
-				<li><a href="/chat/intro">채팅</a></li>
 				<!-- 스프링 시큐리티 principal 가져오는 라이브러리 선언
 		security > domain > CustomUser.java에 선언된 field를 불러온다. -->
 				<sec:authentication property="principal" var="principal" />
 				<li>
 					<form id="actionForm" method="get">
 						<!-- EL표현식으로 사용가능 -->
-						<a class='move' href='${principal.username}'>
-							<sec:authentication property="principal.user.userId" />
+						<a class='move' href='${principal.username}'> <sec:authentication
+								property="principal.user.userId" />
 						</a>
 					</form>
 				</li>
 				<li><a href="/user/adminPage">Admin Page</a></li>
-				<li><a href="/user/userLogout">Logout</a></li>
+				<li>
+					<form action="/user/userLogout" method="POST">
+						<input type="hidden" name="${_csrf.parameterName}"
+							value="${_csrf.token}" />
+						<button>Logout</button>
+					</form>
+				</li>
 			</ul>
 		</sec:authorize>
 

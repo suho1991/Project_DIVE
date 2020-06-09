@@ -104,6 +104,24 @@
 		]]>
 	</select>
 	
+	<!-- 아이디 찾기 -->
+	<select id="findMyId" resultMap="userResultMap">
+  	<![CDATA[
+  		SELECT user_id
+		  FROM tbl_user
+		 WHERE name = #{name}
+		   AND email = #{email}
+  	]]>
+	</select>
+	
+	<!-- 패스워드 변경 -->
+	<update id="changePassword">
+		UPDATE tbl_user
+		   SET 
+		       password = #{password}
+		 WHERE user_id = #{userId}
+	</update>
+	
 	<!-- 회원 상태 변경 -->
 	<update id="updateMemberStatus">
 		UPDATE tbl_user
