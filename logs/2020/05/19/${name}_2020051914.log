@@ -1,0 +1,1694 @@
+14:45:55.246 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\test\DataSourceTests.class]
+14:45:55.256 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\test\JDBCTests.class]
+14:45:55.256 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\test\MapperTests.class]
+14:45:55.256 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\test\TestMapper.class]
+14:45:55.277 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\user\UserTests.class]
+14:45:55.277 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\domain\UserVO.class]
+14:45:55.278 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\persistence\UserMapper.class]
+14:45:55.395 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization...
+14:45:55.396 [main] DEBUG log4jdbc.debug - Using logger: null
+14:45:55.396 [main] DEBUG log4jdbc.debug - x log4jdbc.debug.stack.prefix is not defined
+14:45:55.397 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.warn.threshold is not defined
+14:45:55.397 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.error.threshold is not defined
+14:45:55.397 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+14:45:55.397 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+14:45:55.398 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+14:45:55.398 [main] DEBUG log4jdbc.debug - x log4jdbc.statement.warn is not defined (using default value false)
+14:45:55.398 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.select is not defined (using default value true)
+14:45:55.398 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.insert is not defined (using default value true)
+14:45:55.398 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.update is not defined (using default value true)
+14:45:55.399 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.delete is not defined (using default value true)
+14:45:55.399 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.create is not defined (using default value true)
+14:45:55.399 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+14:45:55.399 [main] DEBUG log4jdbc.debug - x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+14:45:55.399 [main] DEBUG log4jdbc.debug - x log4jdbc.drivers is not defined
+14:45:55.399 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql is not defined (using default value true)
+14:45:55.400 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+14:45:55.400 [main] DEBUG log4jdbc.debug - x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+14:45:55.400 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization done.
+14:45:55.400 [main] DEBUG log4jdbc.debug - DriverSpy intialization...
+14:45:55.473 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.OracleDriver
+14:45:55.473 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.driver.OracleDriver
+14:45:55.476 [main] DEBUG log4jdbc.debug - DriverSpy intialization done.
+14:45:55.965 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+1. Connection opened. {executed in 345ms} 
+open connections:  1 (1)
+14:45:55.966 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+1. Connection.new Connection returned 
+14:45:55.969 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+1. Connection.isReadOnly() returned false
+14:45:55.970 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+1. Connection.getAutoCommit() returned true
+14:45:55.974 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkValidationSupport(PoolBase.java:458)
+1. Connection.isValid(1) returned true
+14:45:55.975 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkDefaultIsolation(PoolBase.java:479)
+1. Connection.getTransactionIsolation() returned 2
+14:45:56.165 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2. Connection opened. {executed in 22ms} 
+open connections:  1 2 (2)
+14:45:56.166 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2. Connection.new Connection returned 
+14:45:56.166 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2. Connection.isReadOnly() returned false
+14:45:56.166 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+2. Connection.getAutoCommit() returned true
+14:45:56.196 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+3. Connection opened. {executed in 29ms} 
+open connections:  1 2 3 (3)
+14:45:56.196 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+3. Connection.new Connection returned 
+14:45:56.197 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+3. Connection.isReadOnly() returned false
+14:45:56.197 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+3. Connection.getAutoCommit() returned true
+14:45:56.219 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+4. Connection opened. {executed in 22ms} 
+open connections:  1 2 3 4 (4)
+14:45:56.219 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+4. Connection.new Connection returned 
+14:45:56.220 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+4. Connection.isReadOnly() returned false
+14:45:56.220 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+4. Connection.getAutoCommit() returned true
+14:45:56.241 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+5. Connection opened. {executed in 21ms} 
+open connections:  1 2 3 4 5 (5)
+14:45:56.241 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+5. Connection.new Connection returned 
+14:45:56.241 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+5. Connection.isReadOnly() returned false
+14:45:56.242 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+5. Connection.getAutoCommit() returned true
+14:45:56.275 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+6. Connection opened. {executed in 33ms} 
+open connections:  1 2 3 4 5 6 (6)
+14:45:56.276 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+6. Connection.new Connection returned 
+14:45:56.276 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+6. Connection.isReadOnly() returned false
+14:45:56.276 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+6. Connection.getAutoCommit() returned true
+14:45:56.324 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+7. Connection opened. {executed in 47ms} 
+open connections:  1 2 3 4 5 6 7 (7)
+14:45:56.324 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+7. Connection.new Connection returned 
+14:45:56.324 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+7. Connection.isReadOnly() returned false
+14:45:56.324 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+7. Connection.getAutoCommit() returned true
+14:45:56.349 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+8. Connection opened. {executed in 24ms} 
+open connections:  1 2 3 4 5 6 7 8 (8)
+14:45:56.350 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+8. Connection.new Connection returned 
+14:45:56.350 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+8. Connection.isReadOnly() returned false
+14:45:56.350 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+8. Connection.getAutoCommit() returned true
+14:45:56.380 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+9. Connection opened. {executed in 29ms} 
+open connections:  1 2 3 4 5 6 7 8 9 (9)
+14:45:56.380 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+9. Connection.new Connection returned 
+14:45:56.381 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+9. Connection.isReadOnly() returned false
+14:45:56.381 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+9. Connection.getAutoCommit() returned true
+14:45:56.405 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10. Connection opened. {executed in 24ms} 
+open connections:  1 2 3 4 5 6 7 8 9 10 (10)
+14:45:56.405 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10. Connection.new Connection returned 
+14:45:56.405 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+10. Connection.isReadOnly() returned false
+14:45:56.405 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+10. Connection.getAutoCommit() returned true
+14:45:56.543 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:161)
+1. Connection.isValid(5) returned true
+14:45:56.548 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyConnection.getAutoCommit(HikariProxyConnection.java:-1)
+1. Connection.getAutoCommit() returned true
+14:45:56.780 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+1. PreparedStatement.new PreparedStatement returned 
+14:45:56.781 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+1. Connection.prepareStatement(SELECT SEQ_USER.NEXTVAL FROM DUAL) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@724aefc3
+14:45:56.890 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT SEQ_USER.NEXTVAL FROM DUAL  {executed in 104 ms}
+14:45:56.892 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. PreparedStatement.execute() returned true
+14:45:56.904 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyStatement.getResultSet(ProxyStatement.java:214)
+1. ResultSet.new ResultSet returned 
+14:45:56.904 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyStatement.getResultSet(ProxyStatement.java:214)
+1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@7dcb42a9
+14:45:56.925 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getMetaData(HikariProxyResultSet.java:-1)
+1. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@32eae6f2
+14:45:56.929 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getType(HikariProxyResultSet.java:-1)
+1. ResultSet.getType() returned 1003
+14:45:56.930 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.isClosed(HikariProxyResultSet.java:-1)
+1. ResultSet.isClosed() returned false
+14:45:56.930 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.next(HikariProxyResultSet.java:-1)
+1. ResultSet.next() returned true
+14:45:56.935 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getLong(HikariProxyResultSet.java:-1)
+1. ResultSet.getLong(NEXTVAL) returned 11
+14:45:56.935 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.isClosed(HikariProxyResultSet.java:-1)
+1. ResultSet.isClosed() returned false
+14:45:56.938 [main] INFO  log4jdbc.log4j2 - 
+|--------|
+|nextval |
+|--------|
+|11      |
+|--------|
+
+14:45:56.938 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.next(HikariProxyResultSet.java:-1)
+1. ResultSet.next() returned false
+14:45:56.939 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.close(HikariProxyResultSet.java:-1)
+1. ResultSet.close() returned void
+14:45:56.940 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.getMetaData(ProxyConnection.java:380)
+1. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@18a19e
+14:45:56.946 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyStatement.close(ProxyStatement.java:76)
+1. PreparedStatement.close() returned 
+14:45:56.948 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+1. PreparedStatement.new PreparedStatement returned 
+14:45:56.948 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+1. Connection.prepareStatement(INSERT INTO TBL_USER
+		(user_num, id, password, name, sex, birthday, address, phone, email)
+		
+		VALUES(?,?,?,?,?,
+		?,?,?,?)) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@5d0b0cb9
+14:45:56.951 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setLong(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setLong(1, 11) returned 
+14:45:56.958 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setString(2, "TEST") returned 
+14:45:56.959 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setString(3, "TEST") returned 
+14:45:56.962 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setNull(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setNull(4, 12) returned 
+14:45:56.963 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setString(5, " ") returned 
+14:45:56.963 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setString(6, " ") returned 
+14:45:56.964 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setNull(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setNull(7, 12) returned 
+14:45:56.964 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setNull(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setNull(8, 12) returned 
+14:45:56.964 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setNull(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setNull(9, 12) returned 
+14:45:56.969 [main] ERROR log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. INSERT INTO TBL_USER (user_num, id, password, name, sex, birthday, address, phone, email) VALUES(11,'TEST','TEST',NULL,' ', 
+' ',NULL,NULL,NULL)  {FAILED after 4 ms}
+java.sql.SQLIntegrityConstraintViolationException: ORA-01400: NULL을 ("SCOTT"."TBL_USER"."NAME") 안에 삽입할 수 없습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494) ~[ojdbc8.jar:18.3.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8.jar:18.3.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1052) ~[ojdbc8.jar:18.3.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:537) ~[ojdbc8.jar:18.3.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:255) ~[ojdbc8.jar:18.3.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:610) ~[ojdbc8.jar:18.3.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:253) ~[ojdbc8.jar:18.3.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:86) ~[ojdbc8.jar:18.3.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:928) ~[ojdbc8.jar:18.3.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1136) ~[ojdbc8.jar:18.3.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3640) ~[ojdbc8.jar:18.3.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1384) ~[ojdbc8.jar:18.3.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3752) ~[ojdbc8.jar:18.3.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1079) ~[ojdbc8.jar:18.3.0.0.0]
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443) [log4jdbc-log4j2-jdbc4-1.16.jar:?]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) [HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) [HikariCP-3.4.5.jar:?]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) [mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) [mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) [mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) [mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) [mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) [mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) [mybatis-3.5.3.jar:3.5.3]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) [mybatis-spring-2.0.3.jar:2.0.3]
+	at com.sun.proxy.$Proxy38.insert(Unknown Source) [?:?]
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271) [mybatis-spring-2.0.3.jar:2.0.3]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) [mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93) [mybatis-3.5.3.jar:3.5.3]
+	at com.sun.proxy.$Proxy40.insertUser(Unknown Source) [?:?]
+	at kr.jungang.dive.user.UserTests.test_01_insertUser(UserTests.java:28) [test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209) [.cp/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-01400: NULL을 ("SCOTT"."TBL_USER"."NAME") 안에 삽입할 수 없습니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8.jar:18.3.0.0.0]
+	... 65 more
+14:45:56.996 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyStatement.close(ProxyStatement.java:76)
+1. PreparedStatement.close() returned 
+14:45:56.999 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:267)
+1. Connection.clearWarnings() returned 
+14:45:57.096 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.getMetaData(ProxyConnection.java:380)
+1. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@18a19e
+14:45:57.097 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:267)
+1. Connection.clearWarnings() returned 
+14:45:57.162 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+1. Connection closed. {executed in 2ms} 
+open connections:  2 3 4 5 6 7 8 9 10 (9)
+14:45:57.163 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+1. Connection.close() returned 
+14:45:57.208 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+2. Connection closed. {executed in 45ms} 
+open connections:  3 4 5 6 7 8 9 10 (8)
+14:45:57.208 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+2. Connection.close() returned 
+14:45:57.223 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+3. Connection closed. {executed in 15ms} 
+open connections:  4 5 6 7 8 9 10 (7)
+14:45:57.223 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+3. Connection.close() returned 
+14:45:57.239 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+4. Connection closed. {executed in 16ms} 
+open connections:  5 6 7 8 9 10 (6)
+14:45:57.240 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+4. Connection.close() returned 
+14:45:57.256 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+5. Connection closed. {executed in 16ms} 
+open connections:  6 7 8 9 10 (5)
+14:45:57.257 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+5. Connection.close() returned 
+14:45:57.273 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+6. Connection closed. {executed in 16ms} 
+open connections:  7 8 9 10 (4)
+14:45:57.273 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+6. Connection.close() returned 
+14:45:57.298 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+7. Connection closed. {executed in 25ms} 
+open connections:  8 9 10 (3)
+14:45:57.299 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+7. Connection.close() returned 
+14:45:57.323 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+8. Connection closed. {executed in 24ms} 
+open connections:  9 10 (2)
+14:45:57.323 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+8. Connection.close() returned 
+14:45:57.340 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+9. Connection closed. {executed in 17ms} 
+open connections:  10 (1)
+14:45:57.340 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+9. Connection.close() returned 
+14:45:57.356 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10. Connection closed. {executed in 16ms} 
+open connections:  none
+14:45:57.357 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10. Connection.close() returned 
+14:47:34.172 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\test\DataSourceTests.class]
+14:47:34.181 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\test\JDBCTests.class]
+14:47:34.181 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\test\MapperTests.class]
+14:47:34.181 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\test\TestMapper.class]
+14:47:34.199 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\user\UserTests.class]
+14:47:34.199 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\domain\UserVO.class]
+14:47:34.200 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\persistence\UserMapper.class]
+14:47:34.299 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization...
+14:47:34.300 [main] DEBUG log4jdbc.debug - Using logger: null
+14:47:34.300 [main] DEBUG log4jdbc.debug - x log4jdbc.debug.stack.prefix is not defined
+14:47:34.300 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.warn.threshold is not defined
+14:47:34.300 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.error.threshold is not defined
+14:47:34.300 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+14:47:34.301 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+14:47:34.301 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+14:47:34.301 [main] DEBUG log4jdbc.debug - x log4jdbc.statement.warn is not defined (using default value false)
+14:47:34.301 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.select is not defined (using default value true)
+14:47:34.301 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.insert is not defined (using default value true)
+14:47:34.301 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.update is not defined (using default value true)
+14:47:34.302 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.delete is not defined (using default value true)
+14:47:34.302 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.create is not defined (using default value true)
+14:47:34.302 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+14:47:34.302 [main] DEBUG log4jdbc.debug - x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+14:47:34.302 [main] DEBUG log4jdbc.debug - x log4jdbc.drivers is not defined
+14:47:34.302 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql is not defined (using default value true)
+14:47:34.302 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+14:47:34.302 [main] DEBUG log4jdbc.debug - x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+14:47:34.302 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization done.
+14:47:34.303 [main] DEBUG log4jdbc.debug - DriverSpy intialization...
+14:47:34.374 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.OracleDriver
+14:47:34.375 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.driver.OracleDriver
+14:47:34.378 [main] DEBUG log4jdbc.debug - DriverSpy intialization done.
+14:47:34.766 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+1. Connection opened. {executed in 355ms} 
+open connections:  1 (1)
+14:47:34.768 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+1. Connection.new Connection returned 
+14:47:34.771 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+1. Connection.isReadOnly() returned false
+14:47:34.771 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+1. Connection.getAutoCommit() returned true
+14:47:34.773 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkValidationSupport(PoolBase.java:458)
+1. Connection.isValid(1) returned true
+14:47:34.774 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkDefaultIsolation(PoolBase.java:479)
+1. Connection.getTransactionIsolation() returned 2
+14:47:34.917 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2. Connection opened. {executed in 29ms} 
+open connections:  1 2 (2)
+14:47:34.917 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2. Connection.new Connection returned 
+14:47:34.918 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2. Connection.isReadOnly() returned false
+14:47:34.918 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+2. Connection.getAutoCommit() returned true
+14:47:34.979 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+3. Connection opened. {executed in 60ms} 
+open connections:  1 2 3 (3)
+14:47:34.979 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+3. Connection.new Connection returned 
+14:47:34.979 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+3. Connection.isReadOnly() returned false
+14:47:34.980 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+3. Connection.getAutoCommit() returned true
+14:47:35.012 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+4. Connection opened. {executed in 31ms} 
+open connections:  1 2 3 4 (4)
+14:47:35.012 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+4. Connection.new Connection returned 
+14:47:35.012 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+4. Connection.isReadOnly() returned false
+14:47:35.012 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+4. Connection.getAutoCommit() returned true
+14:47:35.039 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+5. Connection opened. {executed in 27ms} 
+open connections:  1 2 3 4 5 (5)
+14:47:35.039 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+5. Connection.new Connection returned 
+14:47:35.039 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+5. Connection.isReadOnly() returned false
+14:47:35.039 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+5. Connection.getAutoCommit() returned true
+14:47:35.079 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+6. Connection opened. {executed in 39ms} 
+open connections:  1 2 3 4 5 6 (6)
+14:47:35.080 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+6. Connection.new Connection returned 
+14:47:35.080 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+6. Connection.isReadOnly() returned false
+14:47:35.080 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+6. Connection.getAutoCommit() returned true
+14:47:35.153 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+7. Connection opened. {executed in 73ms} 
+open connections:  1 2 3 4 5 6 7 (7)
+14:47:35.153 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+7. Connection.new Connection returned 
+14:47:35.154 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+7. Connection.isReadOnly() returned false
+14:47:35.154 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+7. Connection.getAutoCommit() returned true
+14:47:35.184 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+8. Connection opened. {executed in 30ms} 
+open connections:  1 2 3 4 5 6 7 8 (8)
+14:47:35.184 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+8. Connection.new Connection returned 
+14:47:35.185 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+8. Connection.isReadOnly() returned false
+14:47:35.185 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+8. Connection.getAutoCommit() returned true
+14:47:35.170 [main] ERROR org.mybatis.spring.mapper.MapperFactoryBean - Error while adding the mapper 'interface kr.jungang.dive.user.persistence.UserMapper' to configuration.
+org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'kr/jungang/dive/user/persistence/UserMapper.xml'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving JdbcType. Cause: java.lang.IllegalArgumentException: No enum constant org.apache.ibatis.type.JdbcType.VARCHAR2
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:122) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:94) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:182) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:129) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:775) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44) ~[spring-tx-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) [spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) [spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:863) [spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) [spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) [spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209) [.cp/:?]
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving JdbcType. Cause: java.lang.IllegalArgumentException: No enum constant org.apache.ibatis.type.JdbcType.VARCHAR2
+	at org.apache.ibatis.builder.BaseBuilder.resolveJdbcType(BaseBuilder.java:73) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.buildParameterMapping(SqlSourceBuilder.java:101) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.handleToken(SqlSourceBuilder.java:67) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.parsing.GenericTokenParser.parse(GenericTokenParser.java:77) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder.parse(SqlSourceBuilder.java:45) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.defaults.RawSqlSource.<init>(RawSqlSource.java:46) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.defaults.RawSqlSource.<init>(RawSqlSource.java:40) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.xmltags.XMLScriptBuilder.parseScriptNode(XMLScriptBuilder.java:72) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.xmltags.XMLLanguageDriver.createSqlSource(XMLLanguageDriver.java:44) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:96) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:137) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:130) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120) ~[mybatis-3.5.3.jar:3.5.3]
+	... 49 more
+Caused by: java.lang.IllegalArgumentException: No enum constant org.apache.ibatis.type.JdbcType.VARCHAR2
+	at java.lang.Enum.valueOf(Enum.java:240) ~[?:?]
+	at org.apache.ibatis.type.JdbcType.valueOf(JdbcType.java:25) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.BaseBuilder.resolveJdbcType(BaseBuilder.java:71) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.buildParameterMapping(SqlSourceBuilder.java:101) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.handleToken(SqlSourceBuilder.java:67) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.parsing.GenericTokenParser.parse(GenericTokenParser.java:77) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder.parse(SqlSourceBuilder.java:45) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.defaults.RawSqlSource.<init>(RawSqlSource.java:46) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.defaults.RawSqlSource.<init>(RawSqlSource.java:40) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.xmltags.XMLScriptBuilder.parseScriptNode(XMLScriptBuilder.java:72) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.xmltags.XMLLanguageDriver.createSqlSource(XMLLanguageDriver.java:44) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:96) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:137) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:130) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120) ~[mybatis-3.5.3.jar:3.5.3]
+	... 49 more
+14:47:35.195 [main] WARN  org.springframework.context.support.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\persistence\UserMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'kr/jungang/dive/user/persistence/UserMapper.xml'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving JdbcType. Cause: java.lang.IllegalArgumentException: No enum constant org.apache.ibatis.type.JdbcType.VARCHAR2
+14:47:35.199 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+1. Connection closed. {executed in 2ms} 
+open connections:  2 3 4 5 6 7 8 (7)
+14:47:35.200 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+1. Connection.close() returned 
+14:47:35.242 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+2. Connection closed. {executed in 42ms} 
+open connections:  3 4 5 6 7 8 (6)
+14:47:35.242 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+2. Connection.close() returned 
+14:47:35.242 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+9. Connection opened. {executed in 57ms} 
+open connections:  3 4 5 6 7 8 9 (7)
+14:47:35.243 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+9. Connection.new Connection returned 
+14:47:35.243 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+9. Connection.isReadOnly() returned false
+14:47:35.243 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+9. Connection.getAutoCommit() returned true
+14:47:35.267 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+3. Connection closed. {executed in 24ms} 
+open connections:  4 5 6 7 8 9 (6)
+14:47:35.267 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+3. Connection.close() returned 
+14:47:35.284 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+4. Connection closed. {executed in 16ms} 
+open connections:  5 6 7 8 9 (5)
+14:47:35.284 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+4. Connection.close() returned 
+14:47:35.301 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+5. Connection closed. {executed in 17ms} 
+open connections:  6 7 8 9 (4)
+14:47:35.301 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+5. Connection.close() returned 
+14:47:35.317 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+6. Connection closed. {executed in 16ms} 
+open connections:  7 8 9 (3)
+14:47:35.318 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+6. Connection.close() returned 
+14:47:35.334 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+7. Connection closed. {executed in 16ms} 
+open connections:  8 9 (2)
+14:47:35.334 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+7. Connection.close() returned 
+14:47:35.351 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+8. Connection closed. {executed in 16ms} 
+open connections:  9 (1)
+14:47:35.351 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+8. Connection.close() returned 
+14:47:35.368 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+9. Connection closed. {executed in 16ms} 
+open connections:  none
+14:47:35.368 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+9. Connection.close() returned 
+14:47:35.372 [main] ERROR org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4b76aa5a] to prepare test instance [kr.jungang.dive.user.UserTests@63a28987]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209) [.cp/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\persistence\UserMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'kr/jungang/dive/user/persistence/UserMapper.xml'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving JdbcType. Cause: java.lang.IllegalArgumentException: No enum constant org.apache.ibatis.type.JdbcType.VARCHAR2
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:863) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 25 more
+Caused by: java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'kr/jungang/dive/user/persistence/UserMapper.xml'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving JdbcType. Cause: java.lang.IllegalArgumentException: No enum constant org.apache.ibatis.type.JdbcType.VARCHAR2
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:83) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44) ~[spring-tx-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:863) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 25 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'kr/jungang/dive/user/persistence/UserMapper.xml'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving JdbcType. Cause: java.lang.IllegalArgumentException: No enum constant org.apache.ibatis.type.JdbcType.VARCHAR2
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:122) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:94) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:182) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:129) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:775) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44) ~[spring-tx-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:863) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 25 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving JdbcType. Cause: java.lang.IllegalArgumentException: No enum constant org.apache.ibatis.type.JdbcType.VARCHAR2
+	at org.apache.ibatis.builder.BaseBuilder.resolveJdbcType(BaseBuilder.java:73) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.buildParameterMapping(SqlSourceBuilder.java:101) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.handleToken(SqlSourceBuilder.java:67) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.parsing.GenericTokenParser.parse(GenericTokenParser.java:77) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder.parse(SqlSourceBuilder.java:45) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.defaults.RawSqlSource.<init>(RawSqlSource.java:46) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.defaults.RawSqlSource.<init>(RawSqlSource.java:40) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.xmltags.XMLScriptBuilder.parseScriptNode(XMLScriptBuilder.java:72) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.xmltags.XMLLanguageDriver.createSqlSource(XMLLanguageDriver.java:44) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:96) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:137) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:130) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:94) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:182) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:129) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:775) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44) ~[spring-tx-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:863) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 25 more
+Caused by: java.lang.IllegalArgumentException: No enum constant org.apache.ibatis.type.JdbcType.VARCHAR2
+	at java.lang.Enum.valueOf(Enum.java:240) ~[?:?]
+	at org.apache.ibatis.type.JdbcType.valueOf(JdbcType.java:25) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.BaseBuilder.resolveJdbcType(BaseBuilder.java:71) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.buildParameterMapping(SqlSourceBuilder.java:101) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.handleToken(SqlSourceBuilder.java:67) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.parsing.GenericTokenParser.parse(GenericTokenParser.java:77) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder.parse(SqlSourceBuilder.java:45) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.defaults.RawSqlSource.<init>(RawSqlSource.java:46) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.defaults.RawSqlSource.<init>(RawSqlSource.java:40) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.xmltags.XMLScriptBuilder.parseScriptNode(XMLScriptBuilder.java:72) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.xmltags.XMLLanguageDriver.createSqlSource(XMLLanguageDriver.java:44) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:96) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:137) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:130) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:94) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:182) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:129) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:775) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44) ~[spring-tx-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:863) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 25 more
+14:51:33.087 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\test\DataSourceTests.class]
+14:51:33.096 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\test\JDBCTests.class]
+14:51:33.096 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\test\MapperTests.class]
+14:51:33.096 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\test\TestMapper.class]
+14:51:33.111 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\user\UserTests.class]
+14:51:33.112 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\domain\UserVO.class]
+14:51:33.112 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\persistence\UserMapper.class]
+14:51:33.228 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization...
+14:51:33.229 [main] DEBUG log4jdbc.debug - Using logger: null
+14:51:33.229 [main] DEBUG log4jdbc.debug - x log4jdbc.debug.stack.prefix is not defined
+14:51:33.229 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.warn.threshold is not defined
+14:51:33.229 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.error.threshold is not defined
+14:51:33.229 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+14:51:33.230 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+14:51:33.230 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+14:51:33.230 [main] DEBUG log4jdbc.debug - x log4jdbc.statement.warn is not defined (using default value false)
+14:51:33.230 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.select is not defined (using default value true)
+14:51:33.230 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.insert is not defined (using default value true)
+14:51:33.230 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.update is not defined (using default value true)
+14:51:33.230 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.delete is not defined (using default value true)
+14:51:33.231 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.create is not defined (using default value true)
+14:51:33.231 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+14:51:33.231 [main] DEBUG log4jdbc.debug - x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+14:51:33.231 [main] DEBUG log4jdbc.debug - x log4jdbc.drivers is not defined
+14:51:33.231 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql is not defined (using default value true)
+14:51:33.231 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+14:51:33.231 [main] DEBUG log4jdbc.debug - x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+14:51:33.232 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization done.
+14:51:33.232 [main] DEBUG log4jdbc.debug - DriverSpy intialization...
+14:51:33.303 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.OracleDriver
+14:51:33.304 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.driver.OracleDriver
+14:51:33.306 [main] DEBUG log4jdbc.debug - DriverSpy intialization done.
+14:51:33.667 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+1. Connection opened. {executed in 323ms} 
+open connections:  1 (1)
+14:51:33.669 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+1. Connection.new Connection returned 
+14:51:33.673 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+1. Connection.isReadOnly() returned false
+14:51:33.673 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+1. Connection.getAutoCommit() returned true
+14:51:33.678 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkValidationSupport(PoolBase.java:458)
+1. Connection.isValid(1) returned true
+14:51:33.679 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkDefaultIsolation(PoolBase.java:479)
+1. Connection.getTransactionIsolation() returned 2
+14:51:33.826 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2. Connection opened. {executed in 40ms} 
+open connections:  1 2 (2)
+14:51:33.827 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2. Connection.new Connection returned 
+14:51:33.828 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2. Connection.isReadOnly() returned false
+14:51:33.828 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+2. Connection.getAutoCommit() returned true
+14:51:33.885 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+3. Connection opened. {executed in 57ms} 
+open connections:  1 2 3 (3)
+14:51:33.886 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+3. Connection.new Connection returned 
+14:51:33.886 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+3. Connection.isReadOnly() returned false
+14:51:33.886 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+3. Connection.getAutoCommit() returned true
+14:51:33.904 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+4. Connection opened. {executed in 18ms} 
+open connections:  1 2 3 4 (4)
+14:51:33.904 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+4. Connection.new Connection returned 
+14:51:33.905 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+4. Connection.isReadOnly() returned false
+14:51:33.905 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+4. Connection.getAutoCommit() returned true
+14:51:33.930 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+5. Connection opened. {executed in 24ms} 
+open connections:  1 2 3 4 5 (5)
+14:51:33.930 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+5. Connection.new Connection returned 
+14:51:33.930 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+5. Connection.isReadOnly() returned false
+14:51:33.930 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+5. Connection.getAutoCommit() returned true
+14:51:33.962 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+6. Connection opened. {executed in 32ms} 
+open connections:  1 2 3 4 5 6 (6)
+14:51:33.962 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+6. Connection.new Connection returned 
+14:51:33.962 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+6. Connection.isReadOnly() returned false
+14:51:33.963 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+6. Connection.getAutoCommit() returned true
+14:51:33.982 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+7. Connection opened. {executed in 19ms} 
+open connections:  1 2 3 4 5 6 7 (7)
+14:51:33.983 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+7. Connection.new Connection returned 
+14:51:33.983 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+7. Connection.isReadOnly() returned false
+14:51:33.983 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+7. Connection.getAutoCommit() returned true
+14:51:34.005 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+8. Connection opened. {executed in 22ms} 
+open connections:  1 2 3 4 5 6 7 8 (8)
+14:51:34.005 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+8. Connection.new Connection returned 
+14:51:34.005 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+8. Connection.isReadOnly() returned false
+14:51:34.006 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+8. Connection.getAutoCommit() returned true
+14:51:34.043 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+9. Connection opened. {executed in 37ms} 
+open connections:  1 2 3 4 5 6 7 8 9 (9)
+14:51:34.043 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+9. Connection.new Connection returned 
+14:51:34.043 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+9. Connection.isReadOnly() returned false
+14:51:34.043 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+9. Connection.getAutoCommit() returned true
+14:51:34.076 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10. Connection opened. {executed in 33ms} 
+open connections:  1 2 3 4 5 6 7 8 9 10 (10)
+14:51:34.077 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10. Connection.new Connection returned 
+14:51:34.077 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+10. Connection.isReadOnly() returned false
+14:51:34.077 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+10. Connection.getAutoCommit() returned true
+14:51:34.080 [main] ERROR org.mybatis.spring.mapper.MapperFactoryBean - Error while adding the mapper 'interface kr.jungang.dive.user.persistence.UserMapper' to configuration.
+org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'kr/jungang/dive/user/persistence/UserMapper.xml'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving JdbcType. Cause: java.lang.IllegalArgumentException: No enum constant org.apache.ibatis.type.JdbcType.VARCHAR2
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:122) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:94) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:182) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:129) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:775) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44) ~[spring-tx-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) [spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) [spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:863) [spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) [spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) [spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209) [.cp/:?]
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving JdbcType. Cause: java.lang.IllegalArgumentException: No enum constant org.apache.ibatis.type.JdbcType.VARCHAR2
+	at org.apache.ibatis.builder.BaseBuilder.resolveJdbcType(BaseBuilder.java:73) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.buildParameterMapping(SqlSourceBuilder.java:101) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.handleToken(SqlSourceBuilder.java:67) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.parsing.GenericTokenParser.parse(GenericTokenParser.java:77) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder.parse(SqlSourceBuilder.java:45) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.defaults.RawSqlSource.<init>(RawSqlSource.java:46) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.defaults.RawSqlSource.<init>(RawSqlSource.java:40) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.xmltags.XMLScriptBuilder.parseScriptNode(XMLScriptBuilder.java:72) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.xmltags.XMLLanguageDriver.createSqlSource(XMLLanguageDriver.java:44) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:96) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:137) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:130) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120) ~[mybatis-3.5.3.jar:3.5.3]
+	... 49 more
+Caused by: java.lang.IllegalArgumentException: No enum constant org.apache.ibatis.type.JdbcType.VARCHAR2
+	at java.lang.Enum.valueOf(Enum.java:240) ~[?:?]
+	at org.apache.ibatis.type.JdbcType.valueOf(JdbcType.java:25) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.BaseBuilder.resolveJdbcType(BaseBuilder.java:71) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.buildParameterMapping(SqlSourceBuilder.java:101) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.handleToken(SqlSourceBuilder.java:67) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.parsing.GenericTokenParser.parse(GenericTokenParser.java:77) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder.parse(SqlSourceBuilder.java:45) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.defaults.RawSqlSource.<init>(RawSqlSource.java:46) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.defaults.RawSqlSource.<init>(RawSqlSource.java:40) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.xmltags.XMLScriptBuilder.parseScriptNode(XMLScriptBuilder.java:72) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.xmltags.XMLLanguageDriver.createSqlSource(XMLLanguageDriver.java:44) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:96) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:137) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:130) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120) ~[mybatis-3.5.3.jar:3.5.3]
+	... 49 more
+14:51:34.098 [main] WARN  org.springframework.context.support.GenericApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\persistence\UserMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'kr/jungang/dive/user/persistence/UserMapper.xml'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving JdbcType. Cause: java.lang.IllegalArgumentException: No enum constant org.apache.ibatis.type.JdbcType.VARCHAR2
+14:51:34.105 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+1. Connection closed. {executed in 2ms} 
+open connections:  2 3 4 5 6 7 8 9 10 (9)
+14:51:34.105 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+1. Connection.close() returned 
+14:51:34.150 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+2. Connection closed. {executed in 45ms} 
+open connections:  3 4 5 6 7 8 9 10 (8)
+14:51:34.150 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+2. Connection.close() returned 
+14:51:34.164 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+3. Connection closed. {executed in 13ms} 
+open connections:  4 5 6 7 8 9 10 (7)
+14:51:34.165 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+3. Connection.close() returned 
+14:51:34.181 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+4. Connection closed. {executed in 16ms} 
+open connections:  5 6 7 8 9 10 (6)
+14:51:34.182 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+4. Connection.close() returned 
+14:51:34.198 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+5. Connection closed. {executed in 16ms} 
+open connections:  6 7 8 9 10 (5)
+14:51:34.198 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+5. Connection.close() returned 
+14:51:34.215 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+6. Connection closed. {executed in 16ms} 
+open connections:  7 8 9 10 (4)
+14:51:34.215 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+6. Connection.close() returned 
+14:51:34.233 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+7. Connection closed. {executed in 18ms} 
+open connections:  8 9 10 (3)
+14:51:34.233 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+7. Connection.close() returned 
+14:51:34.250 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+8. Connection closed. {executed in 17ms} 
+open connections:  9 10 (2)
+14:51:34.251 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+8. Connection.close() returned 
+14:51:34.265 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+9. Connection closed. {executed in 14ms} 
+open connections:  10 (1)
+14:51:34.265 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+9. Connection.close() returned 
+14:51:34.282 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10. Connection closed. {executed in 16ms} 
+open connections:  none
+14:51:34.282 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10. Connection.close() returned 
+14:51:34.286 [main] ERROR org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@36327cec] to prepare test instance [kr.jungang.dive.user.UserTests@410ae5ac]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209) [.cp/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\persistence\UserMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'kr/jungang/dive/user/persistence/UserMapper.xml'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving JdbcType. Cause: java.lang.IllegalArgumentException: No enum constant org.apache.ibatis.type.JdbcType.VARCHAR2
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:863) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 25 more
+Caused by: java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'kr/jungang/dive/user/persistence/UserMapper.xml'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving JdbcType. Cause: java.lang.IllegalArgumentException: No enum constant org.apache.ibatis.type.JdbcType.VARCHAR2
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:83) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44) ~[spring-tx-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:863) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 25 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'kr/jungang/dive/user/persistence/UserMapper.xml'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving JdbcType. Cause: java.lang.IllegalArgumentException: No enum constant org.apache.ibatis.type.JdbcType.VARCHAR2
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:122) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:94) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:182) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:129) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:775) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44) ~[spring-tx-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:863) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 25 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving JdbcType. Cause: java.lang.IllegalArgumentException: No enum constant org.apache.ibatis.type.JdbcType.VARCHAR2
+	at org.apache.ibatis.builder.BaseBuilder.resolveJdbcType(BaseBuilder.java:73) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.buildParameterMapping(SqlSourceBuilder.java:101) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.handleToken(SqlSourceBuilder.java:67) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.parsing.GenericTokenParser.parse(GenericTokenParser.java:77) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder.parse(SqlSourceBuilder.java:45) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.defaults.RawSqlSource.<init>(RawSqlSource.java:46) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.defaults.RawSqlSource.<init>(RawSqlSource.java:40) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.xmltags.XMLScriptBuilder.parseScriptNode(XMLScriptBuilder.java:72) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.xmltags.XMLLanguageDriver.createSqlSource(XMLLanguageDriver.java:44) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:96) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:137) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:130) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:94) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:182) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:129) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:775) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44) ~[spring-tx-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:863) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 25 more
+Caused by: java.lang.IllegalArgumentException: No enum constant org.apache.ibatis.type.JdbcType.VARCHAR2
+	at java.lang.Enum.valueOf(Enum.java:240) ~[?:?]
+	at org.apache.ibatis.type.JdbcType.valueOf(JdbcType.java:25) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.BaseBuilder.resolveJdbcType(BaseBuilder.java:71) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.buildParameterMapping(SqlSourceBuilder.java:101) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder$ParameterMappingTokenHandler.handleToken(SqlSourceBuilder.java:67) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.parsing.GenericTokenParser.parse(GenericTokenParser.java:77) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.SqlSourceBuilder.parse(SqlSourceBuilder.java:45) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.defaults.RawSqlSource.<init>(RawSqlSource.java:46) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.defaults.RawSqlSource.<init>(RawSqlSource.java:40) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.xmltags.XMLScriptBuilder.parseScriptNode(XMLScriptBuilder.java:72) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.scripting.xmltags.XMLLanguageDriver.createSqlSource(XMLLanguageDriver.java:44) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:96) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:137) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:130) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:94) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:182) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:129) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:775) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44) ~[spring-tx-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:863) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 25 more
+14:51:50.770 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\test\DataSourceTests.class]
+14:51:50.778 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\test\JDBCTests.class]
+14:51:50.778 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\test\MapperTests.class]
+14:51:50.779 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\test\TestMapper.class]
+14:51:50.794 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\user\UserTests.class]
+14:51:50.795 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\domain\UserVO.class]
+14:51:50.795 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\persistence\UserMapper.class]
+14:51:50.895 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization...
+14:51:50.896 [main] DEBUG log4jdbc.debug - Using logger: null
+14:51:50.896 [main] DEBUG log4jdbc.debug - x log4jdbc.debug.stack.prefix is not defined
+14:51:50.896 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.warn.threshold is not defined
+14:51:50.896 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.error.threshold is not defined
+14:51:50.896 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+14:51:50.896 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+14:51:50.897 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+14:51:50.897 [main] DEBUG log4jdbc.debug - x log4jdbc.statement.warn is not defined (using default value false)
+14:51:50.897 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.select is not defined (using default value true)
+14:51:50.897 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.insert is not defined (using default value true)
+14:51:50.897 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.update is not defined (using default value true)
+14:51:50.897 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.delete is not defined (using default value true)
+14:51:50.897 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.create is not defined (using default value true)
+14:51:50.897 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+14:51:50.898 [main] DEBUG log4jdbc.debug - x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+14:51:50.898 [main] DEBUG log4jdbc.debug - x log4jdbc.drivers is not defined
+14:51:50.898 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql is not defined (using default value true)
+14:51:50.898 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+14:51:50.898 [main] DEBUG log4jdbc.debug - x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+14:51:50.898 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization done.
+14:51:50.898 [main] DEBUG log4jdbc.debug - DriverSpy intialization...
+14:51:50.971 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.OracleDriver
+14:51:50.971 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.driver.OracleDriver
+14:51:50.974 [main] DEBUG log4jdbc.debug - DriverSpy intialization done.
+14:51:51.329 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+1. Connection opened. {executed in 320ms} 
+open connections:  1 (1)
+14:51:51.330 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+1. Connection.new Connection returned 
+14:51:51.333 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+1. Connection.isReadOnly() returned false
+14:51:51.333 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+1. Connection.getAutoCommit() returned true
+14:51:51.336 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkValidationSupport(PoolBase.java:458)
+1. Connection.isValid(1) returned true
+14:51:51.336 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkDefaultIsolation(PoolBase.java:479)
+1. Connection.getTransactionIsolation() returned 2
+14:51:51.473 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2. Connection opened. {executed in 31ms} 
+open connections:  1 2 (2)
+14:51:51.474 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2. Connection.new Connection returned 
+14:51:51.474 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2. Connection.isReadOnly() returned false
+14:51:51.474 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+2. Connection.getAutoCommit() returned true
+14:51:51.509 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+3. Connection opened. {executed in 34ms} 
+open connections:  1 2 3 (3)
+14:51:51.516 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+3. Connection.new Connection returned 
+14:51:51.516 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+3. Connection.isReadOnly() returned false
+14:51:51.516 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+3. Connection.getAutoCommit() returned true
+14:51:51.573 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+4. Connection opened. {executed in 57ms} 
+open connections:  1 2 3 4 (4)
+14:51:51.573 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+4. Connection.new Connection returned 
+14:51:51.573 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+4. Connection.isReadOnly() returned false
+14:51:51.574 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+4. Connection.getAutoCommit() returned true
+14:51:51.604 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+5. Connection opened. {executed in 30ms} 
+open connections:  1 2 3 4 5 (5)
+14:51:51.604 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+5. Connection.new Connection returned 
+14:51:51.604 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+5. Connection.isReadOnly() returned false
+14:51:51.605 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+5. Connection.getAutoCommit() returned true
+14:51:51.623 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+6. Connection opened. {executed in 18ms} 
+open connections:  1 2 3 4 5 6 (6)
+14:51:51.623 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+6. Connection.new Connection returned 
+14:51:51.624 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+6. Connection.isReadOnly() returned false
+14:51:51.624 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+6. Connection.getAutoCommit() returned true
+14:51:51.641 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+7. Connection opened. {executed in 17ms} 
+open connections:  1 2 3 4 5 6 7 (7)
+14:51:51.641 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+7. Connection.new Connection returned 
+14:51:51.641 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+7. Connection.isReadOnly() returned false
+14:51:51.641 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+7. Connection.getAutoCommit() returned true
+14:51:51.659 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+8. Connection opened. {executed in 18ms} 
+open connections:  1 2 3 4 5 6 7 8 (8)
+14:51:51.660 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+8. Connection.new Connection returned 
+14:51:51.660 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+8. Connection.isReadOnly() returned false
+14:51:51.660 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+8. Connection.getAutoCommit() returned true
+14:51:51.682 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+9. Connection opened. {executed in 22ms} 
+open connections:  1 2 3 4 5 6 7 8 9 (9)
+14:51:51.683 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+9. Connection.new Connection returned 
+14:51:51.683 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+9. Connection.isReadOnly() returned false
+14:51:51.683 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+9. Connection.getAutoCommit() returned true
+14:51:51.702 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10. Connection opened. {executed in 19ms} 
+open connections:  1 2 3 4 5 6 7 8 9 10 (10)
+14:51:51.702 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10. Connection.new Connection returned 
+14:51:51.703 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+10. Connection.isReadOnly() returned false
+14:51:51.703 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+10. Connection.getAutoCommit() returned true
+14:51:51.809 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyConnection.getAutoCommit(HikariProxyConnection.java:-1)
+1. Connection.getAutoCommit() returned true
+14:51:51.962 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+1. PreparedStatement.new PreparedStatement returned 
+14:51:51.963 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+1. Connection.prepareStatement(SELECT SEQ_USER.NEXTVAL FROM DUAL) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@6801b414
+14:51:52.036 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT SEQ_USER.NEXTVAL FROM DUAL  {executed in 68 ms}
+14:51:52.037 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. PreparedStatement.execute() returned true
+14:51:52.048 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyStatement.getResultSet(ProxyStatement.java:214)
+1. ResultSet.new ResultSet returned 
+14:51:52.049 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyStatement.getResultSet(ProxyStatement.java:214)
+1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@772caabe
+14:51:52.056 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getMetaData(HikariProxyResultSet.java:-1)
+1. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@1acb74ad
+14:51:52.057 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getType(HikariProxyResultSet.java:-1)
+1. ResultSet.getType() returned 1003
+14:51:52.058 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.isClosed(HikariProxyResultSet.java:-1)
+1. ResultSet.isClosed() returned false
+14:51:52.058 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.next(HikariProxyResultSet.java:-1)
+1. ResultSet.next() returned true
+14:51:52.061 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getLong(HikariProxyResultSet.java:-1)
+1. ResultSet.getLong(NEXTVAL) returned 4
+14:51:52.062 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.isClosed(HikariProxyResultSet.java:-1)
+1. ResultSet.isClosed() returned false
+14:51:52.063 [main] INFO  log4jdbc.log4j2 - 
+|--------|
+|nextval |
+|--------|
+|4       |
+|--------|
+
+14:51:52.063 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.next(HikariProxyResultSet.java:-1)
+1. ResultSet.next() returned false
+14:51:52.063 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.close(HikariProxyResultSet.java:-1)
+1. ResultSet.close() returned void
+14:51:52.064 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.getMetaData(ProxyConnection.java:380)
+1. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@75b6dd5b
+14:51:52.069 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyStatement.close(ProxyStatement.java:76)
+1. PreparedStatement.close() returned 
+14:51:52.070 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+1. PreparedStatement.new PreparedStatement returned 
+14:51:52.071 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+1. Connection.prepareStatement(INSERT INTO TBL_USER
+		(user_num, id, password, name, sex, birthday, address, phone, email)
+		
+		VALUES(?,?,?,?,?,
+		?,?,?,?)) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@21a9a705
+14:51:52.072 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setLong(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setLong(1, 4) returned 
+14:51:52.074 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setString(2, "TEST") returned 
+14:51:52.074 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setString(3, "TEST") returned 
+14:51:52.074 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setNull(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setNull(4, 12) returned 
+14:51:52.076 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setString(5, " ") returned 
+14:51:52.077 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setString(6, " ") returned 
+14:51:52.077 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setNull(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setNull(7, 12) returned 
+14:51:52.078 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setNull(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setNull(8, 12) returned 
+14:51:52.078 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setNull(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setNull(9, 12) returned 
+14:51:52.093 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. INSERT INTO TBL_USER (user_num, id, password, name, sex, birthday, address, phone, email) VALUES(4,'TEST','TEST',NULL,' ', 
+' ',NULL,NULL,NULL)  {executed in 15 ms}
+14:51:52.093 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. PreparedStatement.execute() returned false
+14:51:52.094 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.getUpdateCount(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.getUpdateCount() returned 1
+14:51:52.095 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyStatement.close(ProxyStatement.java:76)
+1. PreparedStatement.close() returned 
+14:51:52.100 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:267)
+1. Connection.clearWarnings() returned 
+14:51:52.133 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+1. Connection closed. {executed in 7ms} 
+open connections:  2 3 4 5 6 7 8 9 10 (9)
+14:51:52.134 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+1. Connection.close() returned 
+14:51:52.160 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+2. Connection closed. {executed in 26ms} 
+open connections:  3 4 5 6 7 8 9 10 (8)
+14:51:52.161 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+2. Connection.close() returned 
+14:51:52.162 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+3. Connection closed. {executed in 1ms} 
+open connections:  4 5 6 7 8 9 10 (7)
+14:51:52.163 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+3. Connection.close() returned 
+14:51:52.187 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+4. Connection closed. {executed in 24ms} 
+open connections:  5 6 7 8 9 10 (6)
+14:51:52.187 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+4. Connection.close() returned 
+14:51:52.202 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+5. Connection closed. {executed in 15ms} 
+open connections:  6 7 8 9 10 (5)
+14:51:52.202 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+5. Connection.close() returned 
+14:51:52.221 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+6. Connection closed. {executed in 19ms} 
+open connections:  7 8 9 10 (4)
+14:51:52.222 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+6. Connection.close() returned 
+14:51:52.235 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+7. Connection closed. {executed in 13ms} 
+open connections:  8 9 10 (3)
+14:51:52.236 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+7. Connection.close() returned 
+14:51:52.252 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+8. Connection closed. {executed in 16ms} 
+open connections:  9 10 (2)
+14:51:52.252 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+8. Connection.close() returned 
+14:51:52.269 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+9. Connection closed. {executed in 16ms} 
+open connections:  10 (1)
+14:51:52.269 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+9. Connection.close() returned 
+14:51:52.286 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10. Connection closed. {executed in 16ms} 
+open connections:  none
+14:51:52.286 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10. Connection.close() returned 
+14:58:08.141 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\test\DataSourceTests.class]
+14:58:08.149 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\test\JDBCTests.class]
+14:58:08.149 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\test\MapperTests.class]
+14:58:08.149 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\test\TestMapper.class]
+14:58:08.164 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\user\UserTests.class]
+14:58:08.165 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\domain\UserVO.class]
+14:58:08.165 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\persistence\UserMapper.class]
+14:58:08.261 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization...
+14:58:08.261 [main] DEBUG log4jdbc.debug - Using logger: null
+14:58:08.262 [main] DEBUG log4jdbc.debug - x log4jdbc.debug.stack.prefix is not defined
+14:58:08.262 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.warn.threshold is not defined
+14:58:08.262 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.error.threshold is not defined
+14:58:08.262 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+14:58:08.262 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+14:58:08.262 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+14:58:08.263 [main] DEBUG log4jdbc.debug - x log4jdbc.statement.warn is not defined (using default value false)
+14:58:08.263 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.select is not defined (using default value true)
+14:58:08.263 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.insert is not defined (using default value true)
+14:58:08.263 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.update is not defined (using default value true)
+14:58:08.263 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.delete is not defined (using default value true)
+14:58:08.263 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.create is not defined (using default value true)
+14:58:08.263 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+14:58:08.264 [main] DEBUG log4jdbc.debug - x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+14:58:08.264 [main] DEBUG log4jdbc.debug - x log4jdbc.drivers is not defined
+14:58:08.264 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql is not defined (using default value true)
+14:58:08.264 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+14:58:08.264 [main] DEBUG log4jdbc.debug - x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+14:58:08.264 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization done.
+14:58:08.264 [main] DEBUG log4jdbc.debug - DriverSpy intialization...
+14:58:08.344 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.OracleDriver
+14:58:08.345 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.driver.OracleDriver
+14:58:08.347 [main] DEBUG log4jdbc.debug - DriverSpy intialization done.
+14:58:08.720 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+1. Connection opened. {executed in 338ms} 
+open connections:  1 (1)
+14:58:08.721 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+1. Connection.new Connection returned 
+14:58:08.724 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+1. Connection.isReadOnly() returned false
+14:58:08.724 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+1. Connection.getAutoCommit() returned true
+14:58:08.727 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkValidationSupport(PoolBase.java:458)
+1. Connection.isValid(1) returned true
+14:58:08.727 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkDefaultIsolation(PoolBase.java:479)
+1. Connection.getTransactionIsolation() returned 2
+14:58:08.863 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2. Connection opened. {executed in 26ms} 
+open connections:  1 2 (2)
+14:58:08.864 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2. Connection.new Connection returned 
+14:58:08.864 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2. Connection.isReadOnly() returned false
+14:58:08.864 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+2. Connection.getAutoCommit() returned true
+14:58:08.900 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+3. Connection opened. {executed in 35ms} 
+open connections:  1 2 3 (3)
+14:58:08.901 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+3. Connection.new Connection returned 
+14:58:08.901 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+3. Connection.isReadOnly() returned false
+14:58:08.901 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+3. Connection.getAutoCommit() returned true
+14:58:08.924 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+4. Connection opened. {executed in 23ms} 
+open connections:  1 2 3 4 (4)
+14:58:08.924 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+4. Connection.new Connection returned 
+14:58:08.924 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+4. Connection.isReadOnly() returned false
+14:58:08.924 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+4. Connection.getAutoCommit() returned true
+14:58:08.975 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+5. Connection opened. {executed in 50ms} 
+open connections:  1 2 3 4 5 (5)
+14:58:08.975 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+5. Connection.new Connection returned 
+14:58:08.975 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+5. Connection.isReadOnly() returned false
+14:58:08.975 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+5. Connection.getAutoCommit() returned true
+14:58:09.002 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+6. Connection opened. {executed in 26ms} 
+open connections:  1 2 3 4 5 6 (6)
+14:58:09.002 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+6. Connection.new Connection returned 
+14:58:09.003 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+6. Connection.isReadOnly() returned false
+14:58:09.003 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+6. Connection.getAutoCommit() returned true
+14:58:09.020 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+7. Connection opened. {executed in 17ms} 
+open connections:  1 2 3 4 5 6 7 (7)
+14:58:09.021 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+7. Connection.new Connection returned 
+14:58:09.021 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+7. Connection.isReadOnly() returned false
+14:58:09.021 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+7. Connection.getAutoCommit() returned true
+14:58:09.082 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+8. Connection opened. {executed in 61ms} 
+open connections:  1 2 3 4 5 6 7 8 (8)
+14:58:09.082 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+8. Connection.new Connection returned 
+14:58:09.086 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+8. Connection.isReadOnly() returned false
+14:58:09.087 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+8. Connection.getAutoCommit() returned true
+14:58:09.314 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+9. Connection opened. {executed in 227ms} 
+open connections:  1 2 3 4 5 6 7 8 9 (9)
+14:58:09.314 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+9. Connection.new Connection returned 
+14:58:09.314 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+9. Connection.isReadOnly() returned false
+14:58:09.314 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+9. Connection.getAutoCommit() returned true
+14:58:09.322 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:161)
+1. Connection.isValid(5) returned true
+14:58:09.326 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyConnection.getAutoCommit(HikariProxyConnection.java:-1)
+1. Connection.getAutoCommit() returned true
+14:58:09.472 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10. Connection opened. {executed in 157ms} 
+open connections:  1 2 3 4 5 6 7 8 9 10 (10)
+14:58:09.472 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10. Connection.new Connection returned 
+14:58:09.473 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+10. Connection.isReadOnly() returned false
+14:58:09.473 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+10. Connection.getAutoCommit() returned true
+14:58:09.542 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+1. PreparedStatement.new PreparedStatement returned 
+14:58:09.543 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+1. Connection.prepareStatement(SELECT SEQ_USER.NEXTVAL FROM DUAL) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@5b5a4aed
+14:58:09.615 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT SEQ_USER.NEXTVAL FROM DUAL  {executed in 66 ms}
+14:58:09.616 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. PreparedStatement.execute() returned true
+14:58:09.630 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyStatement.getResultSet(ProxyStatement.java:214)
+1. ResultSet.new ResultSet returned 
+14:58:09.630 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyStatement.getResultSet(ProxyStatement.java:214)
+1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@3c0e00a8
+14:58:09.637 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getMetaData(HikariProxyResultSet.java:-1)
+1. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@769bd849
+14:58:09.638 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getType(HikariProxyResultSet.java:-1)
+1. ResultSet.getType() returned 1003
+14:58:09.639 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.isClosed(HikariProxyResultSet.java:-1)
+1. ResultSet.isClosed() returned false
+14:58:09.639 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.next(HikariProxyResultSet.java:-1)
+1. ResultSet.next() returned true
+14:58:09.642 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getLong(HikariProxyResultSet.java:-1)
+1. ResultSet.getLong(NEXTVAL) returned 5
+14:58:09.642 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.isClosed(HikariProxyResultSet.java:-1)
+1. ResultSet.isClosed() returned false
+14:58:09.644 [main] INFO  log4jdbc.log4j2 - 
+|--------|
+|nextval |
+|--------|
+|5       |
+|--------|
+
+14:58:09.644 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.next(HikariProxyResultSet.java:-1)
+1. ResultSet.next() returned false
+14:58:09.645 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.close(HikariProxyResultSet.java:-1)
+1. ResultSet.close() returned void
+14:58:09.646 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.getMetaData(ProxyConnection.java:380)
+1. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@5a97b17c
+14:58:09.651 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyStatement.close(ProxyStatement.java:76)
+1. PreparedStatement.close() returned 
+14:58:09.652 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+1. PreparedStatement.new PreparedStatement returned 
+14:58:09.653 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+1. Connection.prepareStatement(INSERT INTO TBL_USER
+		(user_num, id, password, name, sex, birthday, address, phone, email)
+		
+		VALUES(?,?,?,?,?,
+		?,?,?,?)) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@5d3ff859
+14:58:09.656 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setLong(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setLong(1, 5) returned 
+14:58:09.657 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setString(2, "TEST") returned 
+14:58:09.658 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setString(3, "TEST") returned 
+14:58:09.658 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setNull(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setNull(4, 12) returned 
+14:58:09.659 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setString(5, " ") returned 
+14:58:09.659 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setString(6, " ") returned 
+14:58:09.659 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setNull(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setNull(7, 12) returned 
+14:58:09.659 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setNull(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setNull(8, 12) returned 
+14:58:09.660 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setNull(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.setNull(9, 12) returned 
+14:58:09.661 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. INSERT INTO TBL_USER (user_num, id, password, name, sex, birthday, address, phone, email) VALUES(5,'TEST','TEST',NULL,' ', 
+' ',NULL,NULL,NULL)  {executed in 1 ms}
+14:58:09.662 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. PreparedStatement.execute() returned false
+14:58:09.663 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.getUpdateCount(HikariProxyPreparedStatement.java:-1)
+1. PreparedStatement.getUpdateCount() returned 1
+14:58:09.663 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyStatement.close(ProxyStatement.java:76)
+1. PreparedStatement.close() returned 
+14:58:09.669 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:267)
+1. Connection.clearWarnings() returned 
+14:58:09.693 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+1. Connection closed. {executed in 3ms} 
+open connections:  2 3 4 5 6 7 8 9 10 (9)
+14:58:09.694 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+1. Connection.close() returned 
+14:58:09.733 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+2. Connection closed. {executed in 39ms} 
+open connections:  3 4 5 6 7 8 9 10 (8)
+14:58:09.733 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+2. Connection.close() returned 
+14:58:09.750 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+3. Connection closed. {executed in 16ms} 
+open connections:  4 5 6 7 8 9 10 (7)
+14:58:09.750 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+3. Connection.close() returned 
+14:58:09.768 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+4. Connection closed. {executed in 18ms} 
+open connections:  5 6 7 8 9 10 (6)
+14:58:09.769 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+4. Connection.close() returned 
+14:58:09.783 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+5. Connection closed. {executed in 14ms} 
+open connections:  6 7 8 9 10 (5)
+14:58:09.784 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+5. Connection.close() returned 
+14:58:09.800 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+6. Connection closed. {executed in 16ms} 
+open connections:  7 8 9 10 (4)
+14:58:09.800 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+6. Connection.close() returned 
+14:58:09.817 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+7. Connection closed. {executed in 16ms} 
+open connections:  8 9 10 (3)
+14:58:09.817 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+7. Connection.close() returned 
+14:58:09.850 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+8. Connection closed. {executed in 33ms} 
+open connections:  9 10 (2)
+14:58:09.851 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+8. Connection.close() returned 
+14:58:09.867 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+9. Connection closed. {executed in 16ms} 
+open connections:  10 (1)
+14:58:09.867 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+9. Connection.close() returned 
+14:58:09.884 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10. Connection closed. {executed in 17ms} 
+open connections:  none
+14:58:09.884 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10. Connection.close() returned 
