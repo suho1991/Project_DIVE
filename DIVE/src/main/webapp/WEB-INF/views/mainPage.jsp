@@ -46,7 +46,6 @@
 			<ul class="navbar_icons">
 				<sec:authentication property="principal" var="principal" />
 				<li><a href="/chat/intro">채팅</a></li>
-				<li><a href="/user/userLogout">Logout</a></li>
 				<!-- 스프링 시큐리티 principal 가져오는 라이브러리 선언
 		security > domain > CustomUser.java에 선언된 field를 불러온다. -->
 				<sec:authentication property="principal" var="principal" />
@@ -56,6 +55,13 @@
 						<a class='move' href='${principal.username}'> <sec:authentication
 								property="principal.user.userId" />
 						</a>
+					</form>
+				</li>
+				<li>
+					<form action="/user/userLogout" method="POST">
+						<input type="hidden" name="${_csrf.parameterName}"
+							value="${_csrf.token}" />
+						<input type="submit" value="Logout" />
 					</form>
 				</li>
 			</ul>

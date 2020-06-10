@@ -15,7 +15,7 @@ public interface UserMapper {
 	//아이디로 정보 조회
 	public UserDTO findById(String userId);
 	
-	//정보 수정
+	//정보 수정, UPDATE 성공 시 return 1, 실패 시 return 0
 	public boolean updateUser(UserDTO updateUser);
 	
 	//권한 부여
@@ -28,7 +28,7 @@ public interface UserMapper {
 	public UserDTO findMyId(@Param("name") String name, @Param("email") String email);
 	
 	//PASSWORD 변경
-	public UserDTO changePassword(@Param("password") String password, @Param("userId") String userId);
+	public boolean changePassword(@Param("password") String password, @Param("userId") String userId);
 	
 	//회원 리스트(only Admin)
 	public List<UserDTO> getAllMember();
@@ -37,5 +37,5 @@ public interface UserMapper {
 	public List<UserDTO> getAllMemberWithPaging(Criteria driteria);
 	
 	//회원 상태 처리(only Admin)
-	public UserDTO updateMemberStatus(UserDTO memberStatus);
+	public boolean updateMemberStatus(UserDTO memberStatus);
 }

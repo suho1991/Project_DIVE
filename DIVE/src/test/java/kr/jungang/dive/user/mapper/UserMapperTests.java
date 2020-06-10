@@ -118,4 +118,15 @@ public class UserMapperTests {
 		}
 	}
 	*/
+	
+	@Test 
+	public void test_08_changePassword() {
+		try {
+			String password = pwEncoder.encode("dlwogns2180");
+			userMapper.changePassword(password, "devcolton");
+			log.info("수정완료");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }

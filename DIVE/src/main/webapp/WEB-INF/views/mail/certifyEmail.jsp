@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>아이디 찾기</title>
+<title>인증 페이지</title>
 <link rel="stylesheet" href="/resources/css/findMyId.css">
 <script src="/resources/js/findMyId.js"></script>
 </head>

@@ -95,7 +95,7 @@ public class UserController {
 	@PostMapping("/changePassword")
 	public String changePassword(UserDTO userDTO, RedirectAttributes rttr) {
 		String password = pwEncoder.encode(userDTO.getPassword());
-		userService.changePassword(userDTO.getUserId(), password);
+		userService.changePassword(password, userDTO.getUserId());
 		rttr.addFlashAttribute("result", password);
 		return "user/userLogin";
 	}

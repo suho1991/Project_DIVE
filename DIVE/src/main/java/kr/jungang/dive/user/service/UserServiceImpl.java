@@ -45,7 +45,7 @@ public class UserServiceImpl implements UserService {
 	}
 	
 	@Override
-	public UserDTO changePassword(String password, String userId) {
+	public boolean changePassword(String password, String userId) {
 		return userMapper.changePassword(password, userId);
 	}
 	
@@ -55,7 +55,7 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public UserDTO updateMemberStatus(UserDTO memberStatus) {
+	public boolean updateMemberStatus(UserDTO memberStatus) {
 		return userMapper.updateMemberStatus(memberStatus);
 	}
 }
