@@ -35,8 +35,8 @@
 			<h1>DIVE</h1>
 		</div>
 		<ul class="navbar_menu">
-			<li><a href="/product/list">PRODUCT</a></li>
-			<li><a href="/board/list">BOARD</a></li>
+			<li><a href="#">PRODUCT</a></li>
+			<li><a href="./board.html">QnA</a></li>
 			<li><a href="/chat/intro">CHAT</a></li>
 			<li><a href="#">CORPORATION</a></li>
 		</ul>

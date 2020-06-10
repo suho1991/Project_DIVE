@@ -1,6 +1,7 @@
 package kr.jungang.dive.user.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -35,7 +36,7 @@ public class UserController {
 		model.addAttribute("member", userService.getAllMember());
 		return "user/adminPage";
 	}
-	
+
 	@PostMapping("/adminPage")
 	public String updateMemberStatus(UserDTO memberStatus) {
 		userService.updateMemberStatus(memberStatus);
@@ -53,7 +54,7 @@ public class UserController {
 		createUser.setPassword(pwEncoder.encode(createUser.getPassword()));
 		userService.createUser(createUser);
 		rttr.addFlashAttribute("result", createUser.getUserId());
-		return "redirect:/";
+		return "redirect:/user/userLogin";
 	}
 
 	@PreAuthorize("isAuthenticated()") // 인증 된 상태일 때 연결해 줄 것
@@ -73,9 +74,29 @@ public class UserController {
 	public String updateUser(UserDTO updateUser, RedirectAttributes rttr) {
 		userService.updateUser(updateUser);
 		rttr.addFlashAttribute("result", updateUser.getUserId());
-		return "redirect:/";
+		return "redirect:/user/myPage";
+	}
+
+	@GetMapping("/findMyId")
+	public void findMyId() {
+		log.info("아이디 찾기");
+	}
+
+	@PostMapping("/findMyId")
+	public void findMyId(UserDTO userDTO, Model model) {
+		model.addAttribute("user", userService.findMyId(userDTO.getName(), userDTO.getEmail()));
 	}
 	
-	
-	
+	@GetMapping("/changePassword")
+	public void changePassword() {
+		log.info("아이디 찾기");
+	}
+
+	@PostMapping("/changePassword")
+	public String changePassword(UserDTO userDTO, RedirectAttributes rttr) {
+		String password = pwEncoder.encode(userDTO.getPassword());
+		userService.changePassword(password, userDTO.getUserId());
+		rttr.addFlashAttribute("result", password);
+		return "user/userLogin";
+	}
 }
