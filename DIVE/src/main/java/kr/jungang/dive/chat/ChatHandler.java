@@ -31,7 +31,7 @@ public class ChatHandler extends TextWebSocketHandler {
 		log.info("{}로 부터 {} 받음", session.getId(), message.getPayload());
 		//전송된 메시지 List를 모든 세션에 전송(브로드 캐스팅)
 		for(WebSocketSession webSocketSession : sessionList) {
-			webSocketSession.sendMessage(new TextMessage( name + ": " + msg));
+			webSocketSession.sendMessage(new TextMessage( name + ":" + msg));
 		}
 		System.out.println("handleTextMessage: " + session + ":" + message);
 	}

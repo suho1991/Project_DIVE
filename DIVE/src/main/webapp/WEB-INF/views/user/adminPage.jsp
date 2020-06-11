@@ -31,16 +31,16 @@
 				<c:forEach items="${member}" var="member">
 					<tr>
 						<td><c:out value="${member.id}"></c:out></td>
-						<td><c:out value="${member.userId}"></c:out></td>
+						<td class="userIdTd"><c:out value="${member.userId}"></c:out></td>
 						<td><c:out value="${member.name}"></c:out></td>
 						<td><c:out value="${member.nickName}"></c:out></td>
 						<td><c:out value="${member.email}"></c:out></td>
 						<td><fmt:formatDate pattern="yyyy-MM-dd"
 								value="${member.regDate}"></fmt:formatDate></td>
-						<td><label>활 성</label><input type="radio" name="select"
+						<td><label>활 성</label><input type="radio" name="select${member.id}"
 							value="true"
 							<c:if test="${member.enabled eq 'true'}">checked="checked"</c:if> />
-							<label>비활성</label><input type="radio" name="select" value="false"
+							<label>비활성</label><input type="radio" name="select${member.id}" value="false"
 							<c:if test="${member.enabled eq 'false'}">checked="checked"</c:if> />
 						</td>
 						<td><button class="modify" type="submit">등록</button></td>
@@ -48,6 +48,12 @@
 				</c:forEach>
 			</tbody>
 		</table>
+	</div>
+	<div>
+		<form id="actionForm" method="post">
+			<input type="hidden" name="${_csrf.parameterName}"
+								value="${_csrf.token}" />
+		</form>
 	</div>
 <%@ include file="../include/footer.jsp" %>
 <script src="/resources/js/adminPage.js"></script>
