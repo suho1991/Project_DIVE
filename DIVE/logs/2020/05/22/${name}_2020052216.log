@@ -1,0 +1,315 @@
+16:51:55.458 [main] ERROR org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@19f9d595] to prepare test instance [kr.jungang.dive.user.UserMapperTests@7de4a01f]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209) [.cp/:?]
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from URL [file:src/main/webapp/WEB-INF/spring/appServlet/security-context.xml]; nested exception is java.io.FileNotFoundException: src\main\webapp\WEB-INF\spring\appServlet\security-context.xml (지정된 파일을 찾을 수 없습니다)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:340) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:305) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:195) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:257) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:257) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:124) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 25 more
+Caused by: java.io.FileNotFoundException: src\main\webapp\WEB-INF\spring\appServlet\security-context.xml (지정된 파일을 찾을 수 없습니다)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:219) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:157) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:112) ~[?:?]
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86) ~[?:?]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184) ~[?:?]
+	at org.springframework.core.io.UrlResource.getInputStream(UrlResource.java:173) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:331) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:305) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:195) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:257) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:257) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:124) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 25 more
+16:54:18.984 [main] ERROR org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@433e536f] to prepare test instance [kr.jungang.dive.user.UserMapperTests@89c65d5]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209) [.cp/:?]
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from URL [file:src/main/webapp/WEB-INF/security-context.xml]; nested exception is java.io.FileNotFoundException: src\main\webapp\WEB-INF\security-context.xml (지정된 파일을 찾을 수 없습니다)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:340) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:305) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:195) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:257) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:257) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:124) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 25 more
+Caused by: java.io.FileNotFoundException: src\main\webapp\WEB-INF\security-context.xml (지정된 파일을 찾을 수 없습니다)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:219) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:157) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:112) ~[?:?]
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86) ~[?:?]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184) ~[?:?]
+	at org.springframework.core.io.UrlResource.getInputStream(UrlResource.java:173) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:331) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:305) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:195) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:257) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:257) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:124) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 25 more
+16:54:55.390 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\test\DataSourceTests.class]
+16:54:55.397 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\test\JDBCTests.class]
+16:54:55.398 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\test\MapperTests.class]
+16:54:55.398 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\test\TestMapper.class]
+16:54:55.411 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\security\ForUserDetailsService.class]
+16:54:55.412 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\security\UserAccessDeniedHandler.class]
+16:54:55.412 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\security\UserLoginSuccessHandler.class]
+16:54:55.412 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\security\controller\SecurityController.class]
+16:54:55.413 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\security\domain\CustomUser.class]
+16:54:55.417 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\user\UserMapperTests.class]
+16:54:55.417 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\controller\UserController.class]
+16:54:55.418 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\domain\AuthorityVO.class]
+16:54:55.418 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\domain\UserVO.class]
+16:54:55.418 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\persistence\UserMapper.class]
+16:54:55.418 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\service\UserService.class]
+16:54:55.419 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\service\UserServiceImpl.class]
+16:54:55.529 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization...
+16:54:55.529 [main] DEBUG log4jdbc.debug - Using logger: null
+16:54:55.529 [main] DEBUG log4jdbc.debug - x log4jdbc.debug.stack.prefix is not defined
+16:54:55.529 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.warn.threshold is not defined
+16:54:55.529 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.error.threshold is not defined
+16:54:55.530 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+16:54:55.530 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+16:54:55.530 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+16:54:55.530 [main] DEBUG log4jdbc.debug - x log4jdbc.statement.warn is not defined (using default value false)
+16:54:55.530 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.select is not defined (using default value true)
+16:54:55.530 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.insert is not defined (using default value true)
+16:54:55.530 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.update is not defined (using default value true)
+16:54:55.530 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.delete is not defined (using default value true)
+16:54:55.531 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.create is not defined (using default value true)
+16:54:55.531 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+16:54:55.531 [main] DEBUG log4jdbc.debug - x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+16:54:55.531 [main] DEBUG log4jdbc.debug - x log4jdbc.drivers is not defined
+16:54:55.531 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql is not defined (using default value true)
+16:54:55.531 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+16:54:55.532 [main] DEBUG log4jdbc.debug - x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+16:54:55.532 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization done.
+16:54:55.533 [main] DEBUG log4jdbc.debug - DriverSpy intialization...
+16:54:55.595 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.OracleDriver
+16:54:55.595 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.driver.OracleDriver
+16:54:55.598 [main] DEBUG log4jdbc.debug - DriverSpy intialization done.
+16:54:55.973 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+1. Connection opened. {executed in 342ms} 
+open connections:  1 (1)
+16:54:55.974 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+1. Connection.new Connection returned 
+16:54:55.977 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+1. Connection.isReadOnly() returned false
+16:54:55.978 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+1. Connection.getAutoCommit() returned true
+16:54:55.981 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkValidationSupport(PoolBase.java:458)
+1. Connection.isValid(1) returned true
+16:54:55.983 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkDefaultIsolation(PoolBase.java:479)
+1. Connection.getTransactionIsolation() returned 2
+16:54:56.127 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2. Connection opened. {executed in 29ms} 
+open connections:  1 2 (2)
+16:54:56.128 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2. Connection.new Connection returned 
+16:54:56.128 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2. Connection.isReadOnly() returned false
+16:54:56.128 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+2. Connection.getAutoCommit() returned true
+16:54:56.163 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+3. Connection opened. {executed in 34ms} 
+open connections:  1 2 3 (3)
+16:54:56.163 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+3. Connection.new Connection returned 
+16:54:56.163 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+3. Connection.isReadOnly() returned false
+16:54:56.163 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+3. Connection.getAutoCommit() returned true
+16:54:56.194 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+4. Connection opened. {executed in 30ms} 
+open connections:  1 2 3 4 (4)
+16:54:56.194 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+4. Connection.new Connection returned 
+16:54:56.194 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+4. Connection.isReadOnly() returned false
+16:54:56.194 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+4. Connection.getAutoCommit() returned true
+16:54:56.220 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+5. Connection opened. {executed in 24ms} 
+open connections:  1 2 3 4 5 (5)
+16:54:56.220 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+5. Connection.new Connection returned 
+16:54:56.220 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+5. Connection.isReadOnly() returned false
+16:54:56.220 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+5. Connection.getAutoCommit() returned true
+16:54:56.263 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+6. Connection opened. {executed in 43ms} 
+open connections:  1 2 3 4 5 6 (6)
+16:54:56.264 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+6. Connection.new Connection returned 
+16:54:56.264 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+6. Connection.isReadOnly() returned false
+16:54:56.264 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+6. Connection.getAutoCommit() returned true
+16:54:56.293 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+7. Connection opened. {executed in 29ms} 
+open connections:  1 2 3 4 5 6 7 (7)
+16:54:56.294 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+7. Connection.new Connection returned 
+16:54:56.294 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+7. Connection.isReadOnly() returned false
+16:54:56.294 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+7. Connection.getAutoCommit() returned true
+16:54:56.322 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+8. Connection opened. {executed in 28ms} 
+open connections:  1 2 3 4 5 6 7 8 (8)
+16:54:56.322 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+8. Connection.new Connection returned 
+16:54:56.322 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+8. Connection.isReadOnly() returned false
+16:54:56.322 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+8. Connection.getAutoCommit() returned true
+16:54:56.346 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+9. Connection opened. {executed in 23ms} 
+open connections:  1 2 3 4 5 6 7 8 9 (9)
+16:54:56.346 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+9. Connection.new Connection returned 
+16:54:56.347 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+9. Connection.isReadOnly() returned false
+16:54:56.347 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+9. Connection.getAutoCommit() returned true
+16:54:56.386 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10. Connection opened. {executed in 39ms} 
+open connections:  1 2 3 4 5 6 7 8 9 10 (10)
+16:54:56.386 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10. Connection.new Connection returned 
+16:54:56.386 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+10. Connection.isReadOnly() returned false
+16:54:56.386 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+10. Connection.getAutoCommit() returned true
+16:54:56.783 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+1. Connection closed. {executed in 6ms} 
+open connections:  2 3 4 5 6 7 8 9 10 (9)
+16:54:56.783 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+1. Connection.close() returned 
+16:54:56.820 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+2. Connection closed. {executed in 37ms} 
+open connections:  3 4 5 6 7 8 9 10 (8)
+16:54:56.820 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+2. Connection.close() returned 
+16:54:56.835 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+3. Connection closed. {executed in 14ms} 
+open connections:  4 5 6 7 8 9 10 (7)
+16:54:56.835 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+3. Connection.close() returned 
+16:54:56.852 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+4. Connection closed. {executed in 16ms} 
+open connections:  5 6 7 8 9 10 (6)
+16:54:56.852 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+4. Connection.close() returned 
+16:54:56.869 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+5. Connection closed. {executed in 17ms} 
+open connections:  6 7 8 9 10 (5)
+16:54:56.869 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+5. Connection.close() returned 
+16:54:56.885 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+6. Connection closed. {executed in 16ms} 
+open connections:  7 8 9 10 (4)
+16:54:56.886 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+6. Connection.close() returned 
+16:54:56.902 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+7. Connection closed. {executed in 16ms} 
+open connections:  8 9 10 (3)
+16:54:56.903 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+7. Connection.close() returned 
+16:54:56.920 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+8. Connection closed. {executed in 17ms} 
+open connections:  9 10 (2)
+16:54:56.921 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+8. Connection.close() returned 
+16:54:56.936 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+9. Connection closed. {executed in 15ms} 
+open connections:  10 (1)
+16:54:56.937 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+9. Connection.close() returned 
+16:54:56.952 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10. Connection closed. {executed in 15ms} 
+open connections:  none
+16:54:56.953 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10. Connection.close() returned 
