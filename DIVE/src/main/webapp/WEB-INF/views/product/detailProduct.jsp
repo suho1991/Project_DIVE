@@ -9,7 +9,8 @@
  <div class="product_list_wrap">
         <div class="product_list_wraping">
             <div class="product_img">
-    
+    			<a href="#" id="prev"></a>
+                <a href="#" id="next"></a>
             </div>
             <div class="product_item">
                 <div class="product_user">
@@ -120,3 +121,4 @@ $(document).ready(function() {
 	
 });
 </script>
+<script src="/resources/js/slide.js"></script>

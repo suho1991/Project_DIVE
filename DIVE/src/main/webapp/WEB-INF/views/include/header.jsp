@@ -53,7 +53,7 @@
 					<li>
 						<form id="actionForm" method="get">
 							<!-- EL표현식으로 사용가능 -->
-							<a class='move' href='${principal.username}'> <sec:authentication
+							<a class='move moveStyle' href='${principal.username}'> <sec:authentication
 									property="principal.user.userId" />
 							</a>
 						</form>
@@ -62,7 +62,7 @@
 						<form action="/user/userLogout" method="POST">
 							<input type="hidden" name="${_csrf.parameterName}"
 								value="${_csrf.token}" />
-							<button>Logout</button>
+							<button class="btnStyle">Logout</button>
 						</form>
 					</li>
 			</sec:authorize>
@@ -76,7 +76,7 @@
 					<li>
 						<form id="actionForm" method="get">
 							<!-- EL표현식으로 사용가능 -->
-							<a class='move' href='${principal.username}'> <sec:authentication
+							<a class='move moveStyle' href='${principal.username}'> <sec:authentication
 									property="principal.user.userId" />
 							</a>
 						</form>
@@ -86,7 +86,7 @@
 						<form action="/user/userLogout" method="POST">
 							<input type="hidden" name="${_csrf.parameterName}"
 								value="${_csrf.token}" />
-							<button>Logout</button>
+							<button class="btnStyle">Logout</button>
 						</form>
 					</li>
 			</sec:authorize>
@@ -96,3 +96,5 @@
             <i class="fas fa-bars"></i>
         </a>
     </nav>
+    
+    <script src="/resources/js/header.js"></script>

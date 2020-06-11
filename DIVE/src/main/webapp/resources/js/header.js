@@ -6,3 +6,14 @@ const togglebtn = document.querySelector('.navbar_toggle_btn');
             menu.classList.toggle('active');
             icon.classList.toggle('active');
         });
+        
+        $('.move').on(
+    			'click',
+    			function(e) {
+    				e.preventDefault();
+    				$('#actionForm').append(
+    						"<input type='hidden' name='userId' value='"
+    								+ $(this).attr('href') + "'/>");
+    				$('#actionForm').attr("action", "/user/findById");
+    				$('#actionForm').submit();
+    			});

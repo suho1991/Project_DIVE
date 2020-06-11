@@ -3,20 +3,11 @@ table {
 }
 
 .top {
-	text-align: center;
+	text-align: left;
+	padding-bottom: 30px;
 }
-
-.logo i {
-	font-size: 50px;
-	margin: 30px;
-}
-
 a {
 	text-decoration: none;
-}
-
-.logo a:link, .logo a:visited {
-	color: black;
 }
 
 .tit a {

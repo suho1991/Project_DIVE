@@ -11,7 +11,7 @@
 		<div class="top">
 			<h1>상품 등록 페이지</h1>
 			<div class="logo">
-				<a href="./index.html"><i class="fas fa-universal-access"
+				<a href="/"><i class="fas fa-universal-access"
 					style="cursor: pointer"></i></a>
 			</div>
 		</div>

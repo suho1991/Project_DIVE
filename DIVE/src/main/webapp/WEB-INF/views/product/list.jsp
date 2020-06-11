@@ -9,9 +9,6 @@
         <table class="board_list">
             <section class="top">
                 <h1>상품 목록</h1>
-                <div class="logo">
-                    <a href="/"><i class="fas fa-universal-access" style="cursor:pointer"></i></a>
-                </div>
             </section>
 
             <tbody>

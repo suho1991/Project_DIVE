@@ -16,6 +16,12 @@ li {
 }
 a {
     text-decoration: none;
+    color: white;
+    cursor: pointer;
+    
+}
+.moveStyle{
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 a:visited {
     color: white;
@@ -69,11 +75,13 @@ header {
     font-size: 90px;
     color: white;
     z-index: 99998;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .slogan{
     margin: 40px;
     color: white;
     font-size: 30px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .searchBar input{
     background-color: transparent;
@@ -88,10 +96,21 @@ header {
   background-position:top right; 
   background-repeat:no-repeat;
   }*/
+.btnStyle{
+	border : 0 none;
+	background-color: transparent;
+	color: white;
+	outline: none;
+	cursor: pointer;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-weight: bold;
+	font-size: 1em;
+}
+
 
 /* main */
 .content_menu {
-    height: 150px;
+    height: 130px;
     background-color: rgb(247, 239, 240);
 }
 .menu_list {

@@ -36,7 +36,7 @@
 		<async-supported>true</async-supported> <!-- WebSocket을 위한 설정(비동기 지원) -->
 		
 		<multipart-config>
-			<location>C:\\upload\\temp</location>
+			<location>C:\\productDive</location>
 			<!-- 40MB 파일 최대 크기 -->
 			<max-file-size>41943040</max-file-size>
 			<!-- 20MB * 16 한번에 올릴 수 있는 최대 크기 -->
