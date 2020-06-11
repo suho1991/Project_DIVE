@@ -52,8 +52,8 @@
 
 	            </form>
                 <div class="findcustomer">
-                    <a href="./idfind.html">아이디찾기</a> /
-                    <a href="./passwordfind.html">비밀번호찾기</a>
+                    <a href="/user/findMyId">아이디찾기</a> /
+                    <a href="/mail/sendEmail">비밀번호찾기</a>
                 </div>
             </section>
         </div>

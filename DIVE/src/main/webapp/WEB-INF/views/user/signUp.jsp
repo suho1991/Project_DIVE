@@ -32,7 +32,7 @@
                 <div class="customer_inform">
 
 
-                    <form name="form" action="#" method="post" onsubmit="return checkAll()">
+                    <form action="/user/signUp" method="post" onsubmit="return checkAll()">
                         <fieldset>
                             <h1>아이디/비밀번호 입력</h1><br />
                             <div class="fieldlabel">
@@ -46,7 +46,7 @@
                             </div>
                             <div class="fieldlabel">
                                 <div><label for="userPwCheck">비밀번호 확인</label></div>
-                                <input class="border" type="password" id="userPwCheck" name="userPwCheck" maxlength="20"
+                                <input class="border" type="password" id="userPwCheck" maxlength="20"
                                     autocomplete="off">
                             </div>
                             <br />
@@ -56,13 +56,17 @@
                                 <input class="border" type="text" id="userName" name="name" maxlength="20" value="">
                             </div>
                             <div class="fieldlabel">
+                                <div><label for="userName">닉네임</label></div>
+                                <input class="border" type="text" id="userName" name="nickName" maxlength="20" value="">
+                            </div>
+                            <div class="fieldlabel">
                                 <div><label for="birthday">생년월일</label></div>
-                                <input class="border" type="text" name=" birthday" maxlength="8"
+                                <input class="border" type="text" name="birthday" maxlength="8"
                                     placeholder="ex)19900314" size="15">
                             </div>
                             <div class="fieldlabel"><label>성별</label>
-                                <input type="radio" name="sex" value="남" alt="남자" checked>남자
-                                <input type="radio" name="sex" value="여" alt="여자">여자
+                                <input type="radio" name="sex" value="M" alt="남자" checked>남자
+                                <input type="radio" name="sex" value="F" alt="여자">여자
                             </div>
                             <div class="fieldlabel">
                                 <div><label for="address">주소</label></div>
@@ -70,7 +74,7 @@
                             </div>
                             <div class="fieldlabel">
                                 <div><label for="mPhone1">연락처</label></div>
-                                <input class="border" id="mPhone2" name="mPhone2" type="text" value="" size="20"
+                                <input class="border" id="mPhone2" name="phone" type="text" value="" size="20"
                                     maxlength="11" autocomplete="off" placeholder="'-'없이 번호만 입력해주세요">
                             </div>
                             <div class="fieldlabel">
@@ -82,6 +86,8 @@
                                 <input type="submit" class="connect_btn" value="Sign Up">
                             </div>
                         </fieldset>
+                        <input type="hidden" name="${_csrf.parameterName}"
+						value="${_csrf.token}" />
                     </form>
                 </div>
             </section>

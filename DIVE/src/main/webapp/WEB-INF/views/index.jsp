@@ -74,7 +74,7 @@
 						<form action="/user/userLogout" method="POST">
 							<input type="hidden" name="${_csrf.parameterName}"
 								value="${_csrf.token}" />
-							<button>Logout</button>
+							<button class="btnStyle">Logout</button>
 						</form>
 					</li>
 				</ul>
@@ -86,8 +86,8 @@
 				<a href="/">DIVE</a>
 			</div>
 			<p class="slogan">나만의 특별한 보물을 찾아보세요!</p>
-			
-			<form id="searchForm" action="/product/list" method="get" >
+
+			<form id="searchForm" action="/product/list" method="get">
 				<input type="text" name='keyword' size="40" placeholder="검색어를 입력하세요">
 				<input type="hidden" name='type' value='T'>
 				<button class="btnStyle">검색</button>
@@ -117,22 +117,19 @@
 
 	<nav class="content_menu">
 		<ul class="menu_list">
-			<li><a href="/product/list"><img src="/resources/images/pro_list.png"
-					alt="" width="60px" height="60px">
-				<p>상품 목록</p></a></li>
-			<li><a href="/board/list"><img src="/resources/images/board.png"
-					alt="" width="60px" height="60px">
-				<p>자유게시판</p></a></li>
+			<li><a href="/product/list"><img
+					src="/resources/images/pro_list.png" alt="" width="60px"
+					height="60px">
+					<p>상품 목록</p></a></li>
+			<li><a href="/board/list"><img
+					src="/resources/images/board.png" alt="" width="60px" height="60px">
+					<p>자유게시판</p></a></li>
 			<li><a href="/game/miniGame"><img
 					src="/resources/images/game.png" alt="" width="60px" height="60px">
-				<p>미니 게임</p></a></li>
-<<<<<<< HEAD
+					<p>미니 게임</p></a></li>
 			<li><a href="/game/lotto"><img
-=======
-			<li><a href="../user/lotto.jsp"><img
->>>>>>> 00e99ec5162d43f84fc7e3c329ea0edeadc0f854
 					src="/resources/images/lotto.png" alt="" width="60px" height="60px">
-				<p>로또</p></a></li>
+					<p>미니 게임</p></a></li>
 		</ul>
 	</nav>
 

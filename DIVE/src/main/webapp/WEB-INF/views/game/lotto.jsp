@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +11,10 @@
 	<body>
 	    <div class="container">
 	        
-	        <img src="로또.jpg" alt="lotto">
-	        <div class="text">당첨될 숫자( +6 자리)</div><br>
+	        <img src="/resources/images/lotto.jpg" alt="lotto">
+	        <div class="text">당첨될 숫자(6 자리)</div><br>
 	        <div id="result"></div><br>
-	        <div class="text">보너스( +1 자리)</div><br>
+	        <div class="text">보너스(+1 자리)</div><br>
 	        <div id="bonus"></div><br>
 	
 	        <br>
@@ -21,6 +23,6 @@
 	        <button class="start">추첨</button>
 	    </div>
 	
-	    <script src="/resourcse/js/lotto.js"></script>
 	</body>
+	    <script src="/resourcse/js/lotto.js"></script>
 </html>
