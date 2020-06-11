@@ -67,7 +67,7 @@ public class MailSendController {
 			MimeMessageHelper messageHelper = new MimeMessageHelper(message, true, "UTF-8");
 
 			messageHelper.setFrom(setfrom, "admin@dive.com"); // 보내는사람 생략하면 정상작동을 안함
-			messageHelper.setTo(new InternetAddress(email, "박민준 고객님", "UTF-8")); // 받는사람 이메일
+			messageHelper.setTo(new InternetAddress(email, "DIVE 고객님", "UTF-8")); // 받는사람 이메일
 			messageHelper.setSubject(title); // 메일제목은 생략이 가능하다
 			messageHelper.setText(content); // 메일 내용
 

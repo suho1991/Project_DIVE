@@ -79,16 +79,16 @@
     position: relative;
   }
   
-  .friend-bubble {
-    background-color: white;
+  .my-bubble {
+    background-color: #fff46d;
     border-radius: 14px 14px 14px 0;
     padding: 7px 15px 7px 15px;
     float: left;
     clear: both;
   }
   
-  .my-bubble {
-    background-color: #fff46d;
+  .friend-bubble {
+    background-color: #ffffff;
     border-radius: 14px 14px 0px 14px;
     padding: 7px 15px 7px 15px;
     float: right;
