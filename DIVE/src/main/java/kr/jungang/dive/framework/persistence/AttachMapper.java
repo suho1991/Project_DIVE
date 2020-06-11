@@ -10,6 +10,8 @@ import kr.jungang.dive.product.domain.ProductVO;
 public interface AttachMapper {
 	public List<AttachVO> findByOwner(@Param("ownerId") long ownerId, @Param("ownerType") String ownerType);
 	
+	public AttachVO findByOwnerItem(@Param("ownerId") long ownerId, @Param("ownerType") String ownerType);
+	
 	public void insertAttach(AttachVO obj);
 	
 	public void deleteAttach(AttachVO obj);

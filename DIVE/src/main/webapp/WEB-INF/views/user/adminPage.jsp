@@ -1,70 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib uri="http://www.springframework.org/security/tags"
 	prefix="sec"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<link rel="stylesheet" href="/resources/css/adminPage.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript">
-	$(document).ready(
-			function() {
-				$('.move').on(
-						'click',
-						function(e) {
-							e.preventDefault();
-							$('#actionForm').append(
-									"<input type='hidden' name='userId' value='"
-											+ $(this).attr('href') + "'/>");
-							$('#actionForm').attr("action", "/user/findById");
-							$('#actionForm').submit();
-						});
-			});
-</script>
-</head>
-<body>
-	<nav class="navbar">
-		<div class="navbar_logo">
-			<i class="fas fa-universal-access"></i>
-			<h1>DIVE</h1>
-		</div>
-		<ul class="navbar_menu">
-			<li><a href="#">PRODUCT</a></li>
-			<li><a href="./board.html">QnA</a></li>
-			<li><a href="/chat/intro">CHAT</a></li>
-			<li><a href="#">CORPORATION</a></li>
-		</ul>
-		<ul class="navbar_icons">
-			<sec:authorize access="isAnonymous()">
-				<li><a href="/user/userLogin">Login</a></li>
-			</sec:authorize>
-			<sec:authorize access="isAuthenticated()">
-				<li><a href="/user/userLogout">Logout</a></li>
-				<!-- 스프링 시큐리티 principal 가져오는 라이브러리 선언
-		security > domain > CustomUser.java에 선언된 field를 불러온다.		
-	 -->
-				<sec:authentication property="principal" var="principal" />
-				<li>
-					<form id="actionForm" method="get">
-						<!-- EL표현식으로 사용가능 -->
-						<a class='move' href='${principal.username}'> 
-							<sec:authentication property="principal.user.userId" />
-						</a>
-					</form>
-				</li>
-			</sec:authorize>
-		</ul>
-		<a href="#" class="navbar_toggle_btn"> <i class="fas fa-bars"></i>
-		</a>
-	</nav>
-
-
+<%@ include file="../include/header.jsp"%>
+<link rel="stylesheet" href="/resources/css/user/adminPage.css">
 	<div class="board_list_wrap">
 		<section class="top">
 			<h1>관리자 페이지</h1>
@@ -108,5 +49,5 @@
 			</tbody>
 		</table>
 	</div>
-</body>
-</html>
+<%@ include file="../include/footer.jsp" %>
+<script src="/resources/js/adminPage.js"></script>

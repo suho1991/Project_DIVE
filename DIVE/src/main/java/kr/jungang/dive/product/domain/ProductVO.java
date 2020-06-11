@@ -1,7 +1,9 @@
 package kr.jungang.dive.product.domain;
 
 import java.util.Date;
+import java.util.List;
 
+import kr.jungang.dive.framework.domain.AttachVO;
 import kr.jungang.dive.user.domain.UserDTO;
 import lombok.Data;
 
@@ -21,4 +23,12 @@ public class ProductVO {
 	private boolean enabled;
 	
 	private UserDTO user;
+	private List<AttachVO> listAttach;
+	
+	private AttachVO productImg;
+
+	
+	public boolean hasAttach() {
+		return listAttach != null && !listAttach.isEmpty();
+	}
 }

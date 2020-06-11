@@ -4,42 +4,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib uri="http://www.springframework.org/security/tags"
 	prefix="sec"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>아이디 찾기</title>
-<link rel="stylesheet" href="/resources/css/findMyId.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="/resources/js/findMyId.js"></script>
-</head>
-<body>
-	<nav class="navbar">
-		<div class="navbar_logo">
-			<i class="fas fa-universal-access"></i>
-			<h1>DIVE</h1>
-		</div>
-		<ul class="navbar_menu">
-			<li><a href="#">PRODUCT</a></li>
-			<li><a href="./board.html">Q&A</a></li>
-			<li><a
-				onclick="window.open ( '../Project/chat/html.html', 'name', 'width = 400, height = 569, scrollbars=no, resizable=no, toolbars=no, menubar=no')">CHAT</a>
-			</li>
-			<li><a href="#">CORPORATION</a></li>
-		</ul>
-		<ul class="navbar_icons">
-			<a href="./login.html">
-				<li>Log in</li>
-			</a>
-			<a href="./signup.html">
-				<li>Sign up</li>
-			</a>
-		</ul>
-		<a href="#" class="navbar_toggle_btn"> <i class="fas fa-bars"></i>
-		</a>
-	</nav>
-
+<%@ include file="../include/header.jsp"%>
+<link rel="stylesheet" href="/resources/css/user/findMyId.css">
 
 	<div class="choice-sector">
 		<div class="choice-sector-content">
@@ -48,7 +14,7 @@
 			</section>
 			<section class="logo">
 				<div class="logo_image">
-					<a href="./index.html"><i class="fas fa-universal-access"
+					<a href="/"><i class="fas fa-universal-access"
 						style="cursor: pointer"></i></a>
 				</div>
 			</section>
@@ -78,5 +44,5 @@
 			</form>
 		</div>
 	</div>
-</body>
-</html>
+<%@ include file="../include/footer.jsp" %>
+<script src="/resources/js/findMyId.js"></script>

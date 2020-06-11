@@ -7,7 +7,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -22,8 +21,6 @@ import lombok.extern.log4j.Log4j2;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING) // test 오름차순으로 실행됨
 public class UserServiceTests {
 	@Setter(onMethod_ = @Autowired)
-	private PasswordEncoder pwEncoder;
-	@Setter(onMethod_ = @Autowired)
 	private UserService userService;
 
 	//userService와 잘 연결되었는 확인
@@ -33,7 +30,6 @@ public class UserServiceTests {
 		assertNotNull(userService);
 	}
 
-	/*
 	//회원 가입
 	@Test
 	public void test_02_createUserService() {
@@ -75,13 +71,5 @@ public class UserServiceTests {
 		boolean count = userService.updateUser(updateDTO);
 		log.info(count + "건 수정 완료");
 	}
-	*/
 	
-	@Test
-	public void test_05_changePassword() {
-		String password = pwEncoder.encode("wogns2180");
-		userService.changePassword(password, "devcolton");
-		boolean count = userService.changePassword(password, "devcolton");
-		log.info("변경 결과: " + count);
-	}
 }

@@ -75,6 +75,13 @@
 			<version>5.3.1.RELEASE</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/net.coobird/thumbnailator -->
+		<!-- 섬네일 -->
+		<dependency>
+			<groupId>net.coobird</groupId>
+			<artifactId>thumbnailator</artifactId>
+			<version>0.4.11</version>
+		</dependency>
 		<!-- Web Socket -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -203,6 +210,14 @@
 			<artifactId>jackson-databind</artifactId>
 			<version>2.10.2</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-xml</artifactId>
+			<version>2.11.0</version>
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
@@ -215,6 +230,7 @@
 			<artifactId>jackson-annotations</artifactId>
 			<version>2.10.2</version>
 		</dependency>
+
 
 		<!-- @Inject -->
 		<dependency>

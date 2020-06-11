@@ -1,85 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib uri="http://www.springframework.org/security/tags"
 	prefix="sec"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Log In</title>
-<script src="https://kit.fontawesome.com/a4b9f55ded.js"
-	crossorigin="anonymous"></script>
-<style>
-* {
-	margin: 0;
-	padding: 0;
-}
-
-body {
-	background-image: url(../../resources/images/dive.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-a:link {
-	text-decoration: none;
-}
-
-input {
-	outline: none;
-}
-
-.choice-sector {
-	width: 350px;
-	height: 100%;
-	margin: 150px auto;
-	background-color: white;
-	border-radius: 10px;
-	padding-bottom: 100px;
-}
-
-.choice-sector-content {
-	text-align: center;
-}
-
-.login_btn, .signup_btn {
-	width: 100px;
-	height: 40px;
-	margin-top: 80px;
-	border-radius: 50px;
-	background-color: white;
-}
-
-i {
-	font-size: 50px;
-	margin: 30px;
-}
-
-.customer_inform_id_sector, .customer_inform_pass_sector {
-	padding: 10px;
-}
-
-.customer_inform_id, .customer_inform_pass {
-	border: 0;
-	border-bottom: 1px solid black;
-	padding-bottom: 5px;
-}
-
-.connect_sector {
-	margin-top: 50px;
-}
-
-.connect_btn {
-	width: 200px;
-	height: 50px;
-	border-radius: 50px;
-	background-color: white;
-}
-</style>
-</head>
-<body>
+<%@ include file="../include/header.jsp"%>
+<link rel="stylesheet" href="/resources/css/user/userLogin.css">
 	<div class="choice-sector">
 		<div class="choice-sector-content">
 			<section class="choice">
@@ -130,5 +56,5 @@ i {
 			</h3>
 		</div>
 	</div>
-</body>
-</html>
+	
+<%@ include file="../include/footer.jsp" %>

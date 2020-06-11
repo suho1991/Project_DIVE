@@ -76,6 +76,8 @@
 		base-package="kr.jungang.dive.board.persistence" />
 	<mybatis-spring:scan
 		base-package="kr.jungang.dive.product.persistence" />
+	<mybatis-spring:scan
+		base-package="kr.jungang.dive.framework.persistence" />
 
 	<!-- [컴포넌트 자동 스캔 명령] -->
 	<!-- 자동주입 명령을 사용하기 위해 위치를 알려줘야한다. -->

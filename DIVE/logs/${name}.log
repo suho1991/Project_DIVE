@@ -1,509 +1,637 @@
-09:45:11.694 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\Spring_Space\git\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\persistence\UserMapper.class]
-09:45:11.730 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\Spring_Space\git\Project_DIVE\DIVE\target\classes\kr\jungang\dive\board\persistence\PostMapper.class]
-09:45:11.731 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\Spring_Space\git\Project_DIVE\DIVE\target\classes\kr\jungang\dive\board\persistence\ReplyMapper.class]
-09:45:11.735 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Spring_Space\git\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\product\persistence\ProductMapperTest.class]
-09:45:11.737 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\Spring_Space\git\Project_DIVE\DIVE\target\classes\kr\jungang\dive\product\persistence\ProductMapper.class]
-09:45:11.836 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization...
-09:45:11.836 [main] DEBUG log4jdbc.debug - Using logger: null
-09:45:11.836 [main] DEBUG log4jdbc.debug - x log4jdbc.debug.stack.prefix is not defined
-09:45:11.836 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.warn.threshold is not defined
-09:45:11.836 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.error.threshold is not defined
-09:45:11.837 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
-09:45:11.837 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
-09:45:11.837 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
-09:45:11.838 [main] DEBUG log4jdbc.debug - x log4jdbc.statement.warn is not defined (using default value false)
-09:45:11.838 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.select is not defined (using default value true)
-09:45:11.838 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.insert is not defined (using default value true)
-09:45:11.838 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.update is not defined (using default value true)
-09:45:11.839 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.delete is not defined (using default value true)
-09:45:11.839 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.create is not defined (using default value true)
-09:45:11.839 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
-09:45:11.839 [main] DEBUG log4jdbc.debug - x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
-09:45:11.839 [main] DEBUG log4jdbc.debug - x log4jdbc.drivers is not defined
-09:45:11.840 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql is not defined (using default value true)
-09:45:11.840 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
-09:45:11.840 [main] DEBUG log4jdbc.debug - x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
-09:45:11.840 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization done.
-09:45:11.840 [main] DEBUG log4jdbc.debug - DriverSpy intialization...
-09:45:11.920 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.OracleDriver
-09:45:11.920 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.driver.OracleDriver
-09:45:11.922 [main] DEBUG log4jdbc.debug - DriverSpy intialization done.
-09:45:12.302 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-1. Connection opened. {executed in 343ms} 
+10:12:15.364 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\JavaSpace\dive_v1.0\target\classes\kr\jungang\dive\user\persistence\UserMapper.class]
+10:12:15.416 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\JavaSpace\dive_v1.0\target\classes\kr\jungang\dive\board\persistence\PostMapper.class]
+10:12:15.417 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\JavaSpace\dive_v1.0\target\classes\kr\jungang\dive\board\persistence\ReplyMapper.class]
+10:12:15.552 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization...
+10:12:15.553 [main] DEBUG log4jdbc.debug - Using logger: null
+10:12:15.553 [main] DEBUG log4jdbc.debug - x log4jdbc.debug.stack.prefix is not defined
+10:12:15.553 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.warn.threshold is not defined
+10:12:15.553 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.error.threshold is not defined
+10:12:15.554 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+10:12:15.554 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+10:12:15.554 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+10:12:15.554 [main] DEBUG log4jdbc.debug - x log4jdbc.statement.warn is not defined (using default value false)
+10:12:15.554 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.select is not defined (using default value true)
+10:12:15.554 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.insert is not defined (using default value true)
+10:12:15.555 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.update is not defined (using default value true)
+10:12:15.555 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.delete is not defined (using default value true)
+10:12:15.555 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.create is not defined (using default value true)
+10:12:15.555 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+10:12:15.555 [main] DEBUG log4jdbc.debug - x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+10:12:15.555 [main] DEBUG log4jdbc.debug - x log4jdbc.drivers is not defined
+10:12:15.556 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql is not defined (using default value true)
+10:12:15.556 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+10:12:15.556 [main] DEBUG log4jdbc.debug - x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+10:12:15.556 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization done.
+10:12:15.556 [main] DEBUG log4jdbc.debug - DriverSpy intialization...
+10:12:15.609 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.OracleDriver
+10:12:15.610 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.driver.OracleDriver
+10:12:15.613 [main] DEBUG log4jdbc.debug - DriverSpy intialization done.
+10:12:16.316 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+1. Connection opened. {executed in 660ms} 
 open connections:  1 (1)
-09:45:12.304 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10:12:16.318 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
 1. Connection.new Connection returned 
-09:45:12.305 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.getAndSetNetworkTimeout(PoolBase.java:526)
+10:12:16.318 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.getAndSetNetworkTimeout(PoolBase.java:526)
 1. Connection.getNetworkTimeout() returned 0
-09:45:12.305 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+10:12:16.319 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
 1. Connection.isReadOnly() returned false
-09:45:12.305 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+10:12:16.319 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
 1. Connection.getAutoCommit() returned true
-09:45:12.323 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkValidationSupport(PoolBase.java:458)
+10:12:16.329 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkValidationSupport(PoolBase.java:458)
 1. Connection.isValid(1) returned true
-09:45:12.324 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkDefaultIsolation(PoolBase.java:479)
+10:12:16.330 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkDefaultIsolation(PoolBase.java:479)
 1. Connection.getTransactionIsolation() returned 2
-09:45:12.473 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-2. Connection opened. {executed in 29ms} 
+10:12:16.466 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2. Connection opened. {executed in 24ms} 
 open connections:  1 2 (2)
-09:45:12.474 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10:12:16.466 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
 2. Connection.new Connection returned 
-09:45:12.474 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+10:12:16.466 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
 2. Connection.isReadOnly() returned false
-09:45:12.474 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+10:12:16.466 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
 2. Connection.getAutoCommit() returned true
-09:45:12.490 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-3. Connection opened. {executed in 15ms} 
+10:12:16.485 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+3. Connection opened. {executed in 18ms} 
 open connections:  1 2 3 (3)
-09:45:12.490 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10:12:16.485 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
 3. Connection.new Connection returned 
-09:45:12.491 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+10:12:16.485 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
 3. Connection.isReadOnly() returned false
-09:45:12.491 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+10:12:16.485 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
 3. Connection.getAutoCommit() returned true
-09:45:12.507 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-4. Connection opened. {executed in 16ms} 
+10:12:16.502 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+4. Connection opened. {executed in 15ms} 
 open connections:  1 2 3 4 (4)
-09:45:12.508 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10:12:16.502 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
 4. Connection.new Connection returned 
-09:45:12.508 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+10:12:16.502 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
 4. Connection.isReadOnly() returned false
-09:45:12.508 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+10:12:16.502 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
 4. Connection.getAutoCommit() returned true
-09:45:12.535 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-5. Connection opened. {executed in 21ms} 
+10:12:16.523 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+5. Connection opened. {executed in 20ms} 
 open connections:  1 2 3 4 5 (5)
-09:45:12.538 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10:12:16.524 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
 5. Connection.new Connection returned 
-09:45:12.538 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+10:12:16.524 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
 5. Connection.isReadOnly() returned false
-09:45:12.539 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+10:12:16.524 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
 5. Connection.getAutoCommit() returned true
-09:45:12.564 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-6. Connection opened. {executed in 25ms} 
+10:12:16.545 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+6. Connection opened. {executed in 20ms} 
 open connections:  1 2 3 4 5 6 (6)
-09:45:12.565 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10:12:16.547 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
 6. Connection.new Connection returned 
-09:45:12.565 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+10:12:16.548 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
 6. Connection.isReadOnly() returned false
-09:45:12.565 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+10:12:16.548 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
 6. Connection.getAutoCommit() returned true
-09:45:12.584 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-7. Connection opened. {executed in 19ms} 
+10:12:16.564 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+7. Connection opened. {executed in 16ms} 
 open connections:  1 2 3 4 5 6 7 (7)
-09:45:12.584 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10:12:16.565 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
 7. Connection.new Connection returned 
-09:45:12.585 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+10:12:16.565 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
 7. Connection.isReadOnly() returned false
-09:45:12.585 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+10:12:16.565 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
 7. Connection.getAutoCommit() returned true
-09:45:12.610 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-8. Connection opened. {executed in 25ms} 
+10:12:16.580 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+8. Connection opened. {executed in 15ms} 
 open connections:  1 2 3 4 5 6 7 8 (8)
-09:45:12.610 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10:12:16.581 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
 8. Connection.new Connection returned 
-09:45:12.610 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+10:12:16.581 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
 8. Connection.isReadOnly() returned false
-09:45:12.610 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+10:12:16.581 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
 8. Connection.getAutoCommit() returned true
-09:45:12.630 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-9. Connection opened. {executed in 18ms} 
+10:12:16.595 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+9. Connection opened. {executed in 14ms} 
 open connections:  1 2 3 4 5 6 7 8 9 (9)
-09:45:12.630 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10:12:16.596 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
 9. Connection.new Connection returned 
-09:45:12.630 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+10:12:16.596 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
 9. Connection.isReadOnly() returned false
-09:45:12.630 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+10:12:16.596 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
 9. Connection.getAutoCommit() returned true
-09:45:12.648 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-10. Connection opened. {executed in 18ms} 
-open connections:  1 2 3 4 5 6 7 8 9 10 (10)
-09:45:12.649 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-10. Connection.new Connection returned 
-09:45:12.649 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
-10. Connection.isReadOnly() returned false
-09:45:12.649 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
-10. Connection.getAutoCommit() returned true
-09:45:13.162 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:161)
-1. Connection.isValid(5) returned true
-09:45:13.167 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyConnection.getAutoCommit(HikariProxyConnection.java:-1)
-1. Connection.getAutoCommit() returned true
-09:45:13.311 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
-1. PreparedStatement.new PreparedStatement returned 
-09:45:13.312 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
-1. Connection.prepareStatement(SELECT u.id, u.user_id, u.password, u.name, u.nickname, u.sex, u.birthday, u.address, u.phone, u.email, a.*
-  		  FROM tbl_user u left outer join tbl_authorities a on u.id = a.user_num
-		 WHERE u.user_id = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@13d019a4
-09:45:13.317 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
-1. PreparedStatement.setString(1, "devcolton") returned 
-09:45:13.397 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-1. SELECT u.id, u.user_id, u.password, u.name, u.nickname, u.sex, u.birthday, u.address, u.phone, 
-u.email, a.* FROM tbl_user u left outer join tbl_authorities a on u.id = a.user_num WHERE u.user_id 
-= 'devcolton'  {executed in 80 ms}
-09:45:13.399 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-1. PreparedStatement.execute() returned true
-09:45:13.409 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyStatement.getResultSet(ProxyStatement.java:214)
-1. ResultSet.new ResultSet returned 
-09:45:13.410 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyStatement.getResultSet(ProxyStatement.java:214)
-1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@339f3a55
-09:45:13.417 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getMetaData(HikariProxyResultSet.java:-1)
-1. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@13cc0b90
-09:45:13.419 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getType(HikariProxyResultSet.java:-1)
-1. ResultSet.getType() returned 1003
-09:45:13.420 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.isClosed(HikariProxyResultSet.java:-1)
-1. ResultSet.isClosed() returned false
-09:45:13.420 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.next(HikariProxyResultSet.java:-1)
-1. ResultSet.next() returned true
-09:45:13.421 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getLong(HikariProxyResultSet.java:-1)
-1. ResultSet.getLong(id) returned 1
-09:45:13.423 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getLong(HikariProxyResultSet.java:-1)
-1. ResultSet.getLong(id) returned 1
-09:45:13.424 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getString(HikariProxyResultSet.java:-1)
-1. ResultSet.getString(user_id) returned devcolton
-09:45:13.425 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getString(HikariProxyResultSet.java:-1)
-1. ResultSet.getString(password) returned $2a$10$EGse2WZGVhFggZkJBfstZundw7pgNnWtar1REfcv7C6ujFV2IZtVu
-09:45:13.425 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getString(HikariProxyResultSet.java:-1)
-1. ResultSet.getString(name) returned 이재훈
-09:45:13.426 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getString(HikariProxyResultSet.java:-1)
-1. ResultSet.getString(nickname) returned JAEHOON
-09:45:13.426 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getString(HikariProxyResultSet.java:-1)
-1. ResultSet.getString(sex) returned M
-09:45:13.427 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getString(HikariProxyResultSet.java:-1)
-1. ResultSet.getString(birthday) returned 19851025  
-09:45:13.428 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getString(HikariProxyResultSet.java:-1)
-1. ResultSet.getString(address) returned 인천시 서구 검암동
-09:45:13.431 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getString(HikariProxyResultSet.java:-1)
-1. ResultSet.getString(phone) returned 01093603469
-09:45:13.432 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getString(HikariProxyResultSet.java:-1)
-1. ResultSet.getString(email) returned chic7827@naver.com
-09:45:13.433 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getLong(HikariProxyResultSet.java:-1)
-1. ResultSet.getLong(user_num) returned 1
-09:45:13.433 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getString(HikariProxyResultSet.java:-1)
-1. ResultSet.getString(authority) returned ROLE_ADMIN
-09:45:13.434 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getLong(HikariProxyResultSet.java:-1)
-1. ResultSet.getLong(user_num) returned 1
-09:45:13.434 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getString(HikariProxyResultSet.java:-1)
-1. ResultSet.getString(authority) returned ROLE_ADMIN
-09:45:13.436 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.isClosed(HikariProxyResultSet.java:-1)
-1. ResultSet.isClosed() returned false
-09:45:13.440 [main] INFO  log4jdbc.log4j2 - 
-|---|----------|-------------------------------------------------------------|-----|---------|----|-----------|-----------|------------|-------------------|---------|-----------|
-|id |user_id   |password                                                     |name |nickname |sex |birthday   |address    |phone       |email              |user_num |authority  |
-|---|----------|-------------------------------------------------------------|-----|---------|----|-----------|-----------|------------|-------------------|---------|-----------|
-|1  |devcolton |$2a$10$EGse2WZGVhFggZkJBfstZundw7pgNnWtar1REfcv7C6ujFV2IZtVu |이재훈  |JAEHOON  |M   |19851025   |인천시 서구 검암동 |01093603469 |chic7827@naver.com |1        |ROLE_ADMIN |
-|---|----------|-------------------------------------------------------------|-----|---------|----|-----------|-----------|------------|-------------------|---------|-----------|
-
-09:45:13.440 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.next(HikariProxyResultSet.java:-1)
-1. ResultSet.next() returned false
-09:45:13.440 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.close(HikariProxyResultSet.java:-1)
-1. ResultSet.close() returned void
-09:45:13.441 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.getMetaData(ProxyConnection.java:380)
-1. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@273fa9e
-09:45:13.446 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyStatement.close(ProxyStatement.java:76)
-1. PreparedStatement.close() returned 
-09:45:13.463 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:267)
-1. Connection.clearWarnings() returned 
-09:45:13.464 [main] INFO  kr.jungang.dive.user.mapper.UserMapperTests - UserDTO(id=1, userId=devcolton, password=$2a$10$EGse2WZGVhFggZkJBfstZundw7pgNnWtar1REfcv7C6ujFV2IZtVu, name=이재훈, nickName=JAEHOON, sex=M, birthday=19851025  , address=인천시 서구 검암동, phone=01093603469, email=chic7827@naver.com, regDate=null, updateDate=null, enabled=false, authorityList=[AuthorityVO(userNum=1, authority=ROLE_ADMIN)])
-09:45:13.583 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyConnection.getAutoCommit(HikariProxyConnection.java:-1)
-1. Connection.getAutoCommit() returned true
-09:45:13.584 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
-1. PreparedStatement.new PreparedStatement returned 
-09:45:13.584 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
-1. Connection.prepareStatement(UPDATE tbl_user
-		   SET 
-		       password = ?
-		 WHERE user_id = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@4966bab1
-09:45:13.585 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
-1. PreparedStatement.setString(1, "$2a$10$81d6MxEL8jBFHp7PO7LqBepfcvuZJCAg2rsMiWycfRzgTEejUtWPy") returned 
-09:45:13.585 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
-1. PreparedStatement.setString(2, "devcolton") returned 
-09:45:13.587 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-1. UPDATE tbl_user SET password = '$2a$10$81d6MxEL8jBFHp7PO7LqBepfcvuZJCAg2rsMiWycfRzgTEejUtWPy' 
-WHERE user_id = 'devcolton'  {executed in 2 ms}
-09:45:13.588 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-1. PreparedStatement.execute() returned false
-09:45:13.588 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.getUpdateCount(HikariProxyPreparedStatement.java:-1)
-1. PreparedStatement.getUpdateCount() returned 1
-09:45:13.589 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyStatement.close(ProxyStatement.java:76)
-1. PreparedStatement.close() returned 
-09:45:13.589 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:267)
-1. Connection.clearWarnings() returned 
-09:45:13.589 [main] INFO  kr.jungang.dive.user.mapper.UserMapperTests - 수정완료
-09:45:13.609 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-1. Connection closed. {executed in 3ms} 
-open connections:  2 3 4 5 6 7 8 9 10 (9)
-09:45:13.609 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-1. Connection.close() returned 
-09:45:13.640 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-2. Connection closed. {executed in 30ms} 
-open connections:  3 4 5 6 7 8 9 10 (8)
-09:45:13.640 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-2. Connection.close() returned 
-09:45:13.655 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-3. Connection closed. {executed in 14ms} 
-open connections:  4 5 6 7 8 9 10 (7)
-09:45:13.656 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-3. Connection.close() returned 
-09:45:13.672 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-4. Connection closed. {executed in 16ms} 
-open connections:  5 6 7 8 9 10 (6)
-09:45:13.672 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-4. Connection.close() returned 
-09:45:13.689 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-5. Connection closed. {executed in 16ms} 
-open connections:  6 7 8 9 10 (5)
-09:45:13.689 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-5. Connection.close() returned 
-09:45:13.705 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-6. Connection closed. {executed in 16ms} 
-open connections:  7 8 9 10 (4)
-09:45:13.706 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-6. Connection.close() returned 
-09:45:13.731 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-7. Connection closed. {executed in 25ms} 
-open connections:  8 9 10 (3)
-09:45:13.731 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-7. Connection.close() returned 
-09:45:13.747 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-8. Connection closed. {executed in 16ms} 
-open connections:  9 10 (2)
-09:45:13.748 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-8. Connection.close() returned 
-09:45:13.764 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-9. Connection closed. {executed in 16ms} 
-open connections:  10 (1)
-09:45:13.765 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-9. Connection.close() returned 
-09:45:13.781 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-10. Connection closed. {executed in 16ms} 
-open connections:  none
-09:45:13.781 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-10. Connection.close() returned 
-09:48:28.553 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\Spring_Space\git\Project_DIVE\DIVE\target\classes\kr\jungang\dive\user\persistence\UserMapper.class]
-09:48:28.572 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\Spring_Space\git\Project_DIVE\DIVE\target\classes\kr\jungang\dive\board\persistence\PostMapper.class]
-09:48:28.573 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\Spring_Space\git\Project_DIVE\DIVE\target\classes\kr\jungang\dive\board\persistence\ReplyMapper.class]
-09:48:28.577 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\Spring_Space\git\Project_DIVE\DIVE\target\test-classes\kr\jungang\dive\product\persistence\ProductMapperTest.class]
-09:48:28.577 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\Spring_Space\git\Project_DIVE\DIVE\target\classes\kr\jungang\dive\product\persistence\ProductMapper.class]
-09:48:28.671 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization...
-09:48:28.671 [main] DEBUG log4jdbc.debug - Using logger: null
-09:48:28.671 [main] DEBUG log4jdbc.debug - x log4jdbc.debug.stack.prefix is not defined
-09:48:28.671 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.warn.threshold is not defined
-09:48:28.672 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.error.threshold is not defined
-09:48:28.672 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
-09:48:28.672 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
-09:48:28.672 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
-09:48:28.672 [main] DEBUG log4jdbc.debug - x log4jdbc.statement.warn is not defined (using default value false)
-09:48:28.672 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.select is not defined (using default value true)
-09:48:28.673 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.insert is not defined (using default value true)
-09:48:28.673 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.update is not defined (using default value true)
-09:48:28.673 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.delete is not defined (using default value true)
-09:48:28.673 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.create is not defined (using default value true)
-09:48:28.673 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
-09:48:28.675 [main] DEBUG log4jdbc.debug - x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
-09:48:28.675 [main] DEBUG log4jdbc.debug - x log4jdbc.drivers is not defined
-09:48:28.676 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql is not defined (using default value true)
-09:48:28.676 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
-09:48:28.676 [main] DEBUG log4jdbc.debug - x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
-09:48:28.676 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization done.
-09:48:28.677 [main] DEBUG log4jdbc.debug - DriverSpy intialization...
-09:48:28.755 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.OracleDriver
-09:48:28.755 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.driver.OracleDriver
-09:48:28.758 [main] DEBUG log4jdbc.debug - DriverSpy intialization done.
-09:48:29.129 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-1. Connection opened. {executed in 331ms} 
-open connections:  1 (1)
-09:48:29.130 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-1. Connection.new Connection returned 
-09:48:29.131 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.getAndSetNetworkTimeout(PoolBase.java:526)
-1. Connection.getNetworkTimeout() returned 0
-09:48:29.131 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
-1. Connection.isReadOnly() returned false
-09:48:29.132 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
-1. Connection.getAutoCommit() returned true
-09:48:29.135 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkValidationSupport(PoolBase.java:458)
-1. Connection.isValid(1) returned true
-09:48:29.136 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkDefaultIsolation(PoolBase.java:479)
-1. Connection.getTransactionIsolation() returned 2
-09:48:29.320 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-2. Connection opened. {executed in 51ms} 
-open connections:  1 2 (2)
-09:48:29.320 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-2. Connection.new Connection returned 
-09:48:29.321 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
-2. Connection.isReadOnly() returned false
-09:48:29.321 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
-2. Connection.getAutoCommit() returned true
-09:48:29.340 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-3. Connection opened. {executed in 19ms} 
-open connections:  1 2 3 (3)
-09:48:29.341 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-3. Connection.new Connection returned 
-09:48:29.341 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
-3. Connection.isReadOnly() returned false
-09:48:29.341 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
-3. Connection.getAutoCommit() returned true
-09:48:29.357 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-4. Connection opened. {executed in 16ms} 
-open connections:  1 2 3 4 (4)
-09:48:29.358 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-4. Connection.new Connection returned 
-09:48:29.358 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
-4. Connection.isReadOnly() returned false
-09:48:29.358 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
-4. Connection.getAutoCommit() returned true
-09:48:29.375 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-5. Connection opened. {executed in 17ms} 
-open connections:  1 2 3 4 5 (5)
-09:48:29.375 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-5. Connection.new Connection returned 
-09:48:29.375 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
-5. Connection.isReadOnly() returned false
-09:48:29.376 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
-5. Connection.getAutoCommit() returned true
-09:48:29.390 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-6. Connection opened. {executed in 14ms} 
-open connections:  1 2 3 4 5 6 (6)
-09:48:29.391 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-6. Connection.new Connection returned 
-09:48:29.391 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
-6. Connection.isReadOnly() returned false
-09:48:29.391 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
-6. Connection.getAutoCommit() returned true
-09:48:29.414 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-7. Connection opened. {executed in 23ms} 
-open connections:  1 2 3 4 5 6 7 (7)
-09:48:29.414 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-7. Connection.new Connection returned 
-09:48:29.415 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
-7. Connection.isReadOnly() returned false
-09:48:29.415 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
-7. Connection.getAutoCommit() returned true
-09:48:29.436 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-8. Connection opened. {executed in 20ms} 
-open connections:  1 2 3 4 5 6 7 8 (8)
-09:48:29.437 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-8. Connection.new Connection returned 
-09:48:29.437 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
-8. Connection.isReadOnly() returned false
-09:48:29.437 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
-8. Connection.getAutoCommit() returned true
-09:48:29.455 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-9. Connection opened. {executed in 17ms} 
-open connections:  1 2 3 4 5 6 7 8 9 (9)
-09:48:29.455 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-9. Connection.new Connection returned 
-09:48:29.456 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
-9. Connection.isReadOnly() returned false
-09:48:29.456 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
-9. Connection.getAutoCommit() returned true
-09:48:29.471 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10:12:16.611 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
 10. Connection opened. {executed in 15ms} 
 open connections:  1 2 3 4 5 6 7 8 9 10 (10)
-09:48:29.471 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10:12:16.612 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
 10. Connection.new Connection returned 
-09:48:29.471 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+10:12:16.612 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
 10. Connection.isReadOnly() returned false
-09:48:29.472 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+10:12:16.612 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
 10. Connection.getAutoCommit() returned true
-09:48:30.212 [main] INFO  kr.jungang.dive.user.service.UserServiceTests - assertNotNull Message: kr.jungang.dive.user.service.UserServiceImpl@6dce59e
-09:48:30.343 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:161)
-1. Connection.isValid(5) returned true
-09:48:30.348 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyConnection.getAutoCommit(HikariProxyConnection.java:-1)
-1. Connection.getAutoCommit() returned true
-09:48:30.498 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
-1. PreparedStatement.new PreparedStatement returned 
-09:48:30.499 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
-1. Connection.prepareStatement(UPDATE tbl_user
-		   SET 
-		       password = ?
-		 WHERE user_id = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@74667e6a
-09:48:30.504 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
-1. PreparedStatement.setString(1, "$2a$10$bETA0waSGtsMhIguCoFz3.BPePyMOMaC6l8afyzI8OIdl2CHo3hH2") returned 
-09:48:30.505 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
-1. PreparedStatement.setString(2, "devcolton") returned 
-09:48:30.511 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-1. UPDATE tbl_user SET password = '$2a$10$bETA0waSGtsMhIguCoFz3.BPePyMOMaC6l8afyzI8OIdl2CHo3hH2' 
-WHERE user_id = 'devcolton'  {executed in 6 ms}
-09:48:30.513 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-1. PreparedStatement.execute() returned false
-09:48:30.513 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.getUpdateCount(HikariProxyPreparedStatement.java:-1)
-1. PreparedStatement.getUpdateCount() returned 1
-09:48:30.514 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyStatement.close(ProxyStatement.java:76)
-1. PreparedStatement.close() returned 
-09:48:30.520 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:267)
-1. Connection.clearWarnings() returned 
-09:48:30.520 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyConnection.getAutoCommit(HikariProxyConnection.java:-1)
-1. Connection.getAutoCommit() returned true
-09:48:30.521 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
-1. PreparedStatement.new PreparedStatement returned 
-09:48:30.521 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
-1. Connection.prepareStatement(UPDATE tbl_user
-		   SET 
-		       password = ?
-		 WHERE user_id = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@5bf9ea6b
-09:48:30.521 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
-1. PreparedStatement.setString(1, "$2a$10$bETA0waSGtsMhIguCoFz3.BPePyMOMaC6l8afyzI8OIdl2CHo3hH2") returned 
-09:48:30.521 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setString(HikariProxyPreparedStatement.java:-1)
-1. PreparedStatement.setString(2, "devcolton") returned 
-09:48:30.523 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-1. UPDATE tbl_user SET password = '$2a$10$bETA0waSGtsMhIguCoFz3.BPePyMOMaC6l8afyzI8OIdl2CHo3hH2' 
-WHERE user_id = 'devcolton'  {executed in 2 ms}
-09:48:30.524 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-1. PreparedStatement.execute() returned false
-09:48:30.524 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyPreparedStatement.getUpdateCount(HikariProxyPreparedStatement.java:-1)
-1. PreparedStatement.getUpdateCount() returned 1
-09:48:30.524 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyStatement.close(ProxyStatement.java:76)
-1. PreparedStatement.close() returned 
-09:48:30.524 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:267)
-1. Connection.clearWarnings() returned 
-09:48:30.525 [main] INFO  kr.jungang.dive.user.service.UserServiceTests - true건 수정 완료
-09:48:30.552 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-1. Connection closed. {executed in 2ms} 
+10:12:17.433 [main] ERROR org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@999b951] to prepare test instance [kr.jungang.dive.product.persistence.ProductMapperTest@65cf4d6d]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kr.jungang.dive.product.persistence.ProductMapperTest': Unsatisfied dependency expressed through method 'setProductMapper' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'kr.jungang.dive.product.persistence.ProductMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:723) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:393) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209) [.cp/:?]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'kr.jungang.dive.product.persistence.ProductMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1700) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1256) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:715) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 28 more
+10:12:17.503 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+1. Connection closed. {executed in 3ms} 
 open connections:  2 3 4 5 6 7 8 9 10 (9)
-09:48:30.553 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10:12:17.504 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
 1. Connection.close() returned 
-09:48:30.574 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-2. Connection closed. {executed in 21ms} 
+10:12:17.554 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+2. Connection closed. {executed in 50ms} 
 open connections:  3 4 5 6 7 8 9 10 (8)
-09:48:30.575 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10:12:17.555 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
 2. Connection.close() returned 
-09:48:30.594 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-3. Connection closed. {executed in 19ms} 
+10:12:17.572 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+3. Connection closed. {executed in 16ms} 
 open connections:  4 5 6 7 8 9 10 (7)
-09:48:30.595 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10:12:17.573 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
 3. Connection.close() returned 
-09:48:30.609 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-4. Connection closed. {executed in 14ms} 
+10:12:17.589 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+4. Connection closed. {executed in 16ms} 
 open connections:  5 6 7 8 9 10 (6)
-09:48:30.610 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10:12:17.589 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
 4. Connection.close() returned 
-09:48:30.626 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10:12:17.606 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
 5. Connection closed. {executed in 16ms} 
 open connections:  6 7 8 9 10 (5)
-09:48:30.627 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10:12:17.606 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
 5. Connection.close() returned 
-09:48:30.643 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-6. Connection closed. {executed in 16ms} 
+10:12:17.623 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+6. Connection closed. {executed in 17ms} 
 open connections:  7 8 9 10 (4)
-09:48:30.643 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10:12:17.623 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
 6. Connection.close() returned 
-09:48:30.659 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10:12:17.639 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
 7. Connection closed. {executed in 16ms} 
 open connections:  8 9 10 (3)
-09:48:30.659 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10:12:17.640 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
 7. Connection.close() returned 
-09:48:30.683 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-8. Connection closed. {executed in 24ms} 
+10:12:17.656 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+8. Connection closed. {executed in 16ms} 
 open connections:  9 10 (2)
-09:48:30.683 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10:12:17.656 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
 8. Connection.close() returned 
-09:48:30.692 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
-9. Connection closed. {executed in 9ms} 
+10:12:17.673 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+9. Connection closed. {executed in 16ms} 
 open connections:  10 (1)
-09:48:30.692 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10:12:17.673 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
 9. Connection.close() returned 
-09:48:30.709 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10:12:17.689 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
 10. Connection closed. {executed in 16ms} 
 open connections:  none
-09:48:30.709 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10:12:17.691 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10. Connection.close() returned 
+10:13:29.235 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\JavaSpace\dive_v1.0\target\classes\kr\jungang\dive\user\persistence\UserMapper.class]
+10:13:29.259 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\JavaSpace\dive_v1.0\target\classes\kr\jungang\dive\board\persistence\PostMapper.class]
+10:13:29.260 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\JavaSpace\dive_v1.0\target\classes\kr\jungang\dive\board\persistence\ReplyMapper.class]
+10:13:29.379 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization...
+10:13:29.379 [main] DEBUG log4jdbc.debug - Using logger: null
+10:13:29.379 [main] DEBUG log4jdbc.debug - x log4jdbc.debug.stack.prefix is not defined
+10:13:29.379 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.warn.threshold is not defined
+10:13:29.380 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.error.threshold is not defined
+10:13:29.380 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+10:13:29.380 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+10:13:29.380 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+10:13:29.380 [main] DEBUG log4jdbc.debug - x log4jdbc.statement.warn is not defined (using default value false)
+10:13:29.380 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.select is not defined (using default value true)
+10:13:29.380 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.insert is not defined (using default value true)
+10:13:29.380 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.update is not defined (using default value true)
+10:13:29.381 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.delete is not defined (using default value true)
+10:13:29.381 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.create is not defined (using default value true)
+10:13:29.381 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+10:13:29.381 [main] DEBUG log4jdbc.debug - x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+10:13:29.381 [main] DEBUG log4jdbc.debug - x log4jdbc.drivers is not defined
+10:13:29.381 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql is not defined (using default value true)
+10:13:29.382 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+10:13:29.382 [main] DEBUG log4jdbc.debug - x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+10:13:29.382 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization done.
+10:13:29.382 [main] DEBUG log4jdbc.debug - DriverSpy intialization...
+10:13:29.448 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.OracleDriver
+10:13:29.448 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.driver.OracleDriver
+10:13:29.452 [main] DEBUG log4jdbc.debug - DriverSpy intialization done.
+10:13:30.343 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+1. Connection opened. {executed in 823ms} 
+open connections:  1 (1)
+10:13:30.344 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+1. Connection.new Connection returned 
+10:13:30.344 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.getAndSetNetworkTimeout(PoolBase.java:526)
+1. Connection.getNetworkTimeout() returned 0
+10:13:30.345 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+1. Connection.isReadOnly() returned false
+10:13:30.345 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+1. Connection.getAutoCommit() returned true
+10:13:30.348 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkValidationSupport(PoolBase.java:458)
+1. Connection.isValid(1) returned true
+10:13:30.348 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkDefaultIsolation(PoolBase.java:479)
+1. Connection.getTransactionIsolation() returned 2
+10:13:30.497 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2. Connection opened. {executed in 38ms} 
+open connections:  1 2 (2)
+10:13:30.497 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2. Connection.new Connection returned 
+10:13:30.497 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2. Connection.isReadOnly() returned false
+10:13:30.497 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+2. Connection.getAutoCommit() returned true
+10:13:30.513 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+3. Connection opened. {executed in 15ms} 
+open connections:  1 2 3 (3)
+10:13:30.514 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+3. Connection.new Connection returned 
+10:13:30.514 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+3. Connection.isReadOnly() returned false
+10:13:30.514 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+3. Connection.getAutoCommit() returned true
+10:13:30.529 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+4. Connection opened. {executed in 15ms} 
+open connections:  1 2 3 4 (4)
+10:13:30.529 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+4. Connection.new Connection returned 
+10:13:30.530 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+4. Connection.isReadOnly() returned false
+10:13:30.530 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+4. Connection.getAutoCommit() returned true
+10:13:30.547 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+5. Connection opened. {executed in 17ms} 
+open connections:  1 2 3 4 5 (5)
+10:13:30.548 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+5. Connection.new Connection returned 
+10:13:30.548 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+5. Connection.isReadOnly() returned false
+10:13:30.548 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+5. Connection.getAutoCommit() returned true
+10:13:30.567 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+6. Connection opened. {executed in 18ms} 
+open connections:  1 2 3 4 5 6 (6)
+10:13:30.567 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+6. Connection.new Connection returned 
+10:13:30.568 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+6. Connection.isReadOnly() returned false
+10:13:30.568 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+6. Connection.getAutoCommit() returned true
+10:13:30.583 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+7. Connection opened. {executed in 15ms} 
+open connections:  1 2 3 4 5 6 7 (7)
+10:13:30.584 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+7. Connection.new Connection returned 
+10:13:30.584 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+7. Connection.isReadOnly() returned false
+10:13:30.584 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+7. Connection.getAutoCommit() returned true
+10:13:30.599 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+8. Connection opened. {executed in 14ms} 
+open connections:  1 2 3 4 5 6 7 8 (8)
+10:13:30.600 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+8. Connection.new Connection returned 
+10:13:30.600 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+8. Connection.isReadOnly() returned false
+10:13:30.600 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+8. Connection.getAutoCommit() returned true
+10:13:30.615 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+9. Connection opened. {executed in 15ms} 
+open connections:  1 2 3 4 5 6 7 8 9 (9)
+10:13:30.616 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+9. Connection.new Connection returned 
+10:13:30.616 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+9. Connection.isReadOnly() returned false
+10:13:30.616 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+9. Connection.getAutoCommit() returned true
+10:13:30.631 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10. Connection opened. {executed in 14ms} 
+open connections:  1 2 3 4 5 6 7 8 9 10 (10)
+10:13:30.631 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10. Connection.new Connection returned 
+10:13:30.632 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+10. Connection.isReadOnly() returned false
+10:13:30.632 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+10. Connection.getAutoCommit() returned true
+10:13:31.216 [main] ERROR org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6870c3c2] to prepare test instance [kr.jungang.dive.product.persistence.ProductMapperTest@fb0a08c]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kr.jungang.dive.product.persistence.ProductMapperTest': Unsatisfied dependency expressed through method 'setProductMapper' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'kr.jungang.dive.product.persistence.ProductMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:723) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:393) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209) [.cp/:?]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'kr.jungang.dive.product.persistence.ProductMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1700) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1256) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:715) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 28 more
+10:13:31.316 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+1. Connection closed. {executed in 2ms} 
+open connections:  2 3 4 5 6 7 8 9 10 (9)
+10:13:31.317 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+1. Connection.close() returned 
+10:13:31.374 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+2. Connection closed. {executed in 57ms} 
+open connections:  3 4 5 6 7 8 9 10 (8)
+10:13:31.375 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+2. Connection.close() returned 
+10:13:31.407 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+3. Connection closed. {executed in 32ms} 
+open connections:  4 5 6 7 8 9 10 (7)
+10:13:31.407 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+3. Connection.close() returned 
+10:13:31.411 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+4. Connection closed. {executed in 3ms} 
+open connections:  5 6 7 8 9 10 (6)
+10:13:31.411 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+4. Connection.close() returned 
+10:13:31.426 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+5. Connection closed. {executed in 14ms} 
+open connections:  6 7 8 9 10 (5)
+10:13:31.427 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+5. Connection.close() returned 
+10:13:31.459 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+6. Connection closed. {executed in 32ms} 
+open connections:  7 8 9 10 (4)
+10:13:31.460 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+6. Connection.close() returned 
+10:13:31.468 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+7. Connection closed. {executed in 8ms} 
+open connections:  8 9 10 (3)
+10:13:31.469 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+7. Connection.close() returned 
+10:13:31.480 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+8. Connection closed. {executed in 11ms} 
+open connections:  9 10 (2)
+10:13:31.481 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+8. Connection.close() returned 
+10:13:31.493 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+9. Connection closed. {executed in 12ms} 
+open connections:  10 (1)
+10:13:31.494 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+9. Connection.close() returned 
+10:13:31.513 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10. Connection closed. {executed in 19ms} 
+open connections:  none
+10:13:31.514 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10. Connection.close() returned 
+10:14:52.165 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\JavaSpace\dive_v1.0\target\classes\kr\jungang\dive\user\persistence\UserMapper.class]
+10:14:52.191 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\JavaSpace\dive_v1.0\target\classes\kr\jungang\dive\board\persistence\PostMapper.class]
+10:14:52.192 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\JavaSpace\dive_v1.0\target\classes\kr\jungang\dive\board\persistence\ReplyMapper.class]
+10:14:52.197 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\DevSpace\JavaSpace\dive_v1.0\target\test-classes\kr\jungang\dive\product\persistence\ProductMapperTest.class]
+10:14:52.197 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\DevSpace\JavaSpace\dive_v1.0\target\classes\kr\jungang\dive\product\persistence\ProductMapper.class]
+10:14:52.510 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization...
+10:14:52.510 [main] DEBUG log4jdbc.debug - Using logger: null
+10:14:52.510 [main] DEBUG log4jdbc.debug - x log4jdbc.debug.stack.prefix is not defined
+10:14:52.510 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.warn.threshold is not defined
+10:14:52.511 [main] DEBUG log4jdbc.debug - x log4jdbc.sqltiming.error.threshold is not defined
+10:14:52.511 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+10:14:52.511 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+10:14:52.512 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+10:14:52.513 [main] DEBUG log4jdbc.debug - x log4jdbc.statement.warn is not defined (using default value false)
+10:14:52.513 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.select is not defined (using default value true)
+10:14:52.513 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.insert is not defined (using default value true)
+10:14:52.513 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.update is not defined (using default value true)
+10:14:52.513 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.delete is not defined (using default value true)
+10:14:52.513 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.create is not defined (using default value true)
+10:14:52.514 [main] DEBUG log4jdbc.debug - x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+10:14:52.514 [main] DEBUG log4jdbc.debug - x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+10:14:52.514 [main] DEBUG log4jdbc.debug - x log4jdbc.drivers is not defined
+10:14:52.514 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql is not defined (using default value true)
+10:14:52.514 [main] DEBUG log4jdbc.debug - x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+10:14:52.514 [main] DEBUG log4jdbc.debug - x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+10:14:52.514 [main] DEBUG log4jdbc.debug - log4jdbc-logj2 properties initialization done.
+10:14:52.514 [main] DEBUG log4jdbc.debug - DriverSpy intialization...
+10:14:52.626 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.OracleDriver
+10:14:52.626 [main] DEBUG log4jdbc.debug -   FOUND DRIVER oracle.jdbc.driver.OracleDriver
+10:14:52.631 [main] DEBUG log4jdbc.debug - DriverSpy intialization done.
+10:14:53.650 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+1. Connection opened. {executed in 970ms} 
+open connections:  1 (1)
+10:14:53.651 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+1. Connection.new Connection returned 
+10:14:53.651 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.getAndSetNetworkTimeout(PoolBase.java:526)
+1. Connection.getNetworkTimeout() returned 0
+10:14:53.652 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+1. Connection.isReadOnly() returned false
+10:14:53.652 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+1. Connection.getAutoCommit() returned true
+10:14:53.654 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkValidationSupport(PoolBase.java:458)
+1. Connection.isValid(1) returned true
+10:14:53.655 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.checkDefaultIsolation(PoolBase.java:479)
+1. Connection.getTransactionIsolation() returned 2
+10:14:53.833 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2. Connection opened. {executed in 69ms} 
+open connections:  1 2 (2)
+10:14:53.833 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+2. Connection.new Connection returned 
+10:14:53.833 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+2. Connection.isReadOnly() returned false
+10:14:53.833 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+2. Connection.getAutoCommit() returned true
+10:14:53.870 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+3. Connection opened. {executed in 37ms} 
+open connections:  1 2 3 (3)
+10:14:53.870 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+3. Connection.new Connection returned 
+10:14:53.870 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+3. Connection.isReadOnly() returned false
+10:14:53.871 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+3. Connection.getAutoCommit() returned true
+10:14:53.907 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+4. Connection opened. {executed in 36ms} 
+open connections:  1 2 3 4 (4)
+10:14:53.907 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+4. Connection.new Connection returned 
+10:14:53.907 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+4. Connection.isReadOnly() returned false
+10:14:53.907 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+4. Connection.getAutoCommit() returned true
+10:14:53.942 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+5. Connection opened. {executed in 34ms} 
+open connections:  1 2 3 4 5 (5)
+10:14:53.943 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+5. Connection.new Connection returned 
+10:14:53.943 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+5. Connection.isReadOnly() returned false
+10:14:53.943 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+5. Connection.getAutoCommit() returned true
+10:14:53.964 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+6. Connection opened. {executed in 21ms} 
+open connections:  1 2 3 4 5 6 (6)
+10:14:53.965 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+6. Connection.new Connection returned 
+10:14:53.965 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+6. Connection.isReadOnly() returned false
+10:14:53.965 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+6. Connection.getAutoCommit() returned true
+10:14:53.988 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+7. Connection opened. {executed in 23ms} 
+open connections:  1 2 3 4 5 6 7 (7)
+10:14:53.988 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+7. Connection.new Connection returned 
+10:14:53.988 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+7. Connection.isReadOnly() returned false
+10:14:53.989 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+7. Connection.getAutoCommit() returned true
+10:14:54.028 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+8. Connection opened. {executed in 39ms} 
+open connections:  1 2 3 4 5 6 7 8 (8)
+10:14:54.028 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+8. Connection.new Connection returned 
+10:14:54.029 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+8. Connection.isReadOnly() returned false
+10:14:54.032 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+8. Connection.getAutoCommit() returned true
+10:14:54.050 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+9. Connection opened. {executed in 18ms} 
+open connections:  1 2 3 4 5 6 7 8 9 (9)
+10:14:54.050 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+9. Connection.new Connection returned 
+10:14:54.051 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+9. Connection.isReadOnly() returned false
+10:14:54.051 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+9. Connection.getAutoCommit() returned true
+10:14:54.070 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10. Connection opened. {executed in 19ms} 
+open connections:  1 2 3 4 5 6 7 8 9 10 (10)
+10:14:54.070 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+10. Connection.new Connection returned 
+10:14:54.070 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:402)
+10. Connection.isReadOnly() returned false
+10:14:54.070 [HikariPool-1 connection adder] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:406)
+10. Connection.getAutoCommit() returned true
+10:14:55.109 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:161)
+1. Connection.isValid(5) returned true
+10:14:55.158 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyConnection.getAutoCommit(HikariProxyConnection.java:-1)
+1. Connection.getAutoCommit() returned true
+10:14:58.235 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+1. PreparedStatement.new PreparedStatement returned 
+10:14:58.235 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+1. Connection.prepareStatement(select *
+		  from tbl_product) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@19c1820d
+10:14:58.812 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select * from tbl_product  {executed in 573 ms}
+10:14:58.814 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. PreparedStatement.execute() returned true
+10:14:58.827 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyStatement.getResultSet(ProxyStatement.java:214)
+1. ResultSet.new ResultSet returned 
+10:14:58.828 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyStatement.getResultSet(ProxyStatement.java:214)
+1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@3a1f2a1
+10:14:58.836 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getMetaData(HikariProxyResultSet.java:-1)
+1. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@251c4280
+10:14:58.837 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.getType(HikariProxyResultSet.java:-1)
+1. ResultSet.getType() returned 1003
+10:14:58.838 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.isClosed(HikariProxyResultSet.java:-1)
+1. ResultSet.isClosed() returned false
+10:14:58.841 [main] INFO  log4jdbc.log4j2 - 
+|---|------|------------|-------|---------|------|-------|---------|------------|-----------|-----------|--------|
+|id |title |description |writer |user_num |price |region |reg_date |update_date |like_count |hits_count |enabled |
+|---|------|------------|-------|---------|------|-------|---------|------------|-----------|-----------|--------|
+|---|------|------------|-------|---------|------|-------|---------|------------|-----------|-----------|--------|
+
+10:14:58.841 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.next(HikariProxyResultSet.java:-1)
+1. ResultSet.next() returned false
+10:14:58.841 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.HikariProxyResultSet.close(HikariProxyResultSet.java:-1)
+1. ResultSet.close() returned void
+10:14:58.842 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.getMetaData(ProxyConnection.java:380)
+1. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@3dce6dd8
+10:14:58.848 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyStatement.close(ProxyStatement.java:76)
+1. PreparedStatement.close() returned 
+10:14:58.858 [main] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:267)
+1. Connection.clearWarnings() returned 
+10:14:58.913 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+1. Connection closed. {executed in 3ms} 
+open connections:  2 3 4 5 6 7 8 9 10 (9)
+10:14:58.914 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+1. Connection.close() returned 
+10:14:58.930 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+2. Connection closed. {executed in 15ms} 
+open connections:  3 4 5 6 7 8 9 10 (8)
+10:14:58.930 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+2. Connection.close() returned 
+10:14:58.946 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+3. Connection closed. {executed in 16ms} 
+open connections:  4 5 6 7 8 9 10 (7)
+10:14:58.947 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+3. Connection.close() returned 
+10:14:58.963 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+4. Connection closed. {executed in 16ms} 
+open connections:  5 6 7 8 9 10 (6)
+10:14:58.963 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+4. Connection.close() returned 
+10:14:58.980 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+5. Connection closed. {executed in 16ms} 
+open connections:  6 7 8 9 10 (5)
+10:14:58.980 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+5. Connection.close() returned 
+10:14:58.996 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+6. Connection closed. {executed in 16ms} 
+open connections:  7 8 9 10 (4)
+10:14:58.997 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+6. Connection.close() returned 
+10:14:59.013 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+7. Connection closed. {executed in 16ms} 
+open connections:  8 9 10 (3)
+10:14:59.014 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+7. Connection.close() returned 
+10:14:59.030 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+8. Connection closed. {executed in 16ms} 
+open connections:  9 10 (2)
+10:14:59.030 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+8. Connection.close() returned 
+10:14:59.047 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+9. Connection closed. {executed in 16ms} 
+open connections:  10 (1)
+10:14:59.047 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+9. Connection.close() returned 
+10:14:59.063 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
+10. Connection closed. {executed in 16ms} 
+open connections:  none
+10:14:59.064 [HikariPool-1 connection closer] INFO  log4jdbc.log4j2 -  com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection(PoolBase.java:143)
 10. Connection.close() returned 
