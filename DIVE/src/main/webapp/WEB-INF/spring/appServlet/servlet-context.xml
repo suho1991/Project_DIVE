@@ -65,6 +65,8 @@
 		base-package="kr.jungang.dive.product.controller" />
 	<context:component-scan
 		base-package="kr.jungang.dive.framework.controller" />
+	<context:component-scan
+		base-package="kr.jungang.dive.game.controller" />
 
 	<security:global-method-security
 		pre-post-annotations="enabled" secured-annotations="enabled">

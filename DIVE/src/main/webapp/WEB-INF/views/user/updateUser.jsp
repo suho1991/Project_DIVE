@@ -8,26 +8,12 @@
 <link rel="stylesheet" href="/resources/css/user/updateUser.css">
 	<div class="choice-sector">
 		<div class="choice-sector-content">
-			<section class="choice">
-				<div class="choice_btn">
-					<span class="login_sector"> <a href="/user/myPage"> <input
-							type="button" class="login_btn" value="M Y P A G E">
-					</a>
-					</span> <span class="signup_sector"> <a href="/user/userLogout">
-							<input type="button" class="login_btn" value="L O G O U T">
-					</a>
-					</span>
-				</div>
-			</section>
-			<section class="logo">
-				<div class="logo_image">
-					<i class="fas fa-universal-access"></i>
-				</div>
-			</section>
+			<h1 class="customer_title">My Page</h1><br />
 			<section class="customer">
 				<div class="customer_inform">
 					<form action="/user/updateUser" method="post">
 						<div class="form-group">
+							<p class="infoTit">기본 정보</p>
 							<label for="userId">아이디</label> <input class="form-control"
 								type="text" readonly='readonly' value='${user.userId}' name="userId">
 						</div>
@@ -52,6 +38,7 @@
 								readonly='readonly' value='${user.sex}' name="sex">
 						</div>
 						<br />
+						<p class="infoTit">기타 정보</p>
 						<div class="form-group">
 							<label for="address">주소</label> <input class="form-control"
 								type="text" value='${user.address}' name="address">
@@ -70,10 +57,10 @@
 						<input type="hidden" name="${_csrf.parameterName}"
 							value="${_csrf.token}" />
 
-						<button type="submit" data-oper='modify'>수정 완료</button>
+						<button class="formStyle" type="submit" data-oper='modify'>수정 완료</button>
 					</form>
 				</div>
-				<a href="/"><button class="cancle">HOME</button></a> <br />
+				
 			</section>
 		</div>
 	</div>

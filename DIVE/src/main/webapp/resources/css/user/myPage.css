@@ -11,20 +11,21 @@
 	text-align: center;
 }
 
-.login_btn, .signup_btn {
-	width: 100px;
-	height: 40px;
-	margin-top: 80px;
-	border-radius: 50px;
-	background-color: white;
+/* 회원정보 */
+fieldset {
+	border: none;
 }
 
-i {
-	font-size: 50px;
+.customer_title {
+	padding: 30px 0;
+	text-align: left;
+}
+.customer_inform {
+	text-align: center;
 }
 
 .fieldlabel {
-	padding: 0 0px 10px 80px;
+	padding: 0 0px 10px 60px;
 	text-align: left;
 }
 
@@ -46,4 +47,28 @@ i {
 
 .btnfield {
 	padding-top: 50px;
+}
+
+fieldset {
+	width: 300px;
+	margin: 0 auto;
+}
+
+.actionForm {
+	margin-top: 15px;
+}
+
+.customer_title {
+	padding-left: 20px;
+}
+
+.infoTit {
+	text-align: left;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.formStyle {
+	margin: 50px;
 }

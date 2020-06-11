@@ -24,8 +24,8 @@
 			<!-- 익명의 사용자의 경우 표시함(로그인 되어 있지 않는 user) -->
 			<sec:authorize access="isAnonymous()">
 				<ul class="clear">
-					<li><a href="/user/userLogin">LogIn</a></li>
-					<li><a href="/user/signUp">SignUp</a></li>
+					<li><a class="moveStyle" href="/user/signUp">SignUp</a></li>
+					<li><a class="moveStyle" href="/user/userLogin">LogIn</a></li>
 				</ul>
 			</sec:authorize>
 
@@ -37,7 +37,7 @@
 						<form action="/user/userLogout" method="POST">
 							<input type="hidden" name="${_csrf.parameterName}"
 								value="${_csrf.token}" />
-							<button>Logout</button>
+							<button class="btnStyle">Logout</button>
 						</form>
 					</li>
 					<!-- 스프링 시큐리티 principal 가져오는 라이브러리 선언
@@ -46,7 +46,7 @@
 					<li>
 						<form id="actionForm" method="get">
 							<!-- EL표현식으로 사용가능 -->
-							<a class='move' href='${principal.username}'> <sec:authentication
+							<a class='move moveStyle' href='${principal.username}'> <sec:authentication
 									property="principal.user.userId" />
 							</a>
 						</form>
@@ -64,7 +64,7 @@
 					<li>
 						<form id="actionForm" method="get">
 							<!-- EL표현식으로 사용가능 -->
-							<a class='move' href='${principal.username}'> <sec:authentication
+							<a class='move moveStyle' href='${principal.username}'> <sec:authentication
 									property="principal.user.userId" />
 							</a>
 						</form>
@@ -90,7 +90,7 @@
 			<form id="searchForm" action="/product/list" method="get" >
 				<input type="text" name='keyword' size="40" placeholder="검색어를 입력하세요">
 				<input type="hidden" name='type' value='T'>
-				<button >검색</button>
+				<button class="btnStyle">검색</button>
 			</form>
 		</div>
 		<div class="container">
@@ -117,16 +117,16 @@
 
 	<nav class="content_menu">
 		<ul class="menu_list">
-			<li><a href="/product/list"><img src="/resources/images/bookmark.png"
+			<li><a href="/product/list"><img src="/resources/images/pro_list.png"
 					alt="" width="60px" height="60px">
 				<p>상품 목록</p></a></li>
-			<li><a href="/board/list"><img src="/resources/images/calendar.png"
+			<li><a href="/board/list"><img src="/resources/images/board.png"
 					alt="" width="60px" height="60px">
 				<p>자유게시판</p></a></li>
-			<li><a href="../user/game.jsp"><img
+			<li><a href="/game/miniGame"><img
 					src="/resources/images/game.png" alt="" width="60px" height="60px">
-				<p>게임</p></a></li>
-			<li><a href="../user/lotto.jsp"><img
+				<p>미니 게임</p></a></li>
+			<li><a href="/game/lotto"><img
 					src="/resources/images/lotto.png" alt="" width="60px" height="60px">
 				<p>로또</p></a></li>
 		</ul>

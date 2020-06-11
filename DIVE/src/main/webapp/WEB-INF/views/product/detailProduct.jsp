@@ -6,6 +6,7 @@
 	prefix="sec"%>
 <%@ include file="../include/header.jsp"%>
 <link rel="stylesheet" href="../resources/css/product/detailProduct.css">
+
 <div class="product_list_wrap">
 	<div class="product_list_wraping">
 		<div class="product_img"></div>
