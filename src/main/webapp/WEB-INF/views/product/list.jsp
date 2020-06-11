@@ -4,8 +4,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>
 <%@ include file="../include/header.jsp"%>
-<link rel="stylesheet" href="../resources/css/board.css">
-
+<link rel="stylesheet" href="../resources/css/product/list.css">
 <div class="board_list_wrap">
         <table class="board_list">
             <section class="top">
@@ -89,10 +88,7 @@
      	<input type="hidden" name='type' value='${pageMaker.cri.type}'>
      	<input type="hidden" name='keyword' value='${pageMaker.cri.keyword}'>
     </form>
-    <script src="../resources/js/board.js"></script>
-</body>
-</html>
-
+<%@ include file="../include/footer.jsp"%>
 <script>
 $(document).ready(function(){
     var actionForm = $('#actionForm');

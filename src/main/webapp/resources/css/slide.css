@@ -1,13 +1,13 @@
 /* General styles */
 * {
+    box-sizing: border-box;
     -webkit-font-smoothing: antialised;
 }
 
 .container {
     position: relative;
     width: 100%;	
-    overflow: hidden;
-    padding-bottom: 80px;	
+	overflow: hidden;	
 }
 
 .slider-container {
@@ -46,10 +46,10 @@
     top: 50%;
 	left:50%;
     transform: translateY(-50%);
-    z-index: 999999;
+    /* z-index: 999999; */
     display: inline-block;
-    height: 3em;
-    width: 3em;
+    height: 1em;
+    width: 1em;
     border-radius: 50%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -63,26 +63,26 @@
 }
 
 #prev { 
-    background-image: url('에로우_왼쪽.png'); 
-    margin-left: -240px;
-    /* background-color: black; */
+    /* background-image: url('화살표_왼쪽.png');  */
+    margin-left: -880px;
+    background-color: white;
 }
 
 #prev:hover { 
-    background-image: url('에로우_왼쪽.png'); 
-    /* background-color: black; */
+    /* background-image: url('화살표_왼쪽.png');  */
+    background-color: white;
 }
 
 #next {
-    margin-left: 200px;
-    background-image: url('에로우_오른쪽.png');
-    /* background-color: black; */
+    margin-left: 780px;
+    /* background-image: url('화살표_오른쪽.png'); */
+    background-color: white;
 	
 }
 
 #next:hover { 
-    background-image: url('에로우_오른쪽.png'); 
-    /* background-color: black; */
+    /* background-image: url('화살표_오른쪽.png');  */
+    background-color: white;
 }
 
 .pager {
@@ -91,16 +91,14 @@
     right: 0;
     bottom: 0;
     text-align: center;
-    margin: 0;
-    padding: 0;
 }
 
 .pager span {
     width: 10px;
     height: 10px;
-    background-color: lightgrey;
+    background-color: wheat;
     border-radius: 50%;
     display: inline-block;
     text-indent: -9999em;
-    margin: 0 5px;
+    margin: 0 10px;
 }

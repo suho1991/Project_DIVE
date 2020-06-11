@@ -5,11 +5,10 @@
 <%@ taglib uri="http://www.springframework.org/security/tags"
 	prefix="sec"%>
 <%@ include file="../include/header.jsp"%>
-<link rel="stylesheet" href="/resources/css/productitem.css">
+<link rel="stylesheet" href="../resources/css/product/detailProduct.css">
  <div class="product_list_wrap">
         <div class="product_list_wraping">
             <div class="product_img">
-				
     
             </div>
             <div class="product_item">
@@ -84,9 +83,7 @@
         <input type="hidden" name="keyword" value="${criteria.keyword}">
         <input type='hidden' name="${_csrf.parameterName}" value="${_csrf.token}" />
     </form>
-</body>
-
-</html>
+<%@ include file="../include/footer.jsp"%>
 <script>
 $(document).ready(function() {
 	(function(){

@@ -74,7 +74,7 @@ public class UserController {
 	public String updateUser(UserDTO updateUser, RedirectAttributes rttr) {
 		userService.updateUser(updateUser);
 		rttr.addFlashAttribute("result", updateUser.getUserId());
-		return "redirect:/user/myPage";
+		return "redirect:/user/findById?userId=" + updateUser.getUserId();
 	}
 
 	@GetMapping("/findMyId")

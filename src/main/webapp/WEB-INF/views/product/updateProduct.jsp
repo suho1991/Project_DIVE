@@ -4,58 +4,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib uri="http://www.springframework.org/security/tags"
 	prefix="sec"%>
-<link rel="stylesheet" href="../resources/css/productwrite.css">
+<link rel="stylesheet" href="../resources/css/product/updateProduct.css">
 <%@ include file="../include/header.jsp"%>
-<style>
-.uploadResult {
-	width: 100%;
-	background-color: gray;
-}
-
-.uploadResult ul {
-	display: flex;
-	flex-flow: row;
-	justify-content: center;
-	align-items: center;
-}
-
-.uploadResult ul li {
-	list-style: none;
-	padding: 10px;
-}
-
-.uploadResult ul li img {
-	width: 200px;
-}
-
-.uploadResult ul li span {
-	color: white;
-}
-
-.bigPictureWrapper {
-	position: absolute;
-	display: none;
-	justify-content: center;
-	align-items: center;
-	top: 0%;
-	width: 100%;
-	heigth: 100%;
-	background-color: gray;
-	z-index: 100;
-	background: rgba(255, 255, 255, 0.5);
-}
-
-.bigPicture {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.bigPicture img {
-	width: 600px;
-}
-</style>
 <div class="bigPictureWrapper">
 <div class="bigPicture">
 </div>
@@ -123,8 +73,7 @@
 </div>
 
 <script src="../resources/js/productwrite.js"></script>
-</body>
-</html>
+<%@ include file="../include/footer.jsp"%>
 <script>
 $(document).ready(function(){
 

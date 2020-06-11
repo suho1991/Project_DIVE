@@ -27,12 +27,6 @@
 						<when test="type == 'T'.toString()">
 							title like '%' || #{keyword}||'%'
 						</when>
-						<when test="type == 'D'.toString()">
-							description like '%' || #{keyword}||'%'
-						</when>
-						<when test="type == 'R'.toString()">
-							region like '%' || #{keyword}||'%'
-						</when>
 					</choose>
 				</trim>
 			</foreach>
