@@ -126,7 +126,11 @@
 			<li><a href="/game/miniGame"><img
 					src="/resources/images/game.png" alt="" width="60px" height="60px">
 				<p>미니 게임</p></a></li>
+<<<<<<< HEAD
 			<li><a href="/game/lotto"><img
+=======
+			<li><a href="../user/lotto.jsp"><img
+>>>>>>> 00e99ec5162d43f84fc7e3c329ea0edeadc0f854
 					src="/resources/images/lotto.png" alt="" width="60px" height="60px">
 				<p>로또</p></a></li>
 		</ul>

@@ -14,7 +14,10 @@
         
         
         
+<<<<<<< HEAD
         
+=======
+>>>>>>> 00e99ec5162d43f84fc7e3c329ea0edeadc0f854
         <property name="java-output-path" value="target/classes"/>
                 
         <property name="context-root" value="/"/>
