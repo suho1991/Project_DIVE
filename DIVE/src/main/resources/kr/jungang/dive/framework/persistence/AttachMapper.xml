@@ -20,7 +20,7 @@
 	   	 and owner_id = #{ownerId}
 	]]>
 	</select>
-
+	
 	<select id="getOldFiles" resultMap="attachResultMap">
 	<![CDATA[
 	  select * 
@@ -29,7 +29,7 @@
 	   	 and owner_id in
 	]]>
 		<foreach item="post" collection="listPost" open="(" separator="," close=")">
-        	#{post.id}
+        	#{product.id}
 		</foreach>
 	</select>
 	

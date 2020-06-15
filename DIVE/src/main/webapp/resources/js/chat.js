@@ -1,6 +1,6 @@
 let socket = null;
 function connect() {
-	socket = new SockJS("http://localhost:8080/chat"); // 웹소켓 객체생성
+	socket = new SockJS("http://172.30.1.53:8080/chat"); // 웹소켓 객체생성
 	socket.onopen = onOpen;
 	socket.onmessage = onMessage;
 	socket.onclose = onClose;
@@ -13,13 +13,43 @@ function disconnect() {
 
 function onOpen(event) { // 서버에 연결되면 실행
 	console.log('Info: connection opened!');
-	appendMessage("연결되었습니다.");
+	appendMessage("연결 되었습니다.");
 }
 
 function onMessage(event) { // 서버에서 메시지를 받으면 실행
 	let data = event.data;
-	console.log(data + '\n');
-	appendMessage(data);
+	let sessionId = null;
+	let message = null;
+
+	// 문자열 split
+	let strArray = data.split(':');
+	for (var i = 0; i < strArray.length; i++) {
+		console.log('str[' + i + ']: ' + strArray[i] + '\n');
+	}
+
+	// 현재 session userId
+	let currentUser_session = $('#sessionUserId').val();
+	console.log(currentUser_session);
+	sessionId = strArray[0];
+	message = strArray[1];
+
+	if (sessionId === currentUser_session) {
+		let printHTML = '<div class="my-bubble bubble"><pre>';
+		printHTML += '<strong>' + data + '</strong>';
+		printHTML += '</pre></div>';
+		$('.chatbox').append(printHTML);
+		$('.chatbox').animate({
+			scrollTop : $('.chatbox').get(0).scrollHeight
+		}, 100);
+	} else {
+		let printHTML = '<div class="friend-bubble bubble"><pre>';
+		printHTML += '<strong> [' + sessionId + '] ' + message + '</strong>';
+		printHTML += '</pre></div>';
+		$('.chatbox').append(printHTML);
+		$('.chatbox').animate({
+			scrollTop : $('.chatbox').get(0).scrollHeight
+		}, 100);
+	}
 }
 
 function onClose(event) { // 연결이 종료되면 실행
@@ -46,32 +76,32 @@ function onError(error) { // 웹소켓 에러 발생
 	console.log('error' + error);
 }
 $(document).ready(function() {
-	
-$('#sendBtn').click(function() {
-	send();
-});
 
-$('#exitBtn').click(function() {
-	disconnect();
-});
+	$('#sendBtn').click(function() {
+		send();
+	});
 
-//keydown으로 인식할 경우 입력값이 늦게 반영된다.
-$('textarea').keyup(function() {
-  var text = $('textarea').val();
+	$('#exitBtn').click(function() {
+		disconnect();
+	});
 
-  // enter입력으로 send 버튼과 동일한 효과 주기 위한 코드
-  if(event.key === 'Enter') {
-      //shift+enter 입력시 개행의 효과를 주기 위한 코드
-      //event.shift의 값은 boolean 형이다.
-      if(!event.shiftKey) {
-          if(text.length > 1) {
-              send();
-          } else {
-              $('textarea').val('');
-          }
-      }                
-  }
-  // 입력값이 없을 때 비활성화된 버튼을 키 입력시 활성화하기 위한 코드
-  $('#send').attr('disabled', false);
-});
+	// keydown으로 인식할 경우 입력값이 늦게 반영된다.
+	$('textarea').keyup(function() {
+		var text = $('textarea').val();
+
+		// enter입력으로 send 버튼과 동일한 효과 주기 위한 코드
+		if (event.key === 'Enter') {
+			// shift+enter 입력시 개행의 효과를 주기 위한 코드
+			// event.shift의 값은 boolean 형이다.
+			if (!event.shiftKey) {
+				if (text.length > 1) {
+					send();
+				} else {
+					$('textarea').val('');
+				}
+			}
+		}
+		// 입력값이 없을 때 비활성화된 버튼을 키 입력시 활성화하기 위한 코드
+		$('#send').attr('disabled', false);
+	});
 });

@@ -6,116 +6,7 @@
 <%@ taglib uri="http://www.springframework.org/security/tags"
 	prefix="sec"%>
 <%@ include file="../include/header.jsp"%>
-<style>
-.top {
-	text-align: center;
-}
-
-.top h1 {
-	font-size: 1.5em;
-}
-
-.logo i {
-	font-size: 50px;
-	margin: 30px;
-}
-
-a {
-	text-decoration: none;
-}
-
-.logo a:link, .logo a:visited {
-	color: black;
-}
-
-.board_list_wrap {
-	width: 900px;
-	height: 100%;
-	margin: 150px auto;
-	background-color: white;
-	border-radius: 10px;
-	padding-top: 20px;
-	padding: 50px;
-	padding-bottom: 100px;
-}
-
-.board_list_wraping {
-	width: 500px;
-	margin: 0 auto;
-}
-
-.board {
-	width: 500px;
-	margin: 0 auto;
-}
-
-.board_title_write {
-	width: 500px;
-}
-
-.board_content_write {
-	width: 500px;
-	height: 200px;
-}
-
-.board_btn {
-	width: 500;
-	text-align: right;
-}
-
-.btn_modification, .btn_delete, .btn_list, .board_comment_registration {
-	padding: 5px;
-}
-
-.comment_contenter {
-	list-style: none;
-}
-
-.comment_date {
-	font-size: 13px;
-	color: darkgray;
-}
-
-.paging {
-	font-size: 0;
-	/* list 사이 여백 공간 초기화 */
-	margin-top: 20px;
-	text-align: center;
-}
-
-.paging a {
-	display: inline-block;
-	margin-left: 10px;
-	padding: 5px 10px;
-	border-radius: 100px;
-	font-size: 12px;
-	/* .board_list_wrap .paging 에서 여백 초기화한 값을 토대로 다시 사이즈 재지정 */
-	color: black;
-}
-
-.paging a:first-child {
-	margin-left: 0;
-}
-
-.paging a.btn {
-	border: 1px solid #eee;
-	/* 옆의 border가 들어간 item들과 크기를 맞추기위하여 */
-	text-decoration: none;
-	background: white;
-}
-
-.paging a.num {
-	border: 1px solid blue;
-	font-weight: 600;
-	color: blue;
-}
-
-.paging a.num.on {
-	background: blue;
-	color: #fff;
-}
-</style>
-
+<link rel="stylesheet" href="/resources/css/board/detailPost.css">
 <div class="board_list_wrap">
 	<div class="board_list_wraping">
 		<div class="top">
@@ -188,9 +79,7 @@ a {
 </div>
 
 
-</body>
-
-</html>
+<%@ include file="../include/footer.jsp"%>
 <script type="text/javascript" src="/resources/js/reply.js"></script>
 <script>
 $(document).ready(function(){

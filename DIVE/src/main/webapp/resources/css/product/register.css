@@ -1,0 +1,96 @@
+.top {
+	text-align: center;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+.logo i {
+	font-size: 50px;
+	margin: 30px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo a:link, .logo a:visited {
+	color: black;
+}
+
+.board_list_wrap {
+	width: 900px;
+	height: 100%;
+	margin: 150px auto;
+	background-color: white;
+	border-radius: 10px;
+	padding-top: 20px;
+	padding: 50px;
+	padding-bottom: 100px;
+}
+
+.board_list_wraping {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.board {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.board_title_write {
+	width: 500px;
+}
+
+.board_content_write {
+	width: 500px;
+	height: 200px;
+}
+
+.board_btn {
+	width: 500;
+	text-align: right;
+}
+
+.btn_registration, .btn_list {
+	padding: 5px;
+}
+
+.board_region {
+	margin-right: 60px;
+}
+
+.board_region, .board_price {
+	display: inline-block;
+}
+
+.board_size {
+	width: 200px;
+}
+
+.uploadResult {
+	width: 100%;
+	background-color: gray;
+}
+
+.uploadResult ul {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.uploadResult ul li {
+	list-style: none;
+	padding: 10px;
+}
+
+.uploadResult ul li img {
+	width: 200px;
+}
+
+.uploadResult ul li span {
+	color: white;
+}

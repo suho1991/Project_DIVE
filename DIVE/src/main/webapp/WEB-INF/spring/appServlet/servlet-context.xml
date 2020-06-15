@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans:beans
-	xmlns="http://www.springframework.org/schema/mvc"
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:beans="http://www.springframework.org/schema/beans"
 	xmlns:context="http://www.springframework.org/schema/context"
@@ -46,15 +45,6 @@
 	<beans:bean id="chatHandler"
 		class="kr.jungang.dive.chat.ChatHandler"></beans:bean>
 
-	<!-- STOMP 설정 -->
-	<websocket:message-broker
-		application-destination-prefix="/app">
-		<websocket:stomp-endpoint path="/stomp">
-			<websocket:sockjs />
-		</websocket:stomp-endpoint>
-		<websocket:simple-broker prefix="/topic" />
-	</websocket:message-broker>
-
 	<beans:bean id="multipartResolver"
 		class="org.springframework.web.multipart.support.StandardServletMultipartResolver">
 	</beans:bean>
@@ -73,6 +63,10 @@
 		base-package="kr.jungang.dive.board.controller" />
 	<context:component-scan
 		base-package="kr.jungang.dive.product.controller" />
+	<context:component-scan
+		base-package="kr.jungang.dive.framework.controller" />
+	<context:component-scan
+		base-package="kr.jungang.dive.game.controller" />
 
 	<security:global-method-security
 		pre-post-annotations="enabled" secured-annotations="enabled">

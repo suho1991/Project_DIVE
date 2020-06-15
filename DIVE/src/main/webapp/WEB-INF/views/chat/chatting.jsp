@@ -22,18 +22,20 @@
 			<button id="minimize" class="header-btn"></button>
 			<button id="maximize" class="header-btn"></button>
 
-			<img id="profile-pic" src="../../resources/images/person.png" width="50"
-				height="50"> <span id="username">프로젝트 가즈아</span>
+			<img id="profile-pic" src="../../resources/images/person.png"
+				width="50" height="50"> <span id="username">프로젝트 가즈아</span> 
 		</div>
 
 		<div class="chatbox">
+			<!-- User Session Info Hidden -->
+			<input type="hidden" value='${userId}' id="sessionUserId">
 			<div id="chatMessageArea"></div>
 		</div>
 
 		<div class="text-box">
 			<textarea id="msg" placeholder="대화내용이 들어갑니다."></textarea>
-			<input type="button" id="sendBtn" value="전송" />
-			<input type="button" id="exitBtn" value="나가기" />
+			<input type="button" id="sendBtn" value="전송" /> <input type="button"
+				id="exitBtn" value="나가기" />
 			<div class="clearfix"></div>
 		</div>
 	</div>

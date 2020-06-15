@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import kr.jungang.dive.board.persistence.ReplyMapper;
-import kr.jungang.dive.board.service.ReplyServiceImpl;
+import kr.jungang.dive.framework.domain.AttachVO;
+import kr.jungang.dive.framework.persistence.AttachMapper;
 import kr.jungang.dive.product.domain.ProductCriteria;
 import kr.jungang.dive.product.domain.ProductVO;
 import kr.jungang.dive.product.persistence.ProductMapper;
@@ -20,6 +20,9 @@ import lombok.extern.log4j.Log4j2;
 public class ProductServiceImpl implements ProductService {
 	@Setter(onMethod_ = @Autowired)
 	private ProductMapper productMapper;
+	
+	@Setter(onMethod_ = @Autowired)
+	private AttachMapper attachMapper;
 	
 	@Override
 	public List<ProductVO> getAllProduct() {
@@ -42,18 +45,43 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	@Override
-	public int registerProduct(ProductVO obj) {
-		return productMapper.registerProduct(obj);
+	public void registerProduct(ProductVO obj) {
+		productMapper.registerProduct(obj);
+		if(obj.hasAttach()) {
+			obj.getListAttach().forEach(attach -> {
+				attach.setOwnerId(obj.getId());
+				attach.setOwnerType(obj.getClass().getName());
+				attachMapper.insertAttach(attach);
+			});
+		}
 	}
-
+	
 	@Override
-	public int updateProduct(ProductVO obj) {
-		return productMapper.updateProduct(obj);
+	public List<AttachVO> getAttachList(long id) {
+		return attachMapper.findByOwner(id, ProductVO.class.getName());
+	}
+	
+	@Override
+	public boolean updateProduct(ProductVO obj) {
+		attachMapper.deleteAll(obj.getId(), ProductVO.class.getName());
+		boolean modifyResult = productMapper.updateProduct(obj) == 1;
+		if (modifyResult && obj.hasAttach()) {
+			obj.getListAttach().forEach(attach ->{
+				attach.setOwnerId(obj.getId());
+				attach.setOwnerType(ProductVO.class.getName());
+				attachMapper.insertAttach(attach);
+			});
+		}
+		return modifyResult;
 	}
 
 	@Override
 	public int deleteProduct(long id) {
 		return productMapper.deleteProduct(id);
 	}
+
+	
+	
+
 
 }

@@ -6,67 +6,7 @@
 <%@ taglib uri="http://www.springframework.org/security/tags"
 	prefix="sec"%>
 <%@ include file="../include/header.jsp"%>
-<style>
-.top {
-	text-align: center;
-}
-
-h1 {
-	font-size: 1.5em;
-}
-
-.logo i {
-	font-size: 50px;
-	margin: 30px;
-}
-
-a {
-	text-decoration: none;
-}
-
-.logo a:link, .logo a:visited {
-	color: black;
-}
-
-.board_list_wrap {
-	width: 900px;
-	height: 100%;
-	margin: 150px auto;
-	background-color: white;
-	border-radius: 10px;
-	padding-top: 20px;
-	padding: 50px;
-	padding-bottom: 100px;
-}
-
-.board_list_wraping {
-	width: 500px;
-	margin: 0 auto;
-}
-
-.board {
-	width: 500px;
-	margin: 0 auto;
-}
-
-.board_title_write {
-	width: 500px;
-}
-
-.board_content_write {
-	width: 500px;
-	height: 200px;
-}
-
-.board_btn {
-	width: 500;
-	text-align: right;
-}
-
-.btn_registration, .btn_list {
-	padding: 5px;
-}
-</style>
+<link rel="stylesheet" href="/resources/css/board/create.css">
 <div class="board_list_wrap">
 	<div class="board_list_wraping">
 		<div class="top">
@@ -104,7 +44,12 @@ a {
 	</div>
 </div>
 
-</body>
-
-</html>
-
+<%@ include file="../include/footer.jsp"%>
+<script>
+$(document).ready(function(){
+	$(".btn_list").on("click", function(e){
+		e.preventDefault();
+		location.href="/board/list";
+	})
+})
+</script>
