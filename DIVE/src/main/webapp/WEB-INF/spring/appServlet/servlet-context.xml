@@ -67,6 +67,8 @@
 		base-package="kr.jungang.dive.framework.controller" />
 	<context:component-scan
 		base-package="kr.jungang.dive.game.controller" />
+	<context:component-scan
+		base-package="kr.jungang.dive.exception" />
 
 	<security:global-method-security
 		pre-post-annotations="enabled" secured-annotations="enabled">
