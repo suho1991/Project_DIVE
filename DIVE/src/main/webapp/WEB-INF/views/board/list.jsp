@@ -77,9 +77,8 @@
 		<c:if test="${pageMaker.next}">
 			<a href="${pageMaker.endPage + 1}" class="btn pagingBtn">></a>
 		</c:if>
-		
 	</div>
-	<form id='actionForm' action='/board/list' method='get'>
+	<form id='actionBoardForm' action='/board/list' method='get'>
       	<input type="hidden" name='pageNum' value='${pageMaker.cri.pageNum}' >
       	<input type="hidden" name='amount' value='${pageMaker.cri.amount}' >
       	<input type="hidden" name='type' value='${pageMaker.cri.type}'>
@@ -101,7 +100,7 @@ $(document).ready(function(){
 		}
 	}
 	//페이징 이벤트 처리
-	var actionForm = $('#actionForm');
+	var actionForm = $('#actionBoardForm');
     $('.pagingBtn').on('click', function(e) {
 		e.preventDefault();
 		

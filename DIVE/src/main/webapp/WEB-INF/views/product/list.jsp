@@ -77,7 +77,7 @@
 		</c:if>
 	</div>
     </div>
-    <form id='actionForm' action='/product/list' method='get'>
+    <form id='actionProductForm' action='/product/list' method='get'>
      	<input type="hidden" name='pageNum' value='${pageMaker.cri.pageNum}' >
      	<input type="hidden" name='amount' value='${pageMaker.cri.amount}' >
      	<input type="hidden" name='type' value='${pageMaker.cri.type}'>
@@ -96,7 +96,7 @@ $(document).ready(function(){
 		}
 	}
 	
-    var actionForm = $('#actionForm');
+    var actionForm = $('#actionProductForm');
 
 	  $('.move').on('click', function(e) {
       	e.preventDefault();

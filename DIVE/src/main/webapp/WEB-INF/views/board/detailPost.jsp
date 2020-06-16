@@ -49,7 +49,6 @@
 			<input type="hidden" name="type" value="${criteria.type}">
 			<input type="hidden" name="keyword" value="${criteria.keyword}">
 			<input type='hidden' name="${_csrf.parameterName}" value="${_csrf.token}" />
-			
 		</form>
 
 
