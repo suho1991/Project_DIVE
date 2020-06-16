@@ -43,8 +43,8 @@
 	
 	
 	<!-- 검색  -->
-	<form id="searchForm" class="form-inline" action="/board/list" method="get" >
-							<select class="form-control" name='type'>
+	<form id="searchForm" action="/board/list" method="get" >
+							<select name='type'>
 								<option value="" 
 									<c:out value="${pageMaker.cri.type == null ? 'selected':''}"/>>────────────</option>
 								<option value="T"
@@ -62,14 +62,14 @@
 								<option value="TWC"
 									<c:out value="${pageMaker.cri.type eq 'TWC' ? 'selected':''}"/>>전체</option>
 							</select>
-							<input class="form-control" type="text" name='keyword'>
+							<input type="text" name='keyword'>
 							<input type="hidden" name='pageNum' value='${pageMaker.cri.pageNum}'>
                             <input type="hidden" name='amount' value='${pageMaker.cri.amount}' >
-                            <button id='searchBtn' class='btn btn-primary'>검색</button>
+                            <button id='searchBtn'>검색</button>
 						</form>
 	
 	<div class="paging">
-		<a href="#" class="btn"> <<</a> 
+		<a href="${pageMaker.startPage}" class="btn pagingBtn"> <<</a> 
 		<c:if test="${pageMaker.prev}">
 			<a href="${pageMaker.startPage - 1}" class="btn pagingBtn"> <</a>
 		</c:if>
@@ -79,7 +79,8 @@
 		<c:if test="${pageMaker.next}">
 			<a href="${pageMaker.endPage + 1}" class="btn pagingBtn">></a>
 		</c:if>
-		  <a href="#" class="btn">>></a>
+		<a href="${pageMaker.endPage}" class="btn pagingBtn">>></a>
+		
 	</div>
 	<form id='actionForm' action='/board/list' method='get'>
       	<input type="hidden" name='pageNum' value='${pageMaker.cri.pageNum}' >
@@ -93,7 +94,15 @@
 <%@ include file="../include/footer.jsp"%>
 <script>
 $(document).ready(function(){
+	var result = "${result}";
 	
+	checkAlert(result);
+	
+	function checkAlert(result) {
+		if(parseInt(result) > 0) {
+			alert(result + "번 글이 등록 되었습니다.")
+		}
+	}
 	//페이징 이벤트 처리
 	var actionForm = $('#actionForm');
     $('.pagingBtn').on('click', function(e) {

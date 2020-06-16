@@ -125,13 +125,12 @@
 									operForm.submit();
 								});
 
-						$("button[data-oper='delete']").on(
-								"click",
-								function(e) {
-									operForm.attr("action",
-											"/product/deleteProduct").attr(
-											"method", "post").submit();
-								});
-
+					$("button[data-oper='delete']").on("click", function(e) {
+						var confirmFlag = confirm("정말로 삭제하시겠습니까?");
+						if(confirmFlag) {
+							operForm.attr("action", "/product/deleteProduct").attr("method", "post").submit();
+						}
 					});
+
+	});
 </script>

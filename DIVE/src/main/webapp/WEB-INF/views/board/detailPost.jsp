@@ -97,7 +97,12 @@ $(document).ready(function(){
 	});
 	
 	$("button[data-oper='delete']").on("click", function(e) {
-		operForm.attr("action", "/board/deletePost").attr("method", "post").submit();
+		var confirmFlag = confirm("정말로 삭제하시겠습니까?");
+		if (confirmFlag) {
+			operForm.attr("action", "/board/deletePost").attr("method", "post").submit();
+		} else {
+			
+		}
 	});
 	
 	
@@ -146,21 +151,28 @@ $(document).ready(function(){
 					id : replyId
 			}
 			replyService.updateReply(replyObj, csrfHeaderName, csrfTokenValue, function(result) {
+				alert("수정 완료");
 				location.href="/board/detailPost?id=" + postId;
 			});
 		});
 	});
 	
+	//댓글 삭제
 	$(document).on("click", ".deleteReplyBtn", function() {
+		var confirmFlag = confirm("정말로 삭제하시겠습니까?");
 		var replyId = $(this).data("id");
-		replyService.deleteReply(replyId, loginUserNum, csrfHeaderName, csrfTokenValue, function(successMsg) {
-			if (successMsg === 'success') {
-				alert('Remove 성공');
-				location.href="/board/detailPost?id=" + postId;
-			}
-		}, function(err) {
-			alert('Error....' + err);
-		});
+		if (confirmFlag) {
+			replyService.deleteReply(replyId, loginUserNum, csrfHeaderName, csrfTokenValue, function(successMsg) {
+				if (successMsg === 'success') {
+					alert('삭제 성공');
+					location.href="/board/detailPost?id=" + postId;
+				}
+			}, function(err) {
+				alert('삭제 실패....' + err);
+			});
+		} else {
+				
+		}
 	});
 	
 	

@@ -25,7 +25,7 @@
 	</a>
         <ul class="navbar_search">
             <div class="navbar_search_box">
-	            <form id="searchForm" action="/product/list" method="get" >
+	            <form action="/product/list" method="get" >
 					<input type="text" class="navbar_search_bar" name='keyword' size="40" placeholder="검색어를 입력하세요">
 					<input type="hidden" name='type' value='T'>
 					<button class="navbar_search_btn"></button>

@@ -45,7 +45,6 @@ public class PostController {
 	@GetMapping("/create")
 	@PreAuthorize("isAuthenticated()") //인증된 상태일 때 연결해 줄 것이다.
 	public void createPost() {
-		
 	}
 	
 	@GetMapping("/updatePost")
@@ -77,7 +76,7 @@ public class PostController {
 	public String deletePost(@RequestParam("id") int id, @ModelAttribute("criteria") PostCriteria postCriteria, 
 			RedirectAttributes rttr, long userNum){
 		if(postService.deletePost(id) == 1) {
-			rttr.addFlashAttribute("result","success");			
+			rttr.addFlashAttribute("result","delete");			
 		}
 		return "redirect:/board/list";
 	}

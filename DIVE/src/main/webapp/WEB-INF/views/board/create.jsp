@@ -47,6 +47,7 @@
 <%@ include file="../include/footer.jsp"%>
 <script>
 $(document).ready(function(){
+
 	$(".btn_list").on("click", function(e){
 		e.preventDefault();
 		location.href="/board/list";
