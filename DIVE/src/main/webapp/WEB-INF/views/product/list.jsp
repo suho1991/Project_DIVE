@@ -66,7 +66,6 @@
         </div>
 		</sec:authorize>
         <div class="paging">
-		<a href="${pageMaker.startPage}" class="btn pagingBtn"> <<</a> 
 		<c:if test="${pageMaker.prev}">
 			<a href="${pageMaker.startPage - 1}" class="btn pagingBtn"> <</a>
 		</c:if>
@@ -76,7 +75,6 @@
 		<c:if test="${pageMaker.next}">
 			<a href="${pageMaker.endPage + 1}" class="btn pagingBtn">></a>
 		</c:if>
-		<a href="${pageMaker.endPage}" class="btn pagingBtn">>></a>
 	</div>
     </div>
     <form id='actionForm' action='/product/list' method='get'>
