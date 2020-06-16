@@ -22,12 +22,12 @@
 			<form id="findMyIdForm" action="/user/findMyId" method="post">
 				<section class="customer">
 					<div class="customer_inform">
-						<div class="customer_inform_name_sector">
-							<input type="text" class="customer_inform_name" name="name"
+						<div class="customer_inform_id_sector">
+							<input type="text" class="customer_inform_id" name="name"
 								placeholder="이름을 입력하세요.">
 						</div>
-						<div class="customer_inform_email_sector">
-							<input type="text" class="customer_inform_email" name="email"
+						<div class="customer_inform_pass_sector">
+							<input type="text" class="customer_inform_pass" name="email"
 								placeholder="이메일 주소를 입력하세요.">
 						</div>
 					</div>
@@ -44,3 +44,24 @@
 	</div>
 <%@ include file="../include/footer.jsp" %>
 <script src="/resources/js/findMyId.js"></script>
+<script>
+	$(document).ready(function() {
+		let result = "${user.userId}";
+
+		findMyId(result);
+		
+		function findMyId(result) {
+			if(result === '') {
+				swal('DIVE', '일치하는 정보가 없습니다.', 'error');
+				$(".swal-button").on('click', function() {
+					location.href = "/user/findMyId";
+				})
+			} else {
+				swal('DIVE', '고객님의 아이디는 ' + result + '입니다.', 'success');
+				$(".swal-button").on('click', function() {
+					location.href = "/user/userLogin";
+				})
+			}
+		}
+	});
+</script>

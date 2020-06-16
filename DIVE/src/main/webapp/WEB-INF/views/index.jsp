@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="/resources/css/index.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!-- defer : 모든 파일을 받을때까지 브라우저에서 표시안되는걸 방지 -->
 <!-- <script src="https://kit.fontawesome.com/a4b9f55ded.js" crossorigin="anonymous"></script> -->
 </head>
@@ -34,10 +35,10 @@
 				<ul class="navbar_icons">
 					<sec:authentication property="principal" var="principal" />
 					<li>
-						<form action="/user/userLogout" method="POST">
+						<form id="logoutForm" action="/user/userLogout" method="POST">
 							<input type="hidden" name="${_csrf.parameterName}"
 								value="${_csrf.token}" />
-							<button class="btnStyle">Logout</button>
+							<button id="logoutBtn" class="btnStyle">Logout</button>
 						</form>
 					</li>
 					<!-- 스프링 시큐리티 principal 가져오는 라이브러리 선언
@@ -71,10 +72,10 @@
 					</li>
 					<li><a href="/user/adminPage">Admin Page</a></li>
 					<li>
-						<form action="/user/userLogout" method="POST">
+						<form id="logoutForm" action="/user/userLogout" method="POST">
 							<input type="hidden" name="${_csrf.parameterName}"
 								value="${_csrf.token}" />
-							<button class="btnStyle">Logout</button>
+							<button id="logoutBtn" class="btnStyle">Logout</button>
 						</form>
 					</li>
 				</ul>

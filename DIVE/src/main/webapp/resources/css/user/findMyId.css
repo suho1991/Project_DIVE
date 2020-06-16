@@ -20,11 +20,11 @@
 	margin: 30px;
 }
 
-.customer_inform_id_sector, .customer_inform_pass_sector {
+.customer_inform_name_sector, .customer_inform_email_sector {
 	padding: 10px;
 }
 
-.customer_inform_id, .customer_inform_pass {
+.customer_inform_name, .customer_inform_email {
 	border: 0;
 	border-bottom: 1px solid black;
 	padding-bottom: 5px;
@@ -40,3 +40,5 @@
 	border-radius: 50px;
 	background-color: white;
 }
+
+ @charset "UTF-8";
