@@ -23,7 +23,7 @@
 	transform: translateY(-50%);
 	text-align: center;
     overflow: hidden;
-    z-index: 9999;
+    z-index: 9996;
 }
 
 .slider-container,

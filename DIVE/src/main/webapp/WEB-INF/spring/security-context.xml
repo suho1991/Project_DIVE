@@ -14,6 +14,7 @@
 		class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"></bean>
 	<bean id="ForUserDetailsService"
 		class="kr.jungang.dive.security.ForUserDetailsService"></bean>
+	
 
 	<security:http>
 		<!-- 해당 url 접속 시도 시 access 권한 확인 -->
@@ -31,7 +32,7 @@
 			ref="UserAccessDenied" />
 
 		<!-- 로그아웃  시 쿠키 삭제 -->
-		<security:logout logout-url="/user/userLogout"
+		<security:logout logout-url="/user/userLogout" logout-success-url="/"
 			invalidate-session="true" delete-cookies="remember-me, JSESSION_ID" />
 			
 		<!-- 자동 로그인 설정 -->

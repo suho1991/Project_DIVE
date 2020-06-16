@@ -81,10 +81,15 @@ public class UserController {
 	public void findMyId() {
 		log.info("아이디 찾기");
 	}
+	@GetMapping("/findMyIdResult")
+	public void findMyIdResult() {
+		log.info("아이디 찾기");
+	}
 
 	@PostMapping("/findMyId")
-	public void findMyId(UserDTO userDTO, Model model) {
-		model.addAttribute("user", userService.findMyId(userDTO.getName(), userDTO.getEmail()));
+	public String findMyId(UserDTO userDTO, RedirectAttributes rttr) {
+		rttr.addFlashAttribute("user", userService.findMyId(userDTO.getName(), userDTO.getEmail()));
+		return "redirect:/user/findMyIdResult";
 	}
 	
 	@GetMapping("/changePassword")

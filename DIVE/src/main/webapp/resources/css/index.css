@@ -47,7 +47,7 @@ header {
     top: 25px;
     left: 0;
     width: 100%;
-    z-index: 99997;
+    z-index: 9997;
 }
 .top ul{
     margin-right: 100px;
@@ -68,13 +68,13 @@ header {
     top: 50%;
     margin-top: -140px;
     text-align: center;
-    z-index: 99999;
+    z-index: 9999;
 }
 .logo{
     margin-top: -80px;
     font-size: 90px;
     color: white;
-    z-index: 99998;
+    z-index: 9998;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .slogan{

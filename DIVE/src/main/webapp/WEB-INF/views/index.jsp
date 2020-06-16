@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="/resources/css/index.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!-- defer : 모든 파일을 받을때까지 브라우저에서 표시안되는걸 방지 -->
 <!-- <script src="https://kit.fontawesome.com/a4b9f55ded.js" crossorigin="anonymous"></script> -->
 </head>
@@ -22,26 +23,14 @@
 	<header>
 		<nav class="top">
 			<!-- 익명의 사용자의 경우 표시함(로그인 되어 있지 않는 user) -->
-			<sec:authorize access="isAnonymous()">
 				<ul class="clear">
+			<sec:authorize access="isAnonymous()">
 					<li><a class="moveStyle" href="/user/signUp">SignUp</a></li>
 					<li><a class="moveStyle" href="/user/userLogin">LogIn</a></li>
-				</ul>
 			</sec:authorize>
 
 			<!-- 회원 권한으로 로그인 되어  있는 경우 표시함 -->
 			<sec:authorize access="hasRole('ROLE_MEMBER')">
-				<ul class="navbar_icons">
-					<sec:authentication property="principal" var="principal" />
-					<li>
-						<form action="/user/userLogout" method="POST">
-							<input type="hidden" name="${_csrf.parameterName}"
-								value="${_csrf.token}" />
-							<button class="btnStyle">Logout</button>
-						</form>
-					</li>
-					<!-- 스프링 시큐리티 principal 가져오는 라이브러리 선언
-	    security > domain > CustomUser.java에 선언된 field를 불러온다. -->
 					<sec:authentication property="principal" var="principal" />
 					<li>
 						<form id="actionForm" method="get">
@@ -51,13 +40,19 @@
 							</a>
 						</form>
 					</li>
-				</ul>
+					<li>
+						<form id="logoutForm" action="/user/userLogout" method="POST">
+							<input type="hidden" name="${_csrf.parameterName}"
+								value="${_csrf.token}" />
+							<button id="logoutBtn" class="btnStyle">Logout</button>
+						</form>
+					</li>
+					<!-- 스프링 시큐리티 principal 가져오는 라이브러리 선언
+	    security > domain > CustomUser.java에 선언된 field를 불러온다. -->
 			</sec:authorize>
 
 			<!-- 관리자 권한으로 로그인 되어  있는 경우 표시함 -->
 			<sec:authorize access="hasRole('ROLE_ADMIN')">
-				<ul class="navbar_icons">
-					<sec:authentication property="principal" var="principal" />
 					<!-- 스프링 시큐리티 principal 가져오는 라이브러리 선언
 	    security > domain > CustomUser.java에 선언된 field를 불러온다. -->
 					<sec:authentication property="principal" var="principal" />
@@ -71,14 +66,14 @@
 					</li>
 					<li><a href="/user/adminPage" class="moveStyle">Admin Page</a></li>
 					<li>
-						<form action="/user/userLogout" method="POST">
+						<form id="logoutForm" action="/user/userLogout" method="POST">
 							<input type="hidden" name="${_csrf.parameterName}"
 								value="${_csrf.token}" />
-							<button class="btnStyle">Logout</button>
+							<button id="logoutBtn" class="btnStyle">Logout</button>
 						</form>
 					</li>
-				</ul>
 			</sec:authorize>
+				</ul>
 
 		</nav>
 		<div class="searchBar">
