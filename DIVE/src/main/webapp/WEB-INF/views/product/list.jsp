@@ -88,6 +88,16 @@
 <%@ include file="../include/footer.jsp"%>
 <script>
 $(document).ready(function(){
+	var result = "${result}";
+	
+	checkAlert(result);
+	
+	function checkAlert(result) {
+		if(parseInt(result) > 0) {
+			alert("상품이 등록 되었습니다.")
+		}
+	}
+	
     var actionForm = $('#actionForm');
 
 	  $('.move').on('click', function(e) {

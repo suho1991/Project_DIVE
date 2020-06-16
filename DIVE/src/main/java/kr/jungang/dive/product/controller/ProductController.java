@@ -82,7 +82,7 @@ public class ProductController {
 	@PostMapping("/updateProduct")
 	public String updatePost(ProductVO obj, @ModelAttribute("criteria") PostCriteria postCriteria, RedirectAttributes rttr){
 		if(productService.updateProduct(obj)) {
-			rttr.addFlashAttribute("result","success");			
+			rttr.addFlashAttribute("result",obj.getId());			
 		}
 		return "redirect:/product/detailProduct?id=" + obj.getId();
 	}

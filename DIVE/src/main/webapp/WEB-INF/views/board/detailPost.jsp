@@ -106,6 +106,16 @@ $(document).ready(function(){
 	});
 	
 	
+	var result = "${result}";
+	
+	checkAlert(result);
+	
+	function checkAlert(result) {
+		if(parseInt(result) > 0) {
+			alert("게시글이 수정 되었습니다.");
+		}
+	}
+	
 	// 댓글 처리
 	var curPageNum = 1;
 	var postId = ${post.id};

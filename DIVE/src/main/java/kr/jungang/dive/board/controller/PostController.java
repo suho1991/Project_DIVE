@@ -66,7 +66,7 @@ public class PostController {
 	@PostMapping("/updatePost")
 	public String updatePost(PostVO obj, @ModelAttribute("criteria") PostCriteria postCriteria, RedirectAttributes rttr){
 		if(postService.updatePost(obj) == 1) {
-			rttr.addFlashAttribute("result","success");			
+			rttr.addFlashAttribute("result", obj.getId());			
 		}
 		return "redirect:/board/detailPost?id=" + obj.getId();
 	}
