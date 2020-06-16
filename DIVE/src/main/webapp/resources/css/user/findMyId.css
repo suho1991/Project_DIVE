@@ -11,13 +11,8 @@
 	text-align: center;
 }
 
-.choice h1 {
-	padding-top: 80px;
-}
-
-.logo_image i {
-	font-size: 50px;
-	margin: 30px;
+.choice {
+	padding: 80px;
 }
 
 .customer_inform_id_sector, .customer_inform_pass_sector {

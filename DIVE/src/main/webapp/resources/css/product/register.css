@@ -1,22 +1,7 @@
 .top {
 	text-align: center;
-}
-
-h1 {
-	font-size: 1.5em;
-}
-
-.logo i {
-	font-size: 50px;
-	margin: 30px;
-}
-
-a {
-	text-decoration: none;
-}
-
-.logo a:link, .logo a:visited {
-	color: black;
+	font-size: 1.2em;
+	padding-bottom: 35px;
 }
 
 .board_list_wrap {
@@ -42,16 +27,20 @@ a {
 
 .board_title_write {
 	width: 500px;
+	padding: 5px;
+	margin-bottom: 5px;
 }
 
 .board_content_write {
 	width: 500px;
 	height: 200px;
+	margin-bottom: 5px;
 }
 
 .board_btn {
 	width: 500;
 	text-align: right;
+	margin-bottom: 5px;
 }
 
 .btn_registration, .btn_list {
@@ -59,15 +48,18 @@ a {
 }
 
 .board_region {
-	margin-right: 60px;
+	margin-right: 80px;
 }
 
-.board_region, .board_price {
+.board_region, 
+.board_price {
 	display: inline-block;
+	margin-bottom: 5px;
 }
 
 .board_size {
 	width: 200px;
+	padding: 5px;
 }
 
 .uploadResult {

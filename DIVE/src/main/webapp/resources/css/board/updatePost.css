@@ -1,22 +1,11 @@
 .top {
 	text-align: center;
-}
-
-h1 {
-	font-size: 1.5em;
-}
-
-.logo i {
-	font-size: 50px;
-	margin: 30px;
+	font-size: 1.2em;
+	padding-bottom: 20px;
 }
 
 a {
 	text-decoration: none;
-}
-
-.logo a:link, .logo a:visited {
-	color: black;
 }
 
 .board_list_wrap {
@@ -42,16 +31,20 @@ a {
 
 .board_title_write {
 	width: 500px;
+	padding: 5px;
+	margin-bottom: 3px;
 }
 
 .board_content_write {
 	width: 500px;
 	height: 200px;
+	margin-bottom: 3px;
 }
 
 .board_btn {
 	width: 500;
 	text-align: right;
+	margin-bottom: 3px;
 }
 
 .btn_update, .btn_list {
