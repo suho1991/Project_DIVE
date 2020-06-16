@@ -1,0 +1,104 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialised;
+}
+
+.container {
+    position: relative;
+    width: 100%;	
+	overflow: hidden;	
+}
+
+.slider-container {
+    position: absolute;
+	width:100%;
+}
+
+.slide {
+	position: absolute;
+	width: 100%;
+	/* box-sizing:border-box; */
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.slider-container,
+.animated {
+	-webkit-transition: left .3s ease-in;
+	transition: left .3s ease-in;
+}
+
+/* Utility */
+.simple-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav */
+#prev,
+#next {
+    position: absolute;
+    top: 50%;
+	left:50%;
+    transform: translateY(-50%);
+    /* z-index: 999999; */
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+#prev.disabled, 
+#next.disabled { 
+    display:none;
+}
+
+#prev { 
+    /* background-image: url('화살표_왼쪽.png');  */
+    margin-left: -880px;
+    background-color: white;
+}
+
+#prev:hover { 
+    /* background-image: url('화살표_왼쪽.png');  */
+    background-color: white;
+}
+
+#next {
+    margin-left: 780px;
+    /* background-image: url('화살표_오른쪽.png'); */
+    background-color: white;
+	
+}
+
+#next:hover { 
+    /* background-image: url('화살표_오른쪽.png');  */
+    background-color: white;
+}
+
+.pager {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.pager span {
+    width: 10px;
+    height: 10px;
+    background-color: wheat;
+    border-radius: 50%;
+    display: inline-block;
+    text-indent: -9999em;
+    margin: 0 10px;
+}

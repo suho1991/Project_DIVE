@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.jungang.dive.product.persistence.ProductMapper">
+	<resultMap id="productResultMap" type="kr.jungang.dive.product.domain.ProductVO"  >
+			<id property="id" column="id" />
+			<result property="title" column="title" />
+			<result property="description" column="description" />
+			<result property="writer" column="writer" />
+			<result property="userNum" column="user_num" />
+			<result property="price" column="price" />
+			<result property="region" column="region" />
+			<result property="regDate" column="reg_date" />
+			<result property="updateDate" column="update_date" />
+			<result property="likeCount" column="like_count" />
+			<result property="hitsCount" column="hits_count" />
+			<result property="enabled" column="enabled" />
+			<association property="user" resultMap="kr.jungang.dive.user.persistence.UserMapper.userResultMap" columnPrefix="user_"/>
+	</resultMap>
+	
+	<sql id="criteria">
+		<trim prefix="(" suffix=") AND " prefixOverrides="OR">
+			<foreach item='type' collection="typeArr">
+				<trim prefix="OR">
+					<choose>
+						<when test="type == 'T'.toString()">
+							title like '%' || #{keyword}||'%'
+						</when>
+					</choose>
+				</trim>
+			</foreach>
+		</trim>
+	</sql>
+
+	<select id="getAllProduct" resultMap="productResultMap">
+	<![CDATA[
+		select *
+		  from tbl_product
+	]]>
+	</select>
+	
+	
+	<select id="findById" resultMap="productResultMap">
+	<![CDATA[
+		select *
+		  from tbl_product
+		 where id = #{id}
+	]]>
+	</select>
+
+	<select id="getTotCount" resultType="int">
+	<![CDATA[
+		select count(*) from tbl_product 
+		 where
+	]]>
+	
+	<include refid="criteria"></include>
+	 
+	<![CDATA[
+		id > 0
+	]]>
+	
+	</select>
+		
+	
+	<select id="getWithPagingProduct" resultMap="productResultMap">
+	<![CDATA[
+		select p.id, p.title, p.description, p.writer, p.user_num, p.price, p.region, p.reg_date, p.update_date, p.like_count, p.hits_count, p.enabled,
+			   m.id as user_id,
+			   m.USER_ID as user_USER_ID,
+			   m.name as user_name,
+			   m.nickname as user_nickname,
+			   m.password as user_password,
+			   m.address as user_address,
+			   m.email as user_email,
+			   m.phone as user_phone,
+			   m.SEX as user_SEX,
+			   m.BIRTHDAY as user_BIRTHDAY,
+			   m.reg_date as user_reg_date,
+			   m.update_date as user_update_date,
+			   m.enabled as user_enabled
+		  from
+		  (select rownum rn, id, title, description, writer, user_num, price, region, reg_date, update_date, like_count, hits_count, enabled
+		     from (select * from tbl_product order by id desc)
+		    where 
+	]]>
+	
+		<include refid="criteria"></include>
+	
+	<![CDATA[
+		rownum <= #{pageNum} * #{amount}) p left outer join tbl_user m on p.user_num = m.id
+		where rn > (#{pageNum} -1) * #{amount}
+	]]>
+	</select>
+	
+	
+	<insert id="registerProduct">
+		<selectKey keyProperty="id" order="BEFORE" resultType="long">
+		<![CDATA[
+		 select seq_product.nextval from dual
+		]]>
+		</selectKey>
+		insert into tbl_product (id, title, description, writer, user_num, price, region)
+		values(#{id}, #{title}, #{description}, #{writer}, #{userNum}, #{price}, #{region})
+	</insert>
+	
+	<update id="updateProduct">
+		update tbl_product
+		set title = #{title},
+		description = #{description},
+		price = #{price},
+		region = #{region},
+		update_date = sysdate
+		where id = #{id}
+	</update>
+
+	<delete id="deleteProduct">
+   <![CDATA[
+   		delete from tbl_product where id= #{id}
+   	]]>
+	</delete>
+</mapper>
