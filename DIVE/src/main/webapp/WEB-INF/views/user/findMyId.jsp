@@ -12,12 +12,7 @@
 			<section class="choice">
 				<h1>아이디 찾기</h1>
 			</section>
-			<section class="logo">
-				<div class="logo_image">
-					<a href="/"><i class="fas fa-universal-access"
-						style="cursor: pointer"></i></a>
-				</div>
-			</section>
+			
 			<form action="/user/findMyId" method="post" onsubmit="return checkAll()">
 				<section class="customer">
 					<div class="customer_inform">

@@ -69,7 +69,7 @@
 							</a>
 						</form>
 					</li>
-					<li><a href="/user/adminPage">Admin Page</a></li>
+					<li><a href="/user/adminPage" class="moveStyle">Admin Page</a></li>
 					<li>
 						<form action="/user/userLogout" method="POST">
 							<input type="hidden" name="${_csrf.parameterName}"
@@ -88,7 +88,7 @@
 			<p class="slogan">나만의 특별한 보물을 찾아보세요!</p>
 
 			<form id="searchForm" action="/product/list" method="get">
-				<input type="text" name='keyword' size="40" placeholder="검색어를 입력하세요">
+				<input type="text" name='keyword' class="inputFocus" size="40" placeholder="검색어를 입력하세요">
 				<input type="hidden" name='type' value='T'>
 				<button class="btnStyle">검색</button>
 			</form>
@@ -183,6 +183,6 @@
 	</footer>
 	<script src="/resources/js/slide.js"></script>
 	<script src="/resources/js/index.js"></script>
-
+	
 </body>
 </html>

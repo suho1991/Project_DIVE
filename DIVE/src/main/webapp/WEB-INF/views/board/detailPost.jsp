@@ -11,10 +11,6 @@
 	<div class="board_list_wraping">
 		<div class="top">
 			<h1>게시판 상세보기</h1>
-			<div class="logo">
-				<a href="/"><i class="fas fa-universal-access"
-					style="cursor: pointer"></i></a>
-			</div>
 		</div>
 		<div class="board">
 			<div class="board_title">
@@ -29,7 +25,7 @@
 			</div>
 			<div class="board_content">
 				<h3>내용</h3>
-				<textarea name="" class="board_content_write" readonly="readonly"><c:out
+				<textarea name="" class="board_content_write" readonly="readonly" style="resize: none;"><c:out
 						value="${post.content}" /></textarea>
 			</div>
 		</div>

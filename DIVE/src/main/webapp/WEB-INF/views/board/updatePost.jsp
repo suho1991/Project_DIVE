@@ -10,11 +10,7 @@
 <div class="board_list_wrap">
 	<div class="board_list_wraping">
 		<div class="top">
-			<h1>글 쓰기</h1>
-			<div class="logo">
-				<a href="/"><i class="fas fa-universal-access"
-					style="cursor: pointer"></i></a>
-			</div>
+			<h1>게시글 수정하기</h1>
 		</div>
 		<form role="form" action="/board/updatePost" method="post">
 			<div class="board">
@@ -30,7 +26,7 @@
 				</div>
 				<div class="board_content">
 					<h3>내용</h3>
-					<textarea name="content" class="board_content_write">${post.content}</textarea>
+					<textarea name="content" class="board_content_write" style="resize: none;">${post.content}</textarea>
 				</div>
 
 			</div>
