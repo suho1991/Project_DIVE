@@ -91,6 +91,9 @@ header {
     margin-top: 20px;
     height: 30px;
 }
+.searchBar input:focus{
+	background-color: white;
+}
 /*input {
   background-image : url('/images/search.jpeg'); 
   background-position:top right; 

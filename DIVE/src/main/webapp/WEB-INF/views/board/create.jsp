@@ -11,10 +11,6 @@
 	<div class="board_list_wraping">
 		<div class="top">
 			<h1>글 쓰기</h1>
-			<div class="logo">
-				<a href="/"><i class="fas fa-universal-access"
-					style="cursor: pointer"></i></a>
-			</div>
 		</div>
 		<form role="form" action="/board/create" method="post">
 			<div class="board">
@@ -22,15 +18,17 @@
 					<h3>제목</h3>
 					<input type="text" name="title" class="board_title_write">
 				</div>
+				<br />
 				<div class="board_writer">
 					<h3>글쓴이</h3>
 					<input type="text" name="writer" class="board_title_write"
 						value="<sec:authentication property='principal.user.name'/>"
 						readonly="readonly">
 				</div>
+				<br />
 				<div class="board_content">
 					<h3>내용</h3>
-					<textarea name="content" class="board_content_write"></textarea>
+					<textarea name="content" class="board_content_write" style="resize: none;"></textarea>
 				</div>
 
 			</div>
@@ -44,9 +42,11 @@
 	</div>
 </div>
 
+
 <%@ include file="../include/footer.jsp"%>
 <script>
 $(document).ready(function(){
+
 	$(".btn_list").on("click", function(e){
 		e.preventDefault();
 		location.href="/board/list";

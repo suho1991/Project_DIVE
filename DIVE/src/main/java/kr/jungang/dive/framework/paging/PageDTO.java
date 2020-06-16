@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class PageDTO {
-	private static final int PAGING_LINK_AMOUNT = 15;
+	private static final int PAGING_LINK_AMOUNT = 16;
 	private int startPage;
 	private int endPage;
 	private boolean prev, next;
@@ -17,7 +17,7 @@ public class PageDTO {
 		this.total = total;
 		this.cri = cri;
 		
-		this.endPage = (int) (Math.ceil(cri.getPageNum() / (float) PAGING_LINK_AMOUNT)) * 15;
+		this.endPage = (int) (Math.ceil(cri.getPageNum() / (float) PAGING_LINK_AMOUNT)) * PAGING_LINK_AMOUNT;
 		this.startPage = this.endPage - (PAGING_LINK_AMOUNT - 1);
 		
 		int realEnd = (int) (Math.ceil((float) total / cri.getAmount())); 

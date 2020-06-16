@@ -125,13 +125,21 @@
 									operForm.submit();
 								});
 
-						$("button[data-oper='delete']").on(
-								"click",
-								function(e) {
-									operForm.attr("action",
-											"/product/deleteProduct").attr(
-											"method", "post").submit();
-								});
-
+					$("button[data-oper='delete']").on("click", function(e) {
+						var confirmFlag = confirm("정말로 삭제하시겠습니까?");
+						if(confirmFlag) {
+							operForm.attr("action", "/product/deleteProduct").attr("method", "post").submit();
+						}
 					});
+
+					var result = "${result}";
+					
+					checkAlert(result);
+					
+					function checkAlert(result) {
+						if(parseInt(result) > 0) {
+							alert("상품이 수정 되었습니다.");
+						}
+					}
+	});
 </script>

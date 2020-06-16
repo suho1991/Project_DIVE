@@ -30,6 +30,7 @@ var replyService = (function(){
 			success: function(result, status, xhr){
 				if (callbackFunc) {
 					callbackFunc(result);
+					alert("댓글 완료");
 				}
 			},
 			error:function(xhr, status, er){

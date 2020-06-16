@@ -4,19 +4,12 @@ table {
 
 .top {
 	text-align: center;
-}
-
-.logo i {
-	font-size: 50px;
-	margin: 30px;
+	padding-bottom: 50px;
+	font-size: 25px;
 }
 
 a {
 	text-decoration: none;
-}
-
-.logo a:link, .logo a:visited {
-	color: black;
 }
 
 .board_list_wrap {

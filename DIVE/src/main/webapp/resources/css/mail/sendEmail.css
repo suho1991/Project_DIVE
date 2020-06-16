@@ -11,32 +11,28 @@
 	text-align: center;
 }
 
-.choice h1 {
-	padding-top: 80px;
+.choice {
+	padding: 80px 0;
 }
 
-.logo_image i {
-	font-size: 50px;
-	margin: 30px;
-}
-
-.customer_inform_id_sector, .customer_inform_pass_sector {
+.customer_inform_id_sector, .customer_inform_email_sector {
 	padding: 10px;
 }
 
-.customer_inform_id, .customer_inform_pass {
+.customer_inform_id, .customer_inform_email {
 	border: 0;
 	border-bottom: 1px solid black;
 	padding-bottom: 5px;
 }
 
-.connect_sector {
-	margin-top: 50px;
-}
-
-.connect_btn {
+.sendEmail {
 	width: 200px;
 	height: 50px;
 	border-radius: 50px;
 	background-color: white;
+}
+
+.btnSend {
+	text-align: center;
+	margin-top: 20px;
 }

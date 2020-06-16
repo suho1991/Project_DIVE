@@ -11,10 +11,6 @@
 	<div class="board_list_wraping">
 		<div class="top">
 			<h1>게시판 상세보기</h1>
-			<div class="logo">
-				<a href="/"><i class="fas fa-universal-access"
-					style="cursor: pointer"></i></a>
-			</div>
 		</div>
 		<div class="board">
 			<div class="board_title">
@@ -29,7 +25,7 @@
 			</div>
 			<div class="board_content">
 				<h3>내용</h3>
-				<textarea name="" class="board_content_write" readonly="readonly"><c:out
+				<textarea name="" class="board_content_write" readonly="readonly" style="resize: none;"><c:out
 						value="${post.content}" /></textarea>
 			</div>
 		</div>
@@ -97,9 +93,24 @@ $(document).ready(function(){
 	});
 	
 	$("button[data-oper='delete']").on("click", function(e) {
-		operForm.attr("action", "/board/deletePost").attr("method", "post").submit();
+		var confirmFlag = confirm("정말로 삭제하시겠습니까?");
+		if (confirmFlag) {
+			operForm.attr("action", "/board/deletePost").attr("method", "post").submit();
+		} else {
+			
+		}
 	});
 	
+	
+	var result = "${result}";
+	
+	checkAlert(result);
+	
+	function checkAlert(result) {
+		if(parseInt(result) > 0) {
+			alert("게시글이 수정 되었습니다.");
+		}
+	}
 	
 	// 댓글 처리
 	var curPageNum = 1;
@@ -146,21 +157,28 @@ $(document).ready(function(){
 					id : replyId
 			}
 			replyService.updateReply(replyObj, csrfHeaderName, csrfTokenValue, function(result) {
+				alert("수정 완료");
 				location.href="/board/detailPost?id=" + postId;
 			});
 		});
 	});
 	
+	//댓글 삭제
 	$(document).on("click", ".deleteReplyBtn", function() {
+		var confirmFlag = confirm("정말로 삭제하시겠습니까?");
 		var replyId = $(this).data("id");
-		replyService.deleteReply(replyId, loginUserNum, csrfHeaderName, csrfTokenValue, function(successMsg) {
-			if (successMsg === 'success') {
-				alert('Remove 성공');
-				location.href="/board/detailPost?id=" + postId;
-			}
-		}, function(err) {
-			alert('Error....' + err);
-		});
+		if (confirmFlag) {
+			replyService.deleteReply(replyId, loginUserNum, csrfHeaderName, csrfTokenValue, function(successMsg) {
+				if (successMsg === 'success') {
+					alert('삭제 성공');
+					location.href="/board/detailPost?id=" + postId;
+				}
+			}, function(err) {
+				alert('삭제 실패....' + err);
+			});
+		} else {
+				
+		}
 	});
 	
 	

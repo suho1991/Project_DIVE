@@ -10,10 +10,6 @@
 	<div class="board_list_wraping">
 		<div class="top">
 			<h1>상품 등록 페이지</h1>
-			<div class="logo">
-				<a href="/"><i class="fas fa-universal-access"
-					style="cursor: pointer"></i></a>
-			</div>
 		</div>
 		<form role="form" action="/product/register" method="post">
 			<div class="board">
@@ -29,12 +25,12 @@
 					</div>
 					<div class="board_price">
 						<h4>희망 가격</h4>
-						<input type="text" name="price" class="board_size">
+						<input type="number" name="price" class="board_size">
 					</div>
 				</div>
 				<div class="board_content">
 					<h3>내용</h3>
-					<textarea name="description" class="board_content_write"></textarea>
+					<textarea name="description" class="board_content_write" style="resize: none;"></textarea>
 				</div>
 				
 			</div>

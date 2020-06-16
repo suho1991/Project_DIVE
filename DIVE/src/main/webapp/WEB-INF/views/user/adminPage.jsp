@@ -9,10 +9,6 @@
 	<div class="board_list_wrap">
 		<section class="top">
 			<h1>관리자 페이지</h1>
-			<div class="logo">
-				<a href="/"><i class="fas fa-universal-access"
-					style="cursor: pointer"></i></a>
-			</div>
 		</section>
 		<table class="board_list">
 			<thead>

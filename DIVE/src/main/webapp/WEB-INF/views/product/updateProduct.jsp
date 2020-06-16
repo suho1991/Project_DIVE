@@ -6,18 +6,10 @@
 	prefix="sec"%>
 <link rel="stylesheet" href="../resources/css/product/updateProduct.css">
 <%@ include file="../include/header.jsp"%>
-<div class="bigPictureWrapper">
-<div class="bigPicture">
-</div>
-</div>
 <div class="board_list_wrap">
 	<div class="board_list_wraping">
 		<div class="top">
-			<h1>상품 등록 페이지</h1>
-			<div class="logo">
-				<a href="/"><i class="fas fa-universal-access"
-					style="cursor: pointer"></i></a>
-			</div>
+			<h1>상품 수정 페이지</h1>
 		</div>
 		<form role="form" action="/product/updateProduct" method="post">
 			<div class="board">
@@ -33,12 +25,12 @@
 					</div>
 					<div class="board_price">
 						<h4>희망 가격</h4>
-						<input type="text" name="price" class="board_size" value="${product.price}">
+						<input type="number" name="price" class="board_size" value="${product.price}">
 					</div>
 				</div>
 				<div class="board_content">
 					<h3>내용</h3>
-					<textarea name="description" class="board_content_write">${product.description}</textarea>
+					<textarea name="description" class="board_content_write" style="resize: none;">${product.description}</textarea>
 				</div>
 				
 			</div>

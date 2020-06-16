@@ -8,33 +8,14 @@
 <link rel="stylesheet" href="/resources/css/user/signUp.css">
 	<div class="choice-sector">
         <div class="choice-sector-content">
-            <section class="choice">
-                <div class="choice_top">
-                    <h1>회원가입</h1>
-                </div>
-            </section>
-            <section class="choice">
-                <div class="choice_btn">
-                    <span class="login_sector">
-                        <a href="/user/userLogin">
-                            <input type="button" class="login_btn" value="L O G I N">
-                        </a>
-                    </span>
-                    <span class="signup_sector">
-                        <input type="button" class="signup_btn" value="S I G N U P">
-                    </span>
-                </div>
-            </section>
-            <section class="logo">
-                
-            </section>
+            
             <section class="customer">
                 <div class="customer_inform">
 
 
                     <form action="/user/signUp" method="post" onsubmit="return checkAll()">
                         <fieldset>
-                            <h1>아이디/비밀번호 입력</h1><br />
+                            <h1 class="top">아이디/비밀번호 입력</h1><br />
                             <div class="fieldlabel">
                                 <div class="test"><label for="userId">아이디</label></div>
                                 <input class="border" type="text" id="userId" name="userId" maxlength="20" value="">

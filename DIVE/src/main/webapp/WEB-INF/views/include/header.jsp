@@ -30,6 +30,7 @@
 					<input type="text" class="navbar_search_bar" name='keyword'
 						size="40" placeholder="검색어를 입력하세요"> <input type="hidden"
 						name='type' value='T'>
+
 					<button class="navbar_search_btn"></button>
 					<img src="/resources/images/search.png" alt="btn">
 				</form>
