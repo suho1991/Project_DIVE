@@ -13,6 +13,7 @@
 			<result property="regDate" column="reg_date" />
 			<result property="updateDate" column="update_date" />
 			<association property="user" resultMap="kr.jungang.dive.user.persistence.UserMapper.userResultMap" columnPrefix="user_"/>
+			<collection property="replyList" resultMap="replyResultMap"/>
 	</resultMap>
 
 	<select id="getTotCountOfPost" resultType="int">
