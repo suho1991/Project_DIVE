@@ -1,6 +1,7 @@
 package kr.jungang.dive.board.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import kr.jungang.dive.user.domain.UserDTO;
 import lombok.Data;
@@ -18,6 +19,6 @@ public class ReplyVO {
 	
 	private UserDTO user;
 	
-	
+	private List<ReplyVO> replyList;
 	
 }
