@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class PageDTO {
-	private static final int PAGING_LINK_AMOUNT = 16;
+	private static final int PAGING_LINK_AMOUNT = 10;
 	private int startPage;
 	private int endPage;
 	private boolean prev, next;

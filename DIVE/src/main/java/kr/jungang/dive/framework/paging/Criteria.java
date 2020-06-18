@@ -13,7 +13,7 @@ public class Criteria {
 	private String keyword;
 
 	public Criteria() {
-		this(1,15);
+		this(1,16);
 	}
 
 	public Criteria(int pageNum, int amount) {
