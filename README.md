@@ -62,13 +62,13 @@
 
 ![나의 역할2](https://user-images.githubusercontent.com/62007108/84986290-4c733800-b179-11ea-9923-3f6124e4dfee.PNG)
 * 깃허브
-      * [게시판 모델](https://github.com/suho1991/Project_DIVE/tree/master/DIVE/src/main/java/kr/jungang/dive/board/domain)
-      * [게시판 Mapper](https://github.com/suho1991/Project_DIVE/tree/master/DIVE/src/main/resources/kr/jungang/dive/board/persistence)
-      * [게시판_jsp](https://github.com/suho1991/Project_DIVE/tree/master/DIVE/src/main/webapp/WEB-INF/views/board)
+       [게시판 모델](https://github.com/suho1991/Project_DIVE/tree/master/DIVE/src/main/java/kr/jungang/dive/board/domain)
+       [게시판 Mapper](https://github.com/suho1991/Project_DIVE/tree/master/DIVE/src/main/resources/kr/jungang/dive/board/persistence)
+       [게시판_jsp](https://github.com/suho1991/Project_DIVE/tree/master/DIVE/src/main/webapp/WEB-INF/views/board)
 
 ![나의 역할1](https://user-images.githubusercontent.com/62007108/84986295-4da46500-b179-11ea-9d6a-44829b646298.PNG)
 * 깃허브
-      * [상품 모델](https://github.com/suho1991/Project_DIVE/tree/master/DIVE/src/main/java/kr/jungang/dive/product/domain)
-      * [상품 Mapper](https://github.com/suho1991/Project_DIVE/tree/master/DIVE/src/main/resources/kr/jungang/dive/product/persistence)
-      * [상품_jsp](https://github.com/suho1991/Project_DIVE/tree/master/DIVE/src/main/webapp/WEB-INF/views/product)
+      [상품 모델](https://github.com/suho1991/Project_DIVE/tree/master/DIVE/src/main/java/kr/jungang/dive/product/domain)
+      [상품 Mapper](https://github.com/suho1991/Project_DIVE/tree/master/DIVE/src/main/resources/kr/jungang/dive/product/persistence)
+      [상품_jsp](https://github.com/suho1991/Project_DIVE/tree/master/DIVE/src/main/webapp/WEB-INF/views/product)
 
