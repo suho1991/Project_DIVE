@@ -72,3 +72,7 @@
       [상품 Mapper](https://github.com/suho1991/Project_DIVE/tree/master/DIVE/src/main/resources/kr/jungang/dive/product/persistence), 
       [상품_jsp](https://github.com/suho1991/Project_DIVE/tree/master/DIVE/src/main/webapp/WEB-INF/views/product)
 
+
+
+* 공통 PAGING
+      [PAGING 모델](https://github.com/suho1991/Project_DIVE/tree/master/DIVE/src/main/java/kr/jungang/dive/framework/paging)
