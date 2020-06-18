@@ -54,3 +54,7 @@
 * 각 기능 설명   
 * 팀원 역할  
 * PPT 보기 [Link](https://docs.google.com/presentation/d/1X_pm5qu2KIjSAaNNoROyh0tZw7PlQ_8B8T9M9vID6KE/edit?usp=sharing)
+
+
+![나의 역할2](https://user-images.githubusercontent.com/62007108/84986290-4c733800-b179-11ea-9923-3f6124e4dfee.PNG)
+![나의 역할1](https://user-images.githubusercontent.com/62007108/84986295-4da46500-b179-11ea-9d6a-44829b646298.PNG)
